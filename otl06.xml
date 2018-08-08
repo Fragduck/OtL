@@ -5,23 +5,23 @@
         <injuried id="caller;" texten="Elderly Woman" elementProperties="hp=92; sex=W; type=Old; hpchange= -0.05;" />
       </scene>
       <dialog>
-        <DialogOption default="2" id="1" texten="911, what's your emergency?" addToAAR="caller" operator="Operator" />
-        <DialogOption default="3" option2="5" id="2" texten="Hello, I'm a little bit dizzy." operator="Caller" />
-        <DialogOption default="4" id="3" texten="{ADDRESS} Where do you live?" operator="Operator" />
-        <DialogOption default="5" id="4" texten="I live at [[ADDRESS]]." operator="Caller" actionOnEnd="actionSetLocation;" />
-        <DialogOption default="6" id="5" texten="How long have you been dizzy?" operator="Operator" />
-        <DialogOption default="7" option2="3" id="6" texten="Hmm... Maybe an hour, I can't really remember. I certainly wasn't dizzy this morning." operator="Caller" />
-        <DialogOption default="8" id="7" texten="Do you have any other symptoms?" operator="Operator" />
-        <DialogOption default="9" option2="11" option3="12" id="8" texten="Well, I feel warmer than usual. Is that a bad sign?" operator="Caller" />
-        <DialogOption default="10" id="9" texten="Do you have a fever?" operator="Operator" />
-        <DialogOption default="11" option2="12" id="10" texten="No, I checked just 5 minutes ago." operator="Caller" />
-        <DialogOption default="13" option2="16" id="11" texten="{SEND AMBULANCE} Alright, I'm going to a send a paramedic to check up on you. Take care now, bye." actiononEnd="opinionEffect=-1;" addToAAR="story_1" operator="Operator" />
-        <DialogOption default="14" option2="15" id="12" texten="{GO TO A DOCTOR} It doesn't sound like an emergency, can you get to your doctor today? They'll be able to do a check up." operator="Operator" />
+        <DialogOption id="1" default="2" texten="911, what's your emergency?" addToAAR="caller" operator="Operator" />
+        <DialogOption id="2" default="3" option2="5" texten="Hello, I'm a little bit dizzy." operator="Caller" />
+        <DialogOption id="3" default="4" texten="{ADDRESS} Where do you live?" operator="Operator" />
+        <DialogOption id="4" default="5" id="4" texten="I live at [[ADDRESS]]." operator="Caller" actionOnEnd="actionSetLocation;" />
+        <DialogOption id="5" default="6" texten="How long have you been dizzy?" operator="Operator" />
+        <DialogOption id="6" default="7" option2="3" texten="Hmm... Maybe an hour, I can't really remember. I certainly wasn't dizzy this morning." operator="Caller" />
+        <DialogOption id="7" default="8" texten="Do you have any other symptoms?" operator="Operator" />
+        <DialogOption id="8" default="9" option2="11" option3="12" texten="Well, I feel warmer than usual. Is that a bad sign?" operator="Caller" />
+        <DialogOption id="9" default="10" texten="Do you have a fever?" operator="Operator" />
+        <DialogOption id="10" default="11" option2="12" texten="No, I checked just 5 minutes ago." operator="Caller" />
+        <DialogOption id="11" default="13" option2="16" texten="{SEND AMBULANCE} Alright, I'm going to a send a paramedic to check up on you. Take care now, bye." actiononEnd="opinionEffect=-1;" addToAAR="story_1" operator="Operator" />
+        <DialogOption id="12" default="14" option2="15" texten="{GO TO A DOCTOR} It doesn't sound like an emergency, can you get to your doctor today? They'll be able to do a check up." operator="Operator" />
         <DialogOption id="13" texten="Thank you, bye." operator="Caller" actionOnEnd="actionHangup;" />
         <DialogOption id="14" texten="Oh, okay. Thank you, bye." addToAAR="story_2" operator="Caller" actiononEnd="actionHangup;" />
-        <DialogOption elementProperties="chance = 0.25" default="16" option2="17" id="15" texten="Oh dear love, well that is a problem. I've got this broken leg and I can't leave the house." actiononEnd="opinionEffect=1" operator="Caller" />
-        <DialogOption default="13" id="16" texten="{SEND AMBULANCE} Hmm, okay then I'll send an ambulance just to be sure." actiononEnd="opinionEffect=1;" addToAAR="story_3" operator="Operator" />
-	<DialogOption default="14" id="17" texten="{DON'T SEND AMBULANCE} Well ma'am, I hope you get better soon. You should visit your doctor when you're able to. Stay safe now, bye." operator="Operator" />
+        <DialogOption id="15" elementProperties="chance = 0.25" default="16" option2="17" texten="Oh dear love, well that is a problem. I've got this broken leg and I can't leave the house." actiononEnd="opinionEffect=1" operator="Caller" />
+        <DialogOption id="16" default="13" texten="{SEND AMBULANCE} Hmm, okay then I'll send an ambulance just to be sure." actiononEnd="opinionEffect=1;" addToAAR="story_3" operator="Operator" />
+	<DialogOption id="17" default="14" texten="{DON'T SEND AMBULANCE} Well ma'am, I hope you get better soon. You should visit your doctor when you're able to. Stay safe now, bye." operator="Operator" />
         <DialogOption id="reminder" texten="Hello? Are you there?" operator="Caller" />
         <DialogOption id="reminder2" texten="Hello? Stupid phone it's hung up again!" operator="Caller" />
       </dialog>
