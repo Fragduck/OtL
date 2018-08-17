@@ -20,11 +20,11 @@
 		<DialogOption id="11" texten="{SEND AMBULANCE} Alright, I'm going to a send a paramedic to check up on you. Take care now, bye." elementProperties="option=13;" actiononEnd="opinionEffect=-1;" addToAAR="ambulance" operator="Operator" />
 		<DialogOption id="12" texten="{GO TO A DOCTOR} It doesn't sound like an emergency, can you get to your doctor today? They'll be able to do a check up." elementProperties="option=14;option=15;" operator="Operator" />
 		<DialogOption id="13" texten="Thank you, bye." actionOnEnd="actionHangup;" operator="Caller" />
-		<DialogOption id="14" texten="Oh, okay I'll go there now. Thank you, bye." actiononEnd="opinionEffect=-1; actionHangup;" addToAAR="ambulance3" operator="Caller" />
+		<DialogOption id="14" texten="Oh, okay I'll go there now. Thank you, bye." actiononEnd="opinionEffect=-1;actionHangup;" addToAAR="ambulance3" operator="Caller" />
 		<DialogOption id="15" texten="Oh dear love, well that is a problem. I've got this broken leg and I can't leave the house." elementProperties="chance=0.25;option=16;option=17;" addtoAAR="broken" operator="Caller" />
 		<DialogOption id="16" texten="{SEND AMBULANCE} Hmm, okay then I'll send an ambulance just to be sure." elementProperties="option=13;" actiononEnd="opinionEffect=2;" addToAAR="ambulance2" operator="Operator" />
 		<DialogOption id="17" texten="{DON'T SEND AMBULANCE} Well ma'am, I hope you get better soon. You should visit your doctor when you're able to. Stay safe now, bye." elementProperties="option=18;" addToAAR="ambulance4" operator="Operator" />
-		<DialogOption id="18" texten="Oh, okay I guess it won't get any worse. Thank you, bye." actiononEnd="opinionEffect=2; actionHangup;" operator="Caller" />
+		<DialogOption id="18" texten="Oh, okay I guess it won't get any worse. Thank you, bye." actiononEnd="opinionEffect=2;actionHangup;" operator="Caller" />
 		<DialogOption id="reminder" texten="Hello? Are you there?" operator="Caller" />
 		<DialogOption id="reminder2" texten="Hello? Stupid phone it's hung up again!" operator="Caller" />
 	</dialog>
