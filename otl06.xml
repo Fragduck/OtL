@@ -6,13 +6,13 @@
 	</scene>
 	<dialog>
 		<DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" operator="Operator" />
-		<DialogOption id="2" texten="Hello, I'm a little bit dizzy." elementProperties="option=3a;option=5;" addToAAR="caller" operator="Caller" />
+		<DialogOption id="2" texten="Hello, I'm a little bit dizzy." elementProperties="option=3a;option=5;option=7;" addToAAR="caller" operator="Caller" />
 		<DialogOption id="3a" texten="{LOCATION} Okay ma'am, where are you now?" elementProperties="option=3b;" operator="Operator" />
 		<DialogOption id="3b" texten="I'm at home." elementProperties="option=3;" operator="Caller" />
 		<DialogOption id="3" texten="{ADDRESS} Where do you live?" elementProperties="option=4;" operator="Operator" />
-		<DialogOption id="4" texten="I live at [[ADDRESS]]." elementProperties="option=5;" actionOnEnd="actionSetLocation;" operator="Caller" />
+		<DialogOption id="4" texten="I live at [[ADDRESS]]." elementProperties="option=5;option=7;" actionOnEnd="actionSetLocation;" operator="Caller" />
 		<DialogOption id="5" texten="How long have you been dizzy?" elementProperties="option=6;" operator="Operator" />
-		<DialogOption id="6" texten="Hmm... Maybe an hour, I can't really remember. I certainly wasn't dizzy this morning." elementProperties="option=7;option=3a;" operator="Caller" />
+		<DialogOption id="6" texten="Hmm... Maybe an hour, I can't really remember. I certainly wasn't dizzy this morning." elementProperties="option=3a;option=7;" operator="Caller" />
 		<DialogOption id="7" texten="Do you have any other symptoms?" elementProperties="option=8;" operator="Operator" />
 		<DialogOption id="8" texten="Well, I feel warmer than usual. Is that a bad sign?" elementProperties="option=9;option=11;option=12;" operator="Caller" />
 		<DialogOption id="9" texten="Do you have a fever?" elementProperties="option=10;" operator="Operator" />
