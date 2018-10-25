@@ -2,13 +2,13 @@
   <conversations>
     <conversation id="otl16" texten="Boston Bombing" elementProperties="type=generableonce;">
       <scene>
-        <injured id="sceneElem_1" texten="Injured runner" elementProperties="hp=30;sex=M;hpchange=-0.2;" addToAAR="" blockedBy="" />
-        <injuried id="sceneElem_2" texten="Injured bystander" elementProperties="hp=20;sex=F;hpchange=-0.1;" addToAAR="" blockedBy="" />
-        <injuried id="sceneElem_3" texten="Injured runner" elementProperties="hp=30;sex=m;hpchange=-0.2;" addToAAR="" blockedBy="" />
-        <injuried id="sceneElem_4" texten="Injured bystander" elementProperties="hp=25;sex=m;hpchange=-0.1;type=children;" addToAAR="" blockedBy="" />
-        <injuried id="sceneElem_5" texten="Injured runner" elementProperties="hp=30;sex=f;hpchange=-0.1;type=children;" addToAAR="" blockedBy="" />
-        <injuried id="sceneElem_6" texten="Injured runner" elementProperties="hp=30;sex=m;hpchange=-0.2;" addToAAR="" blockedBy="" />
-        <injuried id="sceneElem_7" texten="Injured bystander" elementProperties="hp=25;sex=f;hpchange=-0.1;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_1" texten="Injured runner" elementProperties="hp=30;sex=M;hpchange=-0.02;" addToAAR="" blockedBy="" />
+        <injuried id="sceneElem_2" texten="Injured bystander" elementProperties="hp=20;sex=F;hpchange=-0.03;" addToAAR="" blockedBy="" />
+        <injuried id="sceneElem_3" texten="Injured runner" elementProperties="hp=30;sex=m;hpchange=-0.02;" addToAAR="" blockedBy="" />
+        <injuried id="sceneElem_4" texten="Injured bystander" elementProperties="hp=25;sex=m;hpchange=-0.01;type=children;" addToAAR="" blockedBy="" />
+        <injuried id="sceneElem_5" texten="Injured runner" elementProperties="hp=30;sex=f;hpchange=-0.05;type=children;" addToAAR="" blockedBy="" />
+        <injuried id="sceneElem_6" texten="Injured runner" elementProperties="hp=30;sex=m;hpchange=-0.02;" addToAAR="" blockedBy="" />
+        <injuried id="sceneElem_7" texten="Injured bystander" elementProperties="hp=25;sex=f;hpchange=-0.02;" addToAAR="" blockedBy="" />
         <witness id="sceneElem_8" texten="Caller" elementProperties="hp=100;sex=M;" addToAAR="" blockedBy="" />
         <dead id="sceneElem_9" texten="Martin William Richard" elementProperties="hp=0;sex=M;type=children;" addToAAR="" blockedBy="" />
         <dead id="sceneElem_10" texten="Lü Lingzi" elementProperties="hp=0;sex=F;" addToAAR="" blockedBy="" />
