@@ -2,4 +2,5 @@
 "rep_gameaddicts.desc": "GAME ADDICT IS REFUSING TO LEAVE THE COMPUTER FOR 7 DAYS STRAIGHT.",
 "rep_gameaddicts.name": "GAME ADDICT",
 "tipoftD.totd_6.desc": "1. Find something which can be used to dress the wound (e. g bandage, a clean cloth or piece of clothing).\n2. Put pressure on the wound.\n3. As soon as possible, call 911 or ask someone else to do it.\n4. Keep pressure on the wound when waiting for emergency units to arrive.",
+"call.gen22.dialog.dontsend2": "{NO EMERGENCY} Sir, this isn't an emergency call. You will need to contact proper city services to make a complaint.",
 }
