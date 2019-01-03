@@ -194,7 +194,7 @@
 	"call.otl06.dialog.18": "Oh, okay I guess it won't get any worse. Thank you, bye.",
 	"call.otl06.dialog.reminder": "Allô? Il y a quelqu'un?",
 	"call.otl06.dialog.reminder2": "Allô? Stupide téléphone il a encore raccroché!",
-	"call.otl06.aar.caller": "An elderly woman called and reported being dizzy.",
+	"call.otl06.aar.caller": "Une femme agée a appelé afin de nous signaler des vertiges.",
 	"call.otl06.aar.broken": "The caller has a broken leg so could not get to the doctors on her own",
 	"call.otl06.aar.ambulance": "An ambulance was dispatched, although this was not required.",
 	"call.otl06.aar.ambulance2": "An ambulance was dispatched as appropriate.",
