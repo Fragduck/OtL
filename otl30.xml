@@ -1,0 +1,31 @@
+<data>
+  <conversations>
+    <conversation id="otl30" texten="School Shooting" elementProperties="type=generableonce;">
+      <scene elementProperties="setInCentre;">
+        <criminal id="student" texten="Student" elementProperties="sex=M; type=White; fightRisk=0.5; weapon=e_rifle" />
+        <witness id="caller" texten="Secretary" elementProperties="sex=W; type=White;" />
+        <injured id="victim" texten="Student" elementProperties="hp=60; sex=M" />
+        <injured id="victim2" texten="Student2" elementProperties="hp=50; sex=M" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, What is the location of the emergency?" elementProperties="option=2;" actionOnEnd="opinionEffect=4;"  operator="Operator" />
+        <DialogOption id="2" texten="I'm at [[ADDRESS]]." elementProperties="option=3;" actionOnEnd="actionSetLocation"  operator="Caller" />
+        <DialogOption id="3" texten="What is the emergency?" elementProperties="option=4;"  operator="Operator" />
+        <DialogOption id="4" texten="There is a student with a gun. He's in the building." elementProperties="bgsound=cwa_b3_0_alarmpanic2;option=5;option=4b;option=4c;"  operator="Caller" emotions="scared, [distant gun shots]" />
+        <DialogOption id="5" texten="{SEND POLICE} Okay, ma'am, please calm down, police and ems are on route. Can you tell me if anyone is hurt?" elementProperties="option=6;"  operator="Operator" />
+        <DialogOption id="4b" texten="Please send help! There is a student with a gun. He's pointing it at other students." elementProperties="bgsound=ccwa_b3_0_alarmpanic2;"  operator="Caller" emotions="scared, [distant gun shots]" />
+        <DialogOption id="4c" texten="Help!! He's shooting at people." elementProperties="bgsound=cwa_b3_0_alarmpanic2;" operator="Caller" emotions="scared, [distant gun shots]" />
+        <DialogOption id="6" texten="At least two students are shot." elementProperties="option=7;"  operator="Caller" />
+        <DialogOption id="7" texten="Okay that's good ma'am. Can you tell me what the student with a gun looks like?" elementProperties="option=8;"  operator="Operator" />
+        <DialogOption id="8" texten="Err, he is white, erm black hair I think. Why would he do this, he is so kind." elementProperties="option=9;"  operator="Caller" />
+        <DialogOption id="9" texten="I don't know ma'am. The police will be there soon, please stay on the line, while you wait." elementProperties="option=end;"  operator="Operator" />
+        <DialogOption id="end" texten="Okay, the police are here."  actionOnEnd="actionHangup" addToAAR="story" operator="Caller" />
+        <DialogOption id="reminder" texten="Hello? are you still there?" operator="Caller" />
+        <DialogOption id="reminder2" texten="Hello??" operator="Caller" />
+      </dialog>
+      <aar>
+        <reportElement id="story" texten="The Operator ensured the safety of the students, and quickly got help to the injured students." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
