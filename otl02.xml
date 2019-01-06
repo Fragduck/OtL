@@ -1,0 +1,29 @@
+<data>
+  <conversations>
+    <conversation id="otl02" texten="Weird man in mall" elementProperties="type=generableonce;">
+      <scene>
+        <passerby id="sceneElem_1" texten="" addToAAR="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hello. I'm walking in the Supermarket and there is a weird man watching children." elementProperties="option=what;option=where;option=who;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="What is so weird about his appearance?" elementProperties="option=What1;option=What2;option=What3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="What is the adress m'dam?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="Do you know this know him, m'dam?" elementProperties="option=Who1;option=Who2;option=Who3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="It's at the supermarket: &quot;Big Shopper&quot;." elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="What1" texten="He talks to them in a creepy way." addToAAR="" operator="Caller" emotions="Scared" />
+        <DialogOption id="What2" texten="He touches them." addToAAR="" operator="Caller" emotions="Scared" />
+        <DialogOption id="What3" texten="He is showing them something... gross." addToAAR="" operator="Caller" emotions="scared" />
+        <DialogOption id="Who1" texten="I have no idea, sir." addToAAR="" operator="Caller" />
+        <DialogOption id="Who2" texten="He does look like a mental patient." addToAAR="" operator="Caller" />
+        <DialogOption id="Who3" texten="It looks like he works here." actionOnEnd="HangupPhone;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="I will send a police officer. Please be careful and don't take any unnessacery risks." addToAAR="" operator="Operator" />
+        <DialogOption id="4" texten="Thank you, sir." addToAAR="" operator="Caller" />
+      </dialog>
+      <aar>
+        <reportElement id="Pedophile" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
