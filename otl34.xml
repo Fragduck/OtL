@@ -1,0 +1,26 @@
+<data>
+  <conversations>
+    <conversation id="mtx0" texten="Mysterious Call" elementProperties="type=generableonce;">
+      <scene>
+        <injured id="caller" texten="Caller" elementProperties="hp=50;sex=M;" addToAAR="" blockedBy="" />
+        <suspect id="suspect" texten="Suspect" elementProperties="sex=M;type=White;weapon=e_pistol;prisonChance=1;fightRisk=1;hp=50;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" actionOnEnd="opinionEffect=3;onIgnore=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Please I need help!" elementProperties="option=where;option=what;option=danger;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="where" texten="Where are you?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="what" texten="Sir, what´s happening there?" elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="danger" texten="Are you in danger?" elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="I'm at [[ADDRESS]]. I need help, right now!" elementProperties="option=back;option=help;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup;caller.hpchange=-2;" addToAAR="shot" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="help" texten="Police will be there soon, can you stay on the line with me?" elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="reminder" texten="Help, please help!" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="I need help!!" elementProperties="" actionOnEnd="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="shot" texten="The caller was shot." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
