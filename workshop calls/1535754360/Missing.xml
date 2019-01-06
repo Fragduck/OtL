@@ -1,0 +1,33 @@
+<data>
+  <conversations>
+    <conversation id="Missing" texten="Tourists" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="searchArea=20;searchWork=999999999;poi=building_tall;">
+        <dead id="Husband" texten="" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hello, my husband hasn't come to our hotel and it's been three days since he left." elementProperties="option=3;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Who's you're husband?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="When did you're husband leave?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="David Collerio, we're on vacation." elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Around 3PM, he went to go pick up some groceries." elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="Did you try calling him or looking for him?" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="Does he drive?" elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="Well obviously." elementProperties="option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="Yes. An 2018 Toyota Highlander, it's red." elementProperties="option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="Where is the hotel you're staying at?" elementProperties="option=16;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="16" texten="It's on Hingler St. We're staying on floor 8 number 845." elementProperties="option=4;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="What does you're husband look like?" elementProperties="option=11;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="5'7, Brown hair, shaven beard, white." elementProperties="option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="What was he wearing when he left?" elementProperties="option=15;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="I'm not sure what shirt he was wearing... It was red with white patterns on it and it was an button up shirt with short sleeves. He was also wearing jeans and an brown belt." elementProperties="option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="17" texten="Ok, I'll notify officers working in the area, is there anything else?" elementProperties="option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="18" texten="There's nothing else, thank you." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

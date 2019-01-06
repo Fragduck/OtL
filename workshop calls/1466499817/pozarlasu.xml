@@ -1,0 +1,63 @@
+<data>
+  <conversations>
+    <conversation id="pozarlasu" texten="Pożar Lasu [PL]" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <witness id="Dzwoniący" texten="Leśniczy" addToAAR="" blockedBy="" />
+        <injured id="Ranny" texten="Dominik Nowak" elementProperties="hpchang=-0.5;" addToAAR="" blockedBy="Płonącaprzyczepa" />
+        <injured id="Ranny1" texten="Maciej Kowalski" elementProperties="hpchang=-0.5;" addToAAR="" blockedBy="Płonąceprzwalonedrzewo" />
+        <injured id="Ranny2" texten="Tomasz Rybak" elementProperties="hpchang=-0.5;" addToAAR="" blockedBy="Płonącaprzyczepa" />
+        <injured id="Ranny3" texten="Zbigniew Borycki" elementProperties="hpchang=-0.5;" addToAAR="" blockedBy="Płonącynamiot" />
+        <injured id="Ranny4" texten="Henryk Wiśniewski" elementProperties="hpchang=-0.5;" addToAAR="" blockedBy="Płonącynamiot" />
+        <injured id="Ranny5" texten="Piotr Kozłowski" elementProperties="hpchang=-0.5;" addToAAR="" blockedBy="Płonąceprzwalonedrzewo" />
+        <injured id="Ranny6" texten="Wojciech Mazur" elementProperties="hpchang=-0.5;" addToAAR="" blockedBy="PożarLasu9" />
+        <fire id="PożarLasu" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu1" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu2" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu3" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu4" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu5" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu6" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="Płonącaprzyczepa" texten="Płonąca przyczepa" elementProperties="work=10000;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu8" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu9" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu10" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu11" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="Płonącynamiot" texten="Płonący namiot" elementProperties="work=7500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu13" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu14" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu15" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu16" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu17" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <fire id="Płonąceprzwalonedrzewo" texten="Płonące przewalone drzewo" elementProperties="work=4000;" addToAAR="" blockedBy="" />
+        <fire id="PożarLasu19" texten="Pożar" elementProperties="work=2500;" addToAAR="" blockedBy="" />
+        <tech id="Drzewo" texten="Drzewo" elementProperties="work=1500;" addToAAR="" blockedBy="" />
+        <tech id="PrzewróconeDrzewo" texten="Drzewo" elementProperties="work=1500;" addToAAR="" blockedBy="" />
+        <tech id="PrzewaloneDrzewo" texten="Drzewo" elementProperties="work=1500;" addToAAR="" blockedBy="" />
+        <tech id="Drzewo1" texten="Drzewo" elementProperties="work=1500;" addToAAR="" blockedBy="" />
+        <tech id="Krzewy" texten="Drzewo" elementProperties="work=1500;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, słucham?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Witam, mówi Leśniczy Ptak" elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Witam, w czym mogę pomóc?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Podczas dyżuru na wieży obserwacyjnej zauważyłem kłęby dymu wylatujące z głębi lasu. Skontaktowałem się ze wszystkimi wieżami strażniczymi w okolicy i potwierdzili obecność dymu" elementProperties="option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="Więc twierdzi pan że prawdopodobnie płonie las?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Dokładnie, dym jest intensywnie czarny" elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="Kiedy zauważyłeś że z głębi lasu wydobywa się dym?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="Dopiero co, wiedzę jednek że dym staje się coraz intensywniejszy" elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="Wiesz może gdzie dokładnie się pali?" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="Tak, znam tę okolicę to będzie teren campingowy przy [[ADDRESS]]" elementProperties="option=11;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="Czy ktokolwiek może być ranny?" elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="Tak jak mówiłem tam jest teren campingowy, tam może być kilkadziesiąt osób!" elementProperties="option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="Czy w pobliżu są sąsiednie tereny campingowe?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="Tak" elementProperties="option=15;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="15" texten="Ok, zbierz współpracowników i zarządź ewakuacje pobliskich obozów, strażacy są już w drodze!" elementProperties="option=16;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="16" texten="Dziękuje, byle szybko!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="pozarlasu" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

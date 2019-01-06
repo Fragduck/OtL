@@ -1,0 +1,28 @@
+<data>
+  <conversations>
+    <conversation id="Corrupt_Cop" texten="Corruption" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <suspect id="Buyer" texten="" elementProperties="weapon=e_pistol;prisonChance=1;fightRisk=1;sex=M;" actionOnEnd="" addToAAR="" blockedBy="" />
+        <suspect id="Buyer_Guard" texten="" elementProperties="weapon=e_pistol;prisonChance=1;fightRisk=1;sex=M;" addToAAR="" blockedBy="" />
+        <suspect id="Corrupt" texten="" elementProperties="hp=150;weapon=e_pistol;prisonChance=1;fightRisk=1;sex=M;" addToAAR="" blockedBy="" />
+        <injured id="Detective" texten="" elementProperties="hp=40;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="This is Detective Terri, I'm going to need backup at Hingler Street in an alley. An detective is selling police files to criminals." elementProperties="option=2;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="2" texten="Badge number?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="14842" elementProperties="option=4;option=5;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="Copy that. Backup are on their way." elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="How many are there?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Hurry up the response, it's almost over! I'll try to stop them!" elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="Three of them, including the Detective." elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Don't play a hero, wait for bac..." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="10-4. Units responding." elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="Hurry up." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

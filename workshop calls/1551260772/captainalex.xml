@@ -1,0 +1,46 @@
+<data>
+  <conversations>
+    <conversation id="captainalex" texten="Who Killed Captain Alex" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <injured id="sgt" texten="Commando Sergeant (Caller)" elementProperties="hp=40;sex=M;hpchange=-0.5;type=AfAm;isActive=true;" addToAAR="" blockedBy="" />
+        <dead id="cptalex" texten="Captain Alex (dead)" elementProperties="isActive=true;sex=M;type=AfAm;" addToAAR="cptalexinfo" blockedBy="" />
+        <suspect id="puffs" texten="Puffs (Tiger Mafioso)" elementProperties="isActive=true;sex=M;type=AfAm;weapon=e_pistol;hp=100;prisonChance=1;fightRisk=0.9;" addToAAR="tminfo" blockedBy="" />
+        <suspect id="rusmercenary" texten="Russian Mercenary" elementProperties="isActive=true;sex=M;type=AfAm;weapon=e_rifle;hp=100;prisonChance=1;fightRisk=0.9;" addToAAR="tminfo" blockedBy="" />
+        <suspect id="femalemafia" texten="Female Tiger Mafioso" elementProperties="isActive=true;sex=F;type=AfAm;weapon=e_pistol;hp=100;prisonChance=1;fightRisk=0.9;" addToAAR="tminfo" blockedBy="" />
+        <suspect id="tmafioso" texten="Tiger Mafioso" elementProperties="isActive=true;sex=M;type=AfAm;weapon=e_shotgun;hp=100;prisonChance=1;fightRisk=0.9;" addToAAR="tminfo" blockedBy="" />
+        <injured id="commando1" texten="Injured Commando" elementProperties="IsActive=true;sex=M;type=AfAm;hp=70;hpchange=-0.5;" addToAAR="commandoinfo" blockedBy="" />
+        <injured id="commando2" texten="Injured Commando" elementProperties="isActive=true;sex=M;type=AfAm;hp=70;hpchange=-0.5;" addToAAR="commandoinfo" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="CAPTAIN ALEX IS DEAD!" elementProperties="option=what;option=when;" addToAAR="cptalexdeath" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} What happened?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} When did it happen?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="SOMEONE KILLED CAPTAIN ALEX" elementProperties="option=where;option=who;option=when;" addToAAR="cptalexmurder" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="I just heard a Gunshot from afar and then I saw him laying on the ground dead! Please come here fast!" elementProperties="option=who;option=where;" addToAAR="murdertime" operator="Caller" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO KILLED HIM?} Who killed captain Alex?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="At [[ADDRESS]]" elementProperties="option=back;option=6;option=who;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="I DON'T KNOW!" elementProperties="option=when;option=where;option=6;" addToAAR="murdermystery" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="{SEND UNITS} Okay I will sent a unit to your place for an investigation." elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="Thank you, I will... OH MY GOD, THE TIGER MAFIA IS HERE, HELP! HELP, AHHHH!" elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Huh? Hey! What is going on?" elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="cptalexdeath" texten="Someone called &quot;Captain Alex&quot; has died" />
+        <reportElement id="cptalexmurder" texten="Captain Alex was murdered by being shot to death" />
+        <reportElement id="murdertime" texten="The murder happened just a moment before the caller has made the 911 call" />
+        <reportElement id="murdermystery" texten="The Murderer could not been identified and therefore remains unknown" />
+        <reportElement id="tmarrival" texten="The Tiger Mafia has arrived which caused the caller to panic" />
+        <reportElement id="tminfo" texten="The Tiger Mafia is still at the crime scene upon arrival of emergency services and also armed. They attacked the commandos with their weapons. It is unknown if they are the murderers as the caller reported their arrival after the murder." />
+        <reportElement id="sgtinfo" texten="The caller is revealed to be a Sergeant of the Commando. Upon arrival he was found injured by a gunshot from the Tiger Mafia attack." />
+        <reportElement id="commandoinfo" texten="Other Commandos at the scene have been found injured by gunshots from the Tiger Mafia" />
+        <reportElement id="cptalexinfo" texten="Captain Alex is revealed to had been the captain of the commando, instrcuted by the president to lead the commandos to war against the Tiger Mafia." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

@@ -1,0 +1,32 @@
+<data>
+  <conversations>
+    <conversation id="Shootout" texten="Shots fired" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <suspect id="sceneElem_1" texten="" elementProperties="weapon=e_rifle;fightRisk=1;prisonChance=1;hp=500;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_2" texten="" elementProperties="weapon=e_rifle;fightRisk=1;prisonChance=1;hp=500;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_3" texten="" elementProperties="weapon=e_rifle;fightRisk=1;prisonChance=1;hp=500;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_4" texten="" elementProperties="weapon=e_rifle;fightRisk=1;prisonChance=1;hp=500;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_5" texten="" elementProperties="weapon=e_rifle;fightRisk=1;prisonChance=1;hp=500;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_6" texten="" elementProperties="weapon=e_rifle;fightRisk=1;prisonChance=1;hp=500;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_7" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_8" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_9" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_10" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_11" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_12" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_13" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_14" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_15" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_16" texten="" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="Reports of shots fired on civillians at Hingler Park." elementProperties="option=2;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Suspects armed with assault rifles, Code 99 multiple civillians injured." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

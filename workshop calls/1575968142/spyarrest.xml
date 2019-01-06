@@ -1,0 +1,38 @@
+<data>
+  <conversations>
+    <conversation id="spyarrest" texten="고정 간첩사건" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="poi=building;">
+        <injured id="목격자" texten="" elementProperties="hp=60;hpchange=-1;sex=M;" addToAAR="" blockedBy="" />
+        <suspect id="간첩1" texten="" elementProperties="hp=90;fightrisk=1;weapon=e_rifle;sex=M;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="간첩2" texten="" elementProperties="hp=90;fightrisk=1;weapon=e_rifle;sex=M;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="간첩3" texten="" elementProperties="hp=90;fightrisk=1;weapon=e_pistol;sex=M;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="간첩4" texten="" elementProperties="fightrisk=1;hp=90;weapon=e_rifle;sex=M;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="간첩5" texten="" elementProperties="hp=90;fightrisk=1;weapon=e_pistol;sex=M;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="간첩6" texten="" elementProperties="hp=90;fightrisk=1;weapon=e_rifle;sex=M;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="간첩7" texten="" elementProperties="hp=90;fightrisk=1;weapon=e_pistol;sex=M;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="간첩8" texten="" elementProperties="hp=90;fightrisk=1;weapon=e_rifle;sex=M;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="간첩9" texten="" elementProperties="hp=90;fightrisk=1;weapon=e_pistol;sex=M;prisonChance=1;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="긴급 요청 지원센터입니다. 어쩐일이시죠?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="산책중인데 건물에서 우리말과 평안도 사투리가 섞여 들리고 있어요..그런데 말하는게 너무 이상해서 연락드렸어요." elementProperties="option=what;option=who;option=when;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{어떤 얘기를 했는가?}그들이 어떤 얘기를 했는지 들으셨습니까?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{전화 끊기} 죄송하지만 이곳은 긴급 요청 지원센터지 술마시고 보이는거 들어주는 전화선이 아닙니다. 이만 끊겠습니다." elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{언제부터  들렸는가} 언제부터 저런 말들이 들리기 시작했습니까?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="자세힌 못들었는데.... 국회청사를 공격한다 라고 얼핏 들었어요 테러범인지 고정간첩인지 구분이 조금 안가더군요." elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="방금요 .. 이런 사람들 몇명이 내려가고 있어요 빨리 와주세요!" elementProperties="option=where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="잠깐만요! 그 사람들이 내려오기 시작했어요!" elementProperties="option=where;option=who;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="where" texten="{위치확인}지금 어디에 계십니까?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="지금 [[ADDRESS]]에 있어요. 저기요.. 지금 사람들이 절 봤어요 지금 당장 빨리 와주...(탕!) 아악!..." elementProperties="option=back;option=5;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="저기요...신고자분? 저기요? 이런 젠장..." elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="reminder" texten="저기요? 전화받고 계신가요?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="아무도 없나요?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="의문의사람들" texten="건물 내부에 평안도 사투리와 한국어가 섞여서 말하는 무장 단체들이 국회청사 테러를 계획하고 있다고한다. 교전을 허가하니 용의자들을 체포하거나 사살하라" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

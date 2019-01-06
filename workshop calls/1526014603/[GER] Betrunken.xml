@@ -1,0 +1,40 @@
+<data>
+  <conversations>
+    <conversation id="[GER] Betrunken" texten="[GER] Kopfschmerzen" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <injuried id="caller" texten="Guy with a hangover" elementProperties="hp = 95; sex=M; type=Old;" addToAAR="wrong" />
+        <suspect id="callercri" texten="Guy with a hangover" elementProperties="hp = 95; sex=M; type=Old; isActive=false;" actionOnEnd="opinionEffect = 0;" addToAAR="remind" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="Notruf, wo genau befinden sie sich?" elementProperties="option=2;" actionOnEnd="opinionEffect = -1;" addToAAR="story" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Jo mein Freund, ich hab nen Problem… Mein Kopf tut irgendwie so weh…" elementProperties="option=what;option=address;option=emergency;" addToAAR="" operator="Caller" emotions="drunk, barely understandable, male ~50" />
+        <DialogOption id="what" texten="{Was ist passiert?} Was ist vorgefallen?" elementProperties="option=drank;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="address" texten="{Wo?} Wo sind sie denn?" elementProperties="option=home;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="emergency" texten="{Notfall} Sie wissen, dass sie hier beim Notruf gelandet sind?" elementProperties="option=sure;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="drank" texten="Ich habe gesagt, dass mein Kopf schrecklich schmerzt! Ich habe den ganzen Tag gestern mit meinem Bruder bisschen was getrunken, und ich bin jetzt aufgewacht…" elementProperties="option=notemeg;option=emergency;option=hurt;option=address;option=notemeg;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="hurt" texten="{verletzt?} Können sie mir sagen ob sie verletzt sind?" elementProperties="option=hurtno;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="notemeg" texten="{Kein Notfall} Das ist kein Notfall… Bitte rufen sie beim nächsten Mal nur an wenn sie wirklich einen Notfall haben! Ich schicke ihnen kein Wagen!" elementProperties="option=pain;" actionOnEnd="callercri.isActive=true;&#xD;&#xA;caller.isActive=false;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="sure" texten="Ja weiß ich, ich bin ja nicht blöd oder so!" elementProperties="option=hurt;option=back;" addToAAR="" operator="Caller" emotions="leicht aggressiv" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="hurtno" texten="Ja…. Nein!... Ach, mein Kopf tut doch so schrecklich weh, wie schon gesagt!" elementProperties="option=notemeg;option=sendhelp;option=address;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="sendhelp" texten="{Rettung schicken} Ok, ich schicke ihnen einen Rettungswagen raus, der sich das mal anschaut." elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="pain" texten="Och man… Mein Kopf tut weh!" elementProperties="option=nosend;option=address;option=sendhelp;" addToAAR="" operator="Caller" emotions="jammert" />
+        <DialogOption id="nosend" texten="{Niemanden schicken} Tschuldigung, sie haben keinen Notfall… Gehen sie morgen zum Hausarzt… ich kann nicht für sie tun!" elementProperties="option=fu;" actionOnEnd="callercri.isActive=true;&#xD;&#xA;caller.isActive=false;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="fu" texten="Ach fick dich, du Arsch!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="sehr aggressiv und genervt" />
+        <DialogOption id="noway" texten="{Kein Rettungswagen!} Tschuldigung, ich kann ihnen so keinen Rettungswagen schicken. Sorry!" elementProperties="option=noway1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="noway1" texten="Was? Ich bin in Not! Ich schreibe eine Beschwerde, Penner! Sie bekommen ein Gehalt von meinen Steuern!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="home" texten="Ja na von zu Hause halt…" elementProperties="option=detail;option=sendhelp;option=noway;" addToAAR="" operator="Caller" emotions="irritated" />
+        <DialogOption id="detail" texten="{genauer} Ok, und wo ist das?" elementProperties="option=address1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="address1" texten="Boah, das ist bei [[ADDRESS]] !!!" elementProperties="option=nosend;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="end" texten="Ja komm dann her... Hab ja auch nich den ganzen Tag Zeit, ne!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hallo? Kein Bock hier den ganzen Tag zu warten.. Dann geh ich doch lieber zum Hausarzt!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Noch da?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story" texten="The caller was drunk. He called an ambulance, but intervention was not necessary" />
+        <reportElement id="wrong" texten="The team was not happy to deal with this case. " />
+        <reportElement id="remind" texten="The caller was reminded by the police not to call 911 unnecessarily" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

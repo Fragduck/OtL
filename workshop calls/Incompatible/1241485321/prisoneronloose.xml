@@ -1,0 +1,25 @@
+<data>
+  <conversations>
+    <conversation id="prisoneronloose" texten="escaped convict" elementProperties="type=generableonce;">
+      <scene elementProperties="setInCentre;">
+        <suspect id="sceneElem_1" texten="give me all the diamonds and riches or the city dies" addToAAR="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="TO BE DEFINED" elementProperties="option=what;option=where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} What happend?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} When did it happen?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="At [[ADDRESS]]" elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="3" texten="ok now where did the convict go?" addToAAR="story_1" operator="Operator" />
+        <DialogOption id="4" texten="he ran off in the woods" addToAAR="" operator="Caller" />
+        <DialogOption id="5" texten="ok i will send police now" addToAAR="" operator="Operator" />
+        <DialogOption id="6" texten="thanks bye" addToAAR="" operator="Caller" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

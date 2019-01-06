@@ -1,0 +1,49 @@
+<data>
+  <conversations>
+    <conversation id="Childbirth3" texten="Sudden Childbirth" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <passerby id="sceneElem_1" texten="Brother" elementProperties="Sex=M;" addToAAR="" blockedBy="" />
+        <passerby id="sceneElem_2" texten="Mother" elementProperties="Sex=F;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_3" texten="Pregnant daughter" elementProperties="Sex=F;Hp=2;" actionOnEnd="" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="story_1" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="My...My sister is having constractions!" elementProperties="option=3;option=4;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="{WHERE?} Where are you sir?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="{WHAT MONTH?} So what month is it?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="{CONTRACTIONS?} Contractions? You mean giving birth?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="We are at [[ADDRESS]]." elementProperties="option=4;option=5;option=9;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="The eight..." elementProperties="option=3;option=5;option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Yes, she looks like she is in heavy pain?" elementProperties="option=3;option=4;option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="{HOW OLD?} How old is your sister?" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="She is 17..." elementProperties="option=11;option=12;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="{ANY ADULTS?} Does your parents know about this or are they around?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="{WATER BROKEN?} Has her water broken?" elementProperties="option=15;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="{FIRST KID?} Is this baby her first one?" elementProperties="option=16;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="My mom is downstairs." elementProperties="option=12;option=13;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="15" texten="Yes!" elementProperties="option=11;option=13;option=18;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="Yes." elementProperties="option=11;option=12;option=18;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="17" texten="{GET THEM} Go and get your mom!" elementProperties="option=19;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="18" texten="{INSTRUCTIONS.} You have to follow my instructions to preapare her for childbirth, the baby is probably not going to arrive before the ambulance." elementProperties="option=20;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="19" texten="Okay........................................................................................mom! Hannah is giving birth!.........................................................................................................................................................................................................................................................Hello 911?" elementProperties="option=18;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="20" texten="Sure, what do i do first?" elementProperties="option=21;option=22;option=23;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="21" texten="{LAY HER DOWN} First, you need to lay her down." elementProperties="option=24;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="22" texten="{SPREAD HER LEGS} You have to spread her legs so the paramedics can see if the baby is coming out or not." elementProperties="option=25;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="23" texten="{TAKE OFF CLOTHES} You need to take her pants off." elementProperties="option=26;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="24" texten="Hannah...Hannah? Lay down................................................................................................." elementProperties="option=27;option=28;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="25" texten="Hannah..wait, ...................................................................................................................................................................................................................................................................................okay what's next?" elementProperties="option=27;option=28;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="26" texten="Hannah, you need to take off your skirt..............................................................................................................................okay..done." elementProperties="option=27;option=28;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="27" texten="{SEND AMBULANCE} Okay, now she is preapared for childbirth, now just wait for the ambulance to arrive." elementProperties="option=29;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="28" texten="{NOT EMERGENCY} Can't she just give birth at home?" elementProperties="option=30;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="29" texten="Okay...we'll be waiting." elementProperties="" actionOnEnd="actionHangup;" addToAAR="story_2" operator="Caller" emotions="" />
+        <DialogOption id="30" texten="Ugh, FINE!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="story_3" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="Woman started giving birth suddenly." />
+        <reportElement id="story_2" texten="Ambulance arrived and delivered the baby." />
+        <reportElement id="story_3" texten="Home birth was pretty risky and the woman became heavily injured." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

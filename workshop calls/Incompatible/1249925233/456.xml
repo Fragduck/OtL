@@ -1,0 +1,23 @@
+<data>
+  <conversations>
+    <conversation id="456" texten="bad man" elementProperties="type=generableonce;">
+      <scene elementProperties="setInCentre;" />
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="hoi er is hier een rare man volgensmij probeert hij in te breken" elementProperties="option=what;option=where;option=who;option=when;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} What happend?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="(WAAR) waar is het gebeurdt" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} What is your name?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} When did it happen?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="smalkoekweg17" elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="kom snel doei " elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Hallo is er daar iemand " elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

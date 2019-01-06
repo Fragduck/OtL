@@ -1,0 +1,41 @@
+<data>
+  <conversations>
+    <conversation id="Assassination" texten="Party_Assassin" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <witness id="Emily" texten="" elementProperties="sex=F;" addToAAR="" blockedBy="" />
+        <dead id="Deceased" texten="" elementProperties="sex=M;" addToAAR="" blockedBy="" />
+        <witness id="Jake" texten="" elementProperties="sex=M;prisonChance=0.05;" addToAAR="" blockedBy="" />
+        <witness id="Murphy" texten="" elementProperties="sex=M;prisonChance=0.05;" addToAAR="" blockedBy="" />
+        <witness id="Terry" texten="" elementProperties="sex=M;prisonChance=0.05;" addToAAR="" blockedBy="" />
+        <witness id="Danny" texten="" elementProperties="sex=M;fightRisk=0.1;prisonChance=0.1;" addToAAR="" blockedBy="" />
+        <witness id="Jessica" texten="" elementProperties="sex=M;prisonChance=0.05;" addToAAR="" blockedBy="" />
+        <witness id="Evva" texten="" elementProperties="sex=F;prisonChance=0.05;" addToAAR="" blockedBy="" />
+        <witness id="Sarah" texten="" elementProperties="sex=F;prisonChance=0.05;" addToAAR="" blockedBy="" />
+        <witness id="Brittney" texten="" elementProperties="sex=F;prisonChance=0.05;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="There's a dead body in the restroom!" elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Where did this happen?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="At a party." elementProperties="option=5;option=6;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="What is you're name?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Location of the party?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="Emily Watson." elementProperties="option=9;option=10;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="It's on Hingler Ave." elementProperties="option=9;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="Is the person breathing?" elementProperties="option=11;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="Ok, where is this party at?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="Ummm.......... Oh god, they're not breathing!" elementProperties="option=12;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="The ambulance is on it's way." elementProperties="option=15;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="Do they have any wounds?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="Please hurry!!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten=".............................. Yes, their chest.... oh god... has a knife in it...." elementProperties="option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="Emergency services are on their way." elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="I just wanted to go to the restroom... not see a dead person tonight. Oh god..." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

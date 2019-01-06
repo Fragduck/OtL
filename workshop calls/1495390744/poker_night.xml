@@ -1,0 +1,36 @@
+<data>
+  <conversations>
+    <conversation id="poker_night" texten="Club fight" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <witness id="caller" texten="Caller" addToAAR="story_1" blockedBy="" />
+        <suspect id="guard1" texten="Mobster" elementProperties="fightrisk=1;weapon=e_pistol;" addToAAR="story_1" blockedBy="" />
+        <suspect id="guard2" texten="Mobster" elementProperties="fightrisk=1;weapon=e_pistol;" addToAAR="story_1" blockedBy="" />
+        <suspect id="guard3" texten="Mobster" elementProperties="fightrisk=1;weapon=e_shotgun;" addToAAR="story_1" blockedBy="Reinforceddoor" />
+        <suspect id="guard4" texten="Mobster" elementProperties="fightrisk=1;weapon=e_rifle;" addToAAR="story_1" blockedBy="Reinforceddoor" />
+        <suspect id="guard5" texten="Mobster" elementProperties="fightrisk=1;weapon=e_shotgun;" addToAAR="story_1" blockedBy="Reinforceddoor" />
+        <suspect id="player1" texten="" elementProperties="fightrisk=0.6;" addToAAR="story_1" blockedBy="player5" />
+        <suspect id="player2" texten="" elementProperties="fightrisk=0.3;" addToAAR="story_1" blockedBy="guard4" />
+        <suspect id="player3" texten="Mob head" elementProperties="fightrisk=0.7;weapon=e_knife;" addToAAR="story_1" blockedBy="guard3" />
+        <dead id="player4" texten="" addToAAR="story_1" blockedBy="guard4" />
+        <injured id="player5" texten="" elementProperties="hp=40;hpchange=-0.4;" addToAAR="story_1" blockedBy="guard5" />
+        <tech id="Reinforceddoor" texten="Safe " elementProperties="work=1500;" addToAAR="story_1" blockedBy="guard2" />
+        <fire id="fire" texten="" elementProperties="work=850;" addToAAR="story_1" blockedBy="Reinforceddoor" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="I think I've heard some shots coming from [[ADDRESS]]" elementProperties="option=when;option=Okay;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="Worried" />
+        <DialogOption id="when" texten="{WHEN?} When did it happen?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Okay" texten="Alright, go somewhere you can hide and wait until the units arrive" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="Right now!" elementProperties="option=Okay;" addToAAR="" operator="Caller" emotions="Worried" />
+        <DialogOption id="5" texten="Thanks, I'll do that!. And there is something I think you should know" elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="What is that?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="There are some guys looking suspicious at a front door near where I've heard the shots" elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Thank you for the information; now go hide somewhere until the units arrive" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="A fight started at an illegal poker club and things got messy. Upon arrival of the units, they tried to set the place on fire trying to destroy the evidence" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

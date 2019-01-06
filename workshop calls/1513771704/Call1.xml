@@ -1,0 +1,37 @@
+<data>
+  <conversations>
+    <conversation id="Call1" texten="Woman hit by horse" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <injured id="Victim" texten="" elementProperties="hp=90;sex=W;hpchange=-0.3;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hello, my friend got hit by her horse! There's blood everywhere, you have to hurry please!!" elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Mam, please try to stay calm and answer my following questions as accurate as posssible, ok?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Ok....ok....i'll try.." elementProperties="option=5;option=7;option=9;option=11;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="{ASK FOR ADDRESS} Please, tell me your exact location, mam." elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="{ASK FOR HAZARDS} Is the horse still around?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="{ASK FOR CONCIOUSNESS} Is your friend concious?" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="{ASK FOR BLEEDING} Is your friend still bleeding?" elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="{CONTINUE WITH FIRST AID} Ok, i want you to take a clean towel and press it gently on the wound ok?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="We're at [[ADDRESS]]" elementProperties="option=back;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="No........no, it ran away...." elementProperties="option=back;" addToAAR="Horse" operator="Caller" emotions="" />
+        <DialogOption id="10" texten="Yes she is." elementProperties="option=back;" addToAAR="Conciousness" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="Yes, there's blood dripping down her head!" elementProperties="option=back;" addToAAR="Bleeding" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="Ok...................................................................................................................................ok, did it." elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="16" texten="Ok, listen mam, the ambulance is already on her way as we are talking together. What i want you to do is to make sure your friend stays concious and is breathing properly until they arrive,ok?" elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="Ok...." elementProperties="option=18;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="18" texten="Ok, mam i'm going to hang up now. If anything changes you instantly call again, ok?" elementProperties="option=19;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="19" texten="Ok, thank you!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hello??" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="HELLO??......................HELLO??? I NEED HELP PLEASE!!!" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="Conciousness" texten="Patient is concious" />
+        <reportElement id="Bleeding" texten="Patient has a bleeding wound on head" />
+        <reportElement id="Horse" texten="Horse is gone" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

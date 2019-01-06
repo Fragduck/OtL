@@ -1,0 +1,33 @@
+<data>
+  <conversations>
+    <conversation id="mc1" texten="Mystery Call " elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <injured id="sceneElem_1" texten="Hostage" elementProperties="work=30;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_2" texten="Hostage" elementProperties="work=30;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_3" texten="Hostage" elementProperties="work=30;" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_4" texten="Terrorist" elementProperties="weapon=e_pistol;weapon=e_knife;" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_5" texten="Terrorist" elementProperties="weapon=e_shotgun;" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_6" texten="Terrorist" elementProperties="weapon=e_shotgun;" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_7" texten="Terrorist" elementProperties="weapon=e_rifle;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hello... I just freed some hostages... They need pickup..." elementProperties="option=what;option=where;option=who;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} What happened?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} What is your name?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="They are safe and uninjued... The only dead are the hostage takers..." elementProperties="option=where;" addToAAR="" operator="Caller" />
+        <DialogOption id="4" texten="You will find out... Im gonna leave the area... You will never know who i am..." elementProperties="option=6;" addToAAR="" operator="Caller" />
+        <DialogOption id="5" texten="You don't need to know..." elementProperties="option=6;" addToAAR="" operator="Caller" />
+        <DialogOption id="6" texten="Sir please just cooperate with us..." elementProperties="option=end;" addToAAR="" operator="Operator" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

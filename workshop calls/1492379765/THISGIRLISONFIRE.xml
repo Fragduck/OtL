@@ -1,0 +1,53 @@
+<data>
+  <conversations>
+    <conversation id="THISGIRLISONFIRE" texten="Burning Person" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <witness id="sceneElem_1" texten="Caller" elementProperties="Sex=M;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_2" texten="Mother" elementProperties="Sex=F;prisonChance=1;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_3" texten="Burned Girl" elementProperties="Hp=80;Hpchange=-0.5;Sex=F;" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_4" texten="Suffocated Boy" elementProperties="Sex=M;" addToAAR="" blockedBy="" />
+        <fire id="sceneElem_5" texten="Fire" elementProperties="Work=368;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="story_1" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Good evening, i hear a lot screaming from the house next to me...i'm worried that there is happening something." elementProperties="option=3;option=4;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="{WHERE?} So what is the address?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="{WHAT KIND OF?} What kind of noises you hear from there?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="{FIRST TIME?} Is it the first time this has hapenned?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="[[ADDRESS]]." elementProperties="option=4;option=5;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="Very very horrific screams...be glad you don't have to hear them.." elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Yes.." elementProperties="option=3;option=4;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="I also see a lot..i mean A LOT smoke from the- HOLY! " elementProperties="option=10;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="THERE IS A GIRL WHO IS ON FIRE!! GOSH, I HAVE TO HELP HER..................................BUT HOW?" elementProperties="option=11;option=12;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="{ROLL} Tell the girl to roll on the ground while you go and get a towel to wrap her around so the fire could extinguish." elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="{WATER} Go and get some water to put the fire out." elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="{FIRE EXTINGUISHER} Go and get a fire extinguisher and put the fire out." elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="O..okay......................................................................................................................................................................................................................................................................................................................................Phew, she is not burning anymore." elementProperties="option=15;option=16;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="15" texten="{INJURIES?} How heavily is the girl injured?" elementProperties="option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="16" texten="{AGE?} How old is this girl?" elementProperties="option=19;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="{CONSCIOUS?} Is she conscious?" elementProperties="option=20;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="18" texten="She has a lot burns..third degree ones....." elementProperties="option=16;option=17;option=21;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="19" texten="She is 9" elementProperties="option=15;option=17;option=21;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="20" texten="No." elementProperties="option=15;option=16;option=21;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="21" texten="{REASON SHE IS ON FIRE?} Is there any reason this girl actually caught fire and started to burn?" elementProperties="option=22;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="22" texten="The house she lives in is burning...so i think that might be the reason.." elementProperties="option=23;option=24;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="23" texten="{WHO LIVES THERE?} Do you know who lives there?" elementProperties="option=25;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="24" texten="{UNUSUAL?} Has there hapenned anything usual lately at that house?" elementProperties="option=26;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="25" texten="A Mother..She had one 11 year old son and then this 9 year old daughter...I'm not sure if the boy made it out alive but the mother did." elementProperties="option=27;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="26" texten="I'm not sure if this counts as unusual but the mother argued a lot with her kids." elementProperties="option=27;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="27" texten="Okay...what is the girl's condition?" elementProperties="option=28;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="28" texten="She is slowly waking up.." elementProperties="option=29;option=30;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="29" texten="{SEND HELP} I'll send emergency services right now, wait there with the girl until they arrive." elementProperties="option=31;" addToAAR="story_2" operator="Operator" emotions="" />
+        <DialogOption id="30" texten="{NOT URGENT} Give the girl first ai..the fire can't be that bad." elementProperties="option=32;" addToAAR="story_3" operator="Operator" emotions="" />
+        <DialogOption id="31" texten="Thank you...please hurry.." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="32" texten="Uhm...okay.." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="A man reported noises then burning girl and then house fire." />
+        <reportElement id="story_2" texten="Help was given to them and the girl is recovering at the hospital. Her brother didn't make it out alive." />
+        <reportElement id="story_3" texten="Help was needed and this resulted into the girl's death" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

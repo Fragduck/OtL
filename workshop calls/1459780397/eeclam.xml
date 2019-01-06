@@ -1,0 +1,34 @@
+<data>
+  <conversations>
+    <conversation id="eeclam" texten="Eeclampsia" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <witness id="sceneElem_1" texten="Allison the Midwife" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_2" texten="Pregnant woman" elementProperties="hp=45;sex=F;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="We need an ambulance here, quick!" elementProperties="option=what;option=where;option=who;option=when;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="Calm down ma'am, what happened?" elementProperties="option=what0;" actionOnEnd="Ijustcameoverforaprenatalcheckup...;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="Where did this happen?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="What is your name?" elementProperties="option=name0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="When did it happen?" elementProperties="option=when0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="At [[ADDRESS]]" elementProperties="option=back;option=3;option=what;option=who;option=when;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="what0" texten="I came over to give my patient a prenatal exam when she just started shaking and foaming out of her mouth!" elementProperties="option=3;option=where;option=when;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="name0" texten="Allison! I'm a midwife" elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="when0" texten="Just a minute ago!" elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="How far along is the patient?" elementProperties="option=4;" addToAAR="" operator="Operator" />
+        <DialogOption id="4" texten="She's 30 weeks." elementProperties="option=5;option=7;" addToAAR="" operator="Caller" />
+        <DialogOption id="5" texten="Did she show any symptoms beforehand?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Yes, she said she didn't feel well." elementProperties="option=9;" addToAAR="" operator="Caller" />
+        <DialogOption id="7" texten="Is she Epileptic?" elementProperties="option=8;" addToAAR="" operator="Operator" />
+        <DialogOption id="8" texten="No." elementProperties="option=5;option=9;" addToAAR="" operator="Caller" />
+        <DialogOption id="9" texten="I'm sending EMS" addToAAR="" operator="Operator" />
+        <DialogOption id="end" texten="Okay, Hurry!" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="Woman went into Eclampsia during prenatal exam by midwife" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

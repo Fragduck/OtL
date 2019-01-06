@@ -1,0 +1,47 @@
+<data>
+  <conversations>
+    <conversation id="Monohauntsu2" texten="Text Messages" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <witness id="sceneElem_1" texten="Emily" elementProperties="Sex=F;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_2" texten="Stalker" elementProperties="sex=M;PrisonChance=1;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="story_1" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="I'm not sure if this is a emergency but can you pelase send a police?" elementProperties="option=3;option=4;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="{WHERE?} So, where this happened?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="{WHAT?} So..what exactly hapenned?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="{NAME?} What is your name?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="My house is at [[ADDRESS]]. " elementProperties="option=4;option=5;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="I've gotten these very weird messages on my phone and i don't know this guy or girl." elementProperties="option=3;option=5;option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="My name is Emily..." elementProperties="option=3;option=4;option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="{WHAT KIND OF?} What kind of messages you have gotten?" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="He sends pictures of me doing ordinary things in my house and saying that he wants me dead." elementProperties="option=11;option=12;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="{HOW LONG?} How long he/she has sent you these messages?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="{YOUR AGE?} How old are you?" elementProperties="option=15;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="{ANY TRACE OF HIM/HER?} Is there any trace of that he has been behind the window or in your house?" elementProperties="option=16;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="For 2 months.." elementProperties="option=12;option=13;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="15" texten="20." elementProperties="option=11;option=13;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="I actually found pools of blood and knifes from my backyard." elementProperties="option=11;option=12;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="17" texten="{ALONE?} Do you live alone?" elementProperties="option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="18" texten="Yes..But i have two pet dogs and one cat." elementProperties="option=19;option=20;option=21;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="19" texten="{HAVE YOU SEEN HER/HIM?} Have you ever seen this man or woman watching you?" elementProperties="option=22;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="20" texten="{HALLUCINATION?} Are you sure you're not hallucinating Emily?" elementProperties="option=23;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="21" texten="{PETS?} Are you sure your pets are not the culprits?" elementProperties="option=24;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="22" texten="Actually once but it was for a split second.." elementProperties="option=20;option=21;option=25;option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="23" texten="No, i don't have any mental health issues." elementProperties="option=19;option=21;option=25;option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="24" texten="My pets can't take pictures..they might be culprits for those sounds at night but for the picture's part..they're not." elementProperties="option=19;option=20;option=25;option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="25" texten="{POLICE IS ON THE WAY} Emily, the police is on the way, i recommend getting out of the house until police arrives." elementProperties="option=27;" addToAAR="story_4" operator="Operator" emotions="" />
+        <DialogOption id="26" texten="{NOT HELP NEEDED} It's not a 911 emergency Emily (Dmmit Emily, can't use 911 propely)" elementProperties="option=28;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="27" texten="Thank you, i will be waiting....." elementProperties="" actionOnEnd="actionHangup;" addToAAR="story_2" operator="Caller" emotions="" />
+        <DialogOption id="28" texten="Well..okay then.." elementProperties="" actionOnEnd="actionHangup;" addToAAR="story_3" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="Woman reported that she has been getting weird text messages lately." />
+        <reportElement id="story_2" texten="Police arrived and is hunting down this man/woman" />
+        <reportElement id="story_4" texten="The man was found under the woman's bed with a knife." />
+        <reportElement id="story_3" texten="The woman's corpse was discovered 1 hour after the call." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

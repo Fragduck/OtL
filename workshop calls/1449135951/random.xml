@@ -1,0 +1,43 @@
+<data>
+  <conversations>
+    <conversation id="random" texten="3 calls in 1" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <witness id="caller" texten="caller" elementProperties="hp=100;" addToAAR="" blockedBy="" />
+        <injured id="boyfriend" texten="boyfriend" elementProperties="isactive=false;hp=40;hpchange=-0.5;sex=M;" addToAAR="" blockedBy="" />
+        <fire id="fire" texten="fire" elementProperties="isactive=false;work=500;workchange=5;" addToAAR="" blockedBy="" />
+        <suspect id="robber1" texten="robber" elementProperties="isactive=false;hp=100;sex=M;fightrisk=1;weapon=e_rifle;prisonchance=1;bill=5000;" addToAAR="" blockedBy="" />
+        <suspect id="robber2" texten="robber" elementProperties="isactive=false;hp=100;sex=W;fightrisk=1;weapon=e_rifle;prisonchance=1;bill=5000;" addToAAR="" blockedBy="" />
+        <suspect id="robber3" texten="robber" elementProperties="isactive=false;hp=100;sex=M;fightrisk=1;weapon=e_rifle;prisonchance=1;bill=5000;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;option=5;option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="help my boyfriend cut his hand off!!!" elementProperties="option=what;option=where;chance=0.33;" actionOnEnd="boyfriend.isactive=true;opinionEffect=10;onignore=-25;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="help we were just robbed!!!" elementProperties="option=6;option=7;chance=0.33;" actionOnEnd="robber1.isactive=true;robber2.isactive=true;robber3.isactive=true;opinionEffect=10;onignore=-25;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="help there is a huge fire!!!" elementProperties="option=10;option=11;chance=0.33;" actionOnEnd="fire.isactive=true;opinionEffect=10;onignore=-25;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} ok i'm going to need you to calm down, What happened?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where did this happen?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="{WHAT?} ok i'm going to need you to calm down, What happened?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="{WHERE?} Where did this happen?" elementProperties="option=9;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="{WHAT?} ok i'm going to need you to calm down, What happened?" elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="{WHERE?} Where did this happen?" elementProperties="option=13;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="he was working with the saw and his hand sliped!" elementProperties="option=where;option=end2;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="addressa0" texten="At [[ADDRESS]]" elementProperties="option=back;option=what;option=end2;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="they just walked in here with assault rifles and demanded that we empty the cash register!" elementProperties="option=7;option=end;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="At [[ADDRESS]]" elementProperties="option=end;option=6;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="i dont know what happened i just saw the fire burning down the house" elementProperties="option=14;option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="At [[ADDRESS]]" elementProperties="option=14;option=10;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="end2" texten="{END CALL} ok medical services are on the way" elementProperties="" actionOnEnd="actionHangup;opinionEffect=10;" addToAAR="story_1" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="{END CALL} ok the police are on their way" elementProperties="" actionOnEnd="actionHangup" addToAAR="story_2" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="{END CALL} ok firefighters are on their way" elementProperties="" actionOnEnd="actionHangup;" addToAAR="story_3" operator="Operator" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="the operator sent medical services to the scene" />
+        <reportElement id="story_2" texten="the operator sent police to the scene" />
+        <reportElement id="story_3" texten="the operator sent firefighters to the scene" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

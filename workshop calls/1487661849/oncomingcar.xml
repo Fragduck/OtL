@@ -1,0 +1,41 @@
+<data>
+  <conversations>
+    <conversation id="oncomingcar" texten="oncoming car" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="searchArea=3;searchWork=100;">
+        <witness id="sceneElem_1" texten="" addToAAR="" />
+        <witness id="sceneElem_2" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_3" texten="" addToAAR="" blockedBy="sceneElem_6" />
+        <dead id="sceneElem_4" texten="" addToAAR="" blockedBy="sceneElem_5" />
+        <tech id="sceneElem_5" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_6" texten="" addToAAR="" blockedBy="" />
+        <fire id="sceneElem_7" texten="" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_8" texten="" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="there has been a head on collision because a red toyota hilux was driving in the oncoming lane" elementProperties="option=who;option=when;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} What is your name?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} did this just happen?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="just off route 66 near [[ADDRESS]]" elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="end" texten="thank you, bye!..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="my name is Scarlette William" addToAAR="" operator="Caller" />
+        <DialogOption id="3" texten="yes" addToAAR="" operator="Caller" />
+        <DialogOption id="5" texten="the plate is BF76EHL " elementProperties="option=6;" addToAAR="" operator="Caller" />
+        <DialogOption id="6" texten="ok and how many are injured?" elementProperties="option=7;" addToAAR="" operator="Operator" />
+        <DialogOption id="7" texten="just the two drivers" elementProperties="option=8;" addToAAR="" operator="Caller" />
+        <DialogOption id="8" texten="are any of the vehicles blocking traffic?" elementProperties="option=9;" addToAAR="" operator="Operator" />
+        <DialogOption id="9" texten="yes" elementProperties="option=10;" addToAAR="" operator="Caller" />
+        <DialogOption id="10" texten="the injured drivers are breathing, right?" elementProperties="option=11;" addToAAR="" operator="Operator" />
+        <DialogOption id="11" texten="yes but someone has a wound on their head and their unconsious" elementProperties="option=12;" addToAAR="" operator="Caller" />
+        <DialogOption id="12" texten="ok just hold tight and the team are on their way but if they wake up dont let them sleep and leave them in the car" elementProperties="option=end;" addToAAR="" operator="Operator" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="there was a head-on collision with an oncoming toyato hilux " />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

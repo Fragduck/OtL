@@ -1,0 +1,23 @@
+<data>
+  <conversations>
+    <conversation id="gefallen" texten="[GER] Ältere Dame gestürzt" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="setInCentre;">
+        <passerby id="sceneElem_1" texten="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="Notruf, was ist vorgefallen?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Ja Hallo! Hier ist so eine alte Frau hingefallen und kommt nicht mehr hoch… Ich will die jetzt halt auch nicht anfassen… Schicken sie jemanden?" elementProperties="option=when;option=where;" addToAAR="story_1" operator="Caller" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Wo befinden sie sich?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} Wann ist das passiert?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="Bei [[ADDRESS]]" elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hallo? Sind sie noch am Apparat?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Hallo? Noch dran?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

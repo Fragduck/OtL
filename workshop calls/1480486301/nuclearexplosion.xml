@@ -1,0 +1,251 @@
+<data>
+  <conversations>
+    <conversation id="nuclearexplosion" texten="nuclear power plant explosion" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="searchArea=3;searchWork=100;">
+        <injured id="sceneElem_1" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_2" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_3" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_4" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_5" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_6" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_7" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_8" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_9" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_10" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_11" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_12" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_13" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_14" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_15" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_16" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_17" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_18" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_19" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_20" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_21" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_22" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_23" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_24" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_25" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_26" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_27" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_28" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_29" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_30" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_31" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_32" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_33" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_34" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_35" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_36" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_37" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_38" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_39" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_40" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_41" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_42" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_43" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_44" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_45" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_46" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_47" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_48" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_49" texten="" addToAAR="" blockedBy="" />
+        <fire id="sceneElem_50" texten="" addToAAR="" blockedBy="" />
+        <deco id="sceneElem_51" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_52" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_53" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_54" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_55" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_56" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_57" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_58" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_59" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_60" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_61" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_62" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_63" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_64" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_65" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_66" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_67" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_68" texten="" addToAAR="" blockedBy="" />
+        <passerby id="sceneElem_69" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_70" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_71" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_72" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_73" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_74" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_75" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_76" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_77" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_78" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_79" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_80" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_81" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_82" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_83" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_84" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_85" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_86" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_87" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_88" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_89" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_90" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_91" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_92" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_93" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_94" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_95" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_96" texten="" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_97" texten="" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_98" texten="" addToAAR="" blockedBy="" />
+        <passerby id="sceneElem_99" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_100" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_101" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_102" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_103" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_104" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_105" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_106" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_107" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_108" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_109" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_110" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_111" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_112" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_113" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_114" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_115" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_116" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_117" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_118" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_119" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_120" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_121" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_122" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_123" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_124" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_125" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_126" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_127" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_128" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_129" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_130" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_131" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_132" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_133" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_134" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_135" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_136" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_137" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_138" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_139" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_140" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_141" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_142" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_143" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_144" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_145" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_146" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_147" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_148" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_149" texten="" addToAAR="" blockedBy="sceneElem_220" />
+        <deco id="sceneElem_150" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_151" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_152" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_153" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_154" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_155" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_156" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_157" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_158" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_159" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_160" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_161" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_162" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_163" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_164" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_165" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_166" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_167" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_168" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_169" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_170" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_171" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_172" texten="" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_173" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_174" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_175" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_176" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_177" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_178" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_179" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_180" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_181" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_182" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_183" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_184" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_185" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_186" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_187" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_188" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_189" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_190" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_191" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_192" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_193" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_194" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_195" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_196" texten="" addToAAR="" blockedBy="" />
+        <passerby id="sceneElem_197" texten="" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_198" texten="" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_199" texten="" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_200" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_201" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_202" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_203" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_204" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_205" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_206" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_207" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_208" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_209" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_210" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_211" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_212" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_213" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_214" texten="" addToAAR="" blockedBy="" />
+        <deco id="sceneElem_215" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_216" texten="" addToAAR="" blockedBy="" />
+        <fire id="sceneElem_217" texten="" addToAAR="" blockedBy="" />
+        <fire id="sceneElem_218" texten="" addToAAR="" blockedBy="" />
+        <fire id="sceneElem_219" texten="" addToAAR="" blockedBy="" />
+        <fire id="sceneElem_220" texten="" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="A nuclear power plant just exploded and we need assistance closing off the contaminated area and medical intervention" elementProperties="option=who;option=when;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} What is your name?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} When did it happen?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="At [[ADDRESS]]" elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="end" texten="phew... thanks! bye now" elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="my name is jack thompson." addToAAR="" operator="Caller" />
+        <DialogOption id="4" texten="about 5 minutes ago" addToAAR="" operator="Caller" />
+        <DialogOption id="5" texten="Ok, I'm sending all available units to your location but i still need further information" elementProperties="option=6;" addToAAR="" operator="Operator" />
+        <DialogOption id="6" texten="Do you have a hazmat team en route?" elementProperties="option=7;" addToAAR="" operator="Operator" />
+        <DialogOption id="7" texten="yes, we are on the phone with them now" elementProperties="option=8;" addToAAR="" operator="Caller" />
+        <DialogOption id="8" texten="How many victims were there" elementProperties="option=9;" addToAAR="" operator="Operator" />
+        <DialogOption id="9" texten="It seems that there were around 200 people contaminated" elementProperties="option=10;" addToAAR="" operator="Caller" />
+        <DialogOption id="10" texten="allright, we have teams en route but I have some other calls to take so goodbye" elementProperties="option=end;" addToAAR="" operator="Operator" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="There was an explosion at a nuclear power plant and there were 200 noted injured" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

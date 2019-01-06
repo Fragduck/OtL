@@ -1,0 +1,19 @@
+<data>
+  <conversations>
+    <conversation id="Experiment" texten="Test Subject 193" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="searchArea=100;searchWork=9999999;">
+        <suspect id="Wanted" texten="" elementProperties="weapon=e_pistol;fightRisk=1;prisonChance=1;hp=7500;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="This is Chief of Police. The government just called me and notified me of a fugitive that escaped one of their testing facilities. " elementProperties="option=2;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="2" texten="Notify every cop in the city and find them. Now!" elementProperties="option=3;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Yes, sir." elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Good." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

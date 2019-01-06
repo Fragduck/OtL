@@ -1,0 +1,38 @@
+<data>
+  <conversations>
+    <conversation id="Napad na Bank" texten="Napad na Bank" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="poi=building;">
+        <suspect id="" texten="Terrorysta" elementProperties="weapon=e_shotgun;hp=100;fightRisk=1.0;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_1" texten="Terrorysta" elementProperties="fightRisk=1.0;&#xD;weapon=e_rifle;hp=100;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_2" texten="Terrorysta" elementProperties="fightRisk=1.0;&#xD;weapon=e_rifle&#xD;&#xA;;hp=100;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_3" texten="Terrorysta" elementProperties="fightRisk=1.0;weapon=e_rifle&#xD;&#xA;;hp=100;" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_4" texten="Pracownik Banku" elementProperties="hp=70;hpchange=-1;" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_5" texten="Klient" elementProperties="" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_6" texten="Klient" elementProperties="hp=70;hpchange=-1;" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_7" texten="Klient" elementProperties="hp=70;hpchange=-1;" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_8" texten="Klient" elementProperties="hp=70;hpchange=-1;" addToAAR="" blockedBy="" />
+        <passerby id="sceneElem_9" texten="Przechodzień" elementProperties="hp=70;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, w czym mogę pomóc?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="POMÓŻ BŁAGAM!!" elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Aby ci pomóc muszę wiedzieć co się stało" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Widziałem jak uzbrojeni faceci wchodzą do banku !" elementProperties="option=5;option=7;option=9;option=11;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="{GDZIE?} Gdzie to się stało?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="{KIEDY?} Kiedy to się stało?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="{IMIĘ?} Jak masz na imię?" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="{RANNI?} Czy są jacyś ranni?" elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="Wysyłam służby ratunkowe !" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Na [[ADDRESS]]" elementProperties="option=7;option=9;option=11;option=13;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Minute temu !" elementProperties="option=5;option=9;option=11;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="10" texten="Andrzej" elementProperties="option=11;option=7;option=5;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="Nie wiem ! Myślę że to jest atak terrorystyczny !" elementProperties="option=9;option=7;option=5;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="Ohh, dziękuję bardzo!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="Atak na bank" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

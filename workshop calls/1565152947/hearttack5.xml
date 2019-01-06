@@ -1,0 +1,39 @@
+<data>
+  <conversations>
+    <conversation id="hearttack5" texten="Heart Attack" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="poi=building;">
+        <witness id="sceneElem_1" texten="Relative" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_2" texten="Father having heart attack" elementProperties="hp=20;sex=M;type=White;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="I need an ambulance, my father's dying!" elementProperties="option=what;option=where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="Calm down, what do you mean he's dying?" elementProperties="option=3;option=where;option=when;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="What is your address?" elementProperties="option=addressa0;option=when;option=what;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="When did this happen?" elementProperties="option=4;option=where;option=what;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="I'm at [[ADDRESS]] , please send an ambulance quickly!" elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="end" texten="Alright, I'll be waiting!" elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="We were eating thanksgiving dinner when suddenly he gripped at his chest and started having chest pains! I think he's having a heart attack!" elementProperties="option=5;" addToAAR="" operator="Caller" />
+        <DialogOption id="4" texten="It happened just a moment ago!" elementProperties="option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="Does he have any other symptoms?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Yes, he's a bit sweaty" elementProperties="option=7;" addToAAR="" operator="Caller" />
+        <DialogOption id="7" texten="{FIRST AID} Alright, keep him sitting up and keep him calm, I got paramedics on the way." elementProperties="option=end;option=8;" addToAAR="" operator="Operator" />
+        <DialogOption id="8" texten="Understood--Wait! I think he just slumped over!" elementProperties="option=9;" addToAAR="" operator="Caller" />
+        <DialogOption id="9" texten="{BREATHING?} Is he breathing? Does he have a pulse?" elementProperties="option=10;option=11;" addToAAR="" operator="Operator" />
+        <DialogOption id="10" texten="He's barely breathing, get here quickly!" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" />
+        <DialogOption id="11" texten="Oh my god...He's not breathing!" elementProperties="option=12;" addToAAR="" operator="Caller" />
+        <DialogOption id="12" texten="Does anyone at the party know CPR?" elementProperties="option=13;option=14;" addToAAR="" operator="Operator" />
+        <DialogOption id="13" texten="Yes, one of my relatives is a nurse. Get here, quick!" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" />
+        <DialogOption id="14" texten="No, none of us do!" elementProperties="option=15;" addToAAR="" operator="Caller" />
+        <DialogOption id="15" texten="{CPR INSTRUCTIONS} Lay him on the floor, tilt his head back, and have someone at the party do compressions. They will have to place their hands over the breastbone and push into the chest only a few inches deep. Another person at the party will have to do two rescue breaths, they should do it every 30 compressions." elementProperties="option=16;" addToAAR="" operator="Operator" />
+        <DialogOption id="16" texten="Alright.............................................................................................................They're doing it. Get here, quick!" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="A man was having a heart attack during thanksgiving dinner" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

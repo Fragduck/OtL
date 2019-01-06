@@ -1,0 +1,37 @@
+<data>
+  <conversations>
+    <conversation id="optimus5d" texten="길거리 묻지마 살인사건" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <suspect id="용의자" texten="" elementProperties="weapon=e_knife;sex=M;hp=90;prisonChance=1;fightrisk=1;type=White;" addToAAR="" blockedBy="" />
+        <injured id="피해자" texten="" elementProperties="hp=35;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="피해자2" texten="" elementProperties="hp=40;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="피해자3" texten="" elementProperties="hp=45;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="피해자4" texten="" elementProperties="hp=50;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="피해자5" texten="" elementProperties="hp=55;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <witness id="신고자" texten="" addToAAR="" blockedBy="" />
+        <injured id="피해자6" texten="" elementProperties="hp=60;hpchange=-0.5;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911 입니다. 긴급한 용무가 있습니까?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="살려주세요... 지금 어떤사람이 도로에서 사람들을 칼로 찌르고 있어요..." elementProperties="option=where;option=what;option=when;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="where" texten="{거기가 어디죠?}사건이 발생한 위치가 어디입니까?" elementProperties="option=address;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="what" texten="{자세히 말해주세요} 신고자분 사건을 잠시 자세히 말해주실수 있겠습니까?" elementProperties="option=answer;" actionOnEnd="어떤사람이갑자기차에나오더니보행자들을찌르기시작했어요;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{언제 일어난겁니까?} 지금 사건은 언제 일어났습니까?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="{부상자 확인} 지금 몇명이 칼에 찔린거 같습니까?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="address" texten="[[ADDRESS]] 에요. 어서 빨리 와주세요!" elementProperties="option=back;option=police;option=what;option=when;option=5;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="answer" texten="어떤 젊은 사람이 차에 내리더니, 보행자들을 찌르기 시작했어요!" elementProperties="option=where;option=when;option=police;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="방금 일어났어요, 씨발,, 범인이 제 주변에서 사람들을 계속 찌르고 있어요..." elementProperties="option=where;option=what;option=police;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="6" texten="아마 5명에서 6명정도 칼에 찔린거같아요 사람들이 도망가는데  광기어린마냥 쫒아가서 계속 찌르고 있어요." elementProperties="option=when;option=police;option=what;option=where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="police" texten="{긴급요원을 투입하겠습니다}알겠습니다 지금 긴급요원을 투입했으니 신고자분은 잠시 몸을 피하세요." elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="지금 차 뒤에 숨어있습니다  빨리  도와주세요..." elementProperties="option=end;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="저기요? 거기 있어요?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="아무도 없나요?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="묻지마연쇄살인사건" texten="묻지마 연쇄 살인사건이 일어났다 지금 당장 경찰과 구급대원을 출동시켜 사건을 해결하라" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

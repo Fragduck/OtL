@@ -1,0 +1,38 @@
+<data>
+  <conversations>
+    <conversation id="Sportcar" texten="Stolen Sports Car" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <suspect id="Thug" texten="" elementProperties="weapon=e_pistol;prisonChance=1;fightRisk=0.5;" addToAAR="" blockedBy="" />
+        <suspect id="Thug1" texten="" elementProperties="weapon=e_pistol;prisonChance=1;fightRisk=0.5;" addToAAR="" blockedBy="" />
+        <witness id="Caller" texten="" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="My car was stolen!" elementProperties="option=3;option=4;" actionOnEnd="caller.isActive=false;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Where did this happen?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="What kind of car was it?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="In this middle of the street while I was waiting for a red light! They just dragged me out of my car and drove away!" elementProperties="option=8;option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="6" texten="My F‑TYPE!" elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="What street was this on?" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="What kind of car was it?" elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="Did you see what direction they went?" elementProperties="option=11;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="On hingler street." elementProperties="option=13;option=15;option=16;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="My F-TYPE!!" elementProperties="option=13;option=15;option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="East I think." elementProperties="option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="What was the color of you're car?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="Can you give me you're plate?" elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="16" texten="How many were there?" elementProperties="option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="Orange." elementProperties="option=15;option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="17" texten="FI5FTYPE" elementProperties="option=19;" actionOnEnd="speed=150;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="18" texten="Two of them!" elementProperties="option=20;" actionOnEnd="speed=150;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="19" texten="Ok, I'll send police to search for you're car." elementProperties="option=22;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="20" texten="Ok, police will search for you're car." elementProperties="option=22;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="22" texten="Ok, goodbye." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

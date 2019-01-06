@@ -1,0 +1,42 @@
+<data>
+  <conversations>
+    <conversation id="911prank" texten="House on fire" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="searchArea=4;searchWork=120;">
+        <suspect id="Prankster" texten="" elementProperties="bill=10000;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="Prankster1" texten="" elementProperties="bill=200;prisonChance=1;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Uhh hello? My neighbors house is on fire you need to send the entire fire department!" elementProperties="option=3;option=4;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Where is your neighbors place?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="How many people were inside when you spotted the fire?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="On mount everest, it's pretty insane where I live. *Backround giggling*" elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="6" texten="I think like, 13." elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="Excuse me, do you have an emergency? You've reached 911." elementProperties="option=9;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="Ok, where is your neighbors house at?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="Yeah I know! Their place is on fire ontop of mount everest! Send the entire fire department now!" elementProperties="option=10;option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="Dunno officer. Why don't you find out?" elementProperties="option=15;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="10" texten="{Tell charges of prank calling} Sir you do know you can spend up to 3 month in a prison and recieve a 1000 fine right?" elementProperties="option=12;" actionOnEnd="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="{Send Police} Ok sir, I'm sending the fire department now." elementProperties="option=13;" actionOnEnd="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="Sir you need to tell me where your neighbors live. They could all be in danger and worse, die." elementProperties="option=16;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="What? I'm not lying and even if I was you can't just send me to jail and starve me until I get out stupid." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="Well hurry the hell up!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="I told you, find out yourself." elementProperties="option=17;option=18;" actionOnEnd="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="17" texten="Do you not know where you live?" elementProperties="option=19;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="18" texten="{Threaten} If you don't tell me you can face serious charges." elementProperties="option=20;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="19" texten="Do I not know where my own house is, of course I do! But like I said, you need to find out where it is. *Backround laughing*" elementProperties="option=21;option=22;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="20" texten="Like wut? They up your ass officer! Goodbye!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="21" texten="Is this a prank call?" elementProperties="option=23;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="22" texten="If anyone is killed or critically injured you can face serious fines and possibly inside of a prison for not giving your address to emergency services if someones life is in danger. So just tell me where this is at and it wont happen." elementProperties="option=24;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="23" texten="No?" elementProperties="option=25;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="24" texten="Alright dude, chill! It's on another planet fucking asshole." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="25" texten="Sir you do understand you can spend up to three months in a prison and a fine over 1000 dollars if this is a prank call." elementProperties="option=26;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="26" texten="..." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

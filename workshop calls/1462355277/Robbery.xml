@@ -1,0 +1,27 @@
+<data>
+  <conversations>
+    <conversation id="Robbery" texten="Bank Robbery" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <suspect id="Robber" texten="" elementProperties="prisonChance=1;fightRisk=1;sex=M;weapon=e_pistol;hp=150;" addToAAR="" blockedBy="" />
+        <suspect id="Robber2" texten="" elementProperties="fightRisk=1;prisonChance=1;sex=M;weapon=e_pistol;hp=150;" addToAAR="" blockedBy="" />
+        <suspect id="Robber3" texten="" elementProperties="weapon=e_rifle;fightRisk=1;prisonChance=1;sex=M;hp=150;" addToAAR="" blockedBy="" />
+        <witness id="Civilian" texten="Bank Teller" addToAAR="" blockedBy="Robber3" />
+        <witness id="Civilian2" texten="Bank Teller2" addToAAR="" blockedBy="Robber3" />
+        <witness id="Civilian3" texten="" addToAAR="" blockedBy="Robber3" />
+        <witness id="Civilian4" texten="" addToAAR="" blockedBy="Robber3" />
+        <witness id="Civilian5" texten="" addToAAR="" blockedBy="Robber3" />
+        <witness id="Civilian6" texten="" addToAAR="" blockedBy="Robber3" />
+        <witness id="Civilian7" texten="" addToAAR="" blockedBy="Robber3" />
+        <dead id="Security" texten="Dead Security Guard" addToAAR="" blockedBy="" />
+        <dead id="Security2" texten="Dead Security Guard" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="Silent bank alarm activated on hingler street." elementProperties="" actionOnEnd="actionSetLocation;actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

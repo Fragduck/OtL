@@ -1,0 +1,40 @@
+<data>
+  <conversations>
+    <conversation id="Hidden" texten="Woo" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <suspect id="Hidden1" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden2" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden3" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden4" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden5" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden6" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden7" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden8" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden9" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden10" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden11" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden12" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden13" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden14" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden15" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+        <suspect id="Hidden16" texten="" elementProperties="hp=1000;weapon=e_rifle;prisonChance=1;fightRisk=1;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="You've discovered the most 'Hidden' call in the entire game. Here's the details:" elementProperties="option=2;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="2" texten="You get 150 reputation points but with a major downside..." elementProperties="option=3;" addToAAR="" operator="Caller" />
+        <DialogOption id="3" texten="x16 suspects armed with rifles - They have 1000 health each, thats 900 more than normal!" elementProperties="option=4;" addToAAR="" operator="Caller" />
+        <DialogOption id="4" texten="I'd recommend national guard but if you have you're own little army thats cool too." elementProperties="option=5;" addToAAR="" operator="Caller" />
+        <DialogOption id="5" texten="Up for the challenge?" elementProperties="option=6;option=7;" addToAAR="" operator="Caller" />
+        <DialogOption id="6" texten="Yes." elementProperties="option=8;" actionOnEnd="Reputation=+150;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="No." elementProperties="option=9;" addToAAR="" operator="Operator" />
+        <DialogOption id="8" texten="Wonderful! But it's not my fault if you didn't save before this. Good luck!!!" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" />
+        <DialogOption id="9" texten="I expected that anyways." elementProperties="option=10;" addToAAR="" operator="Caller" />
+        <DialogOption id="10" texten="[startcall Hidden]" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

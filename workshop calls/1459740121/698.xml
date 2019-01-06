@@ -1,0 +1,36 @@
+<data>
+  <conversations>
+    <conversation id="698" texten="Gas Station Robbed-Improved Version" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <injured id="Victim" texten="Ben Mead" elementProperties="hp=120;hpchange=-0.8;sex=M;type=White;isActive=true;" addToAAR="" blockedBy="" />
+        <suspect id="Robber" texten="" elementProperties="fightRisk=0.6;weapon=e_knife;hp=100;sex=M;type=White;prisonChance=1;isActive=true;speed=10;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="I just got robbed!" elementProperties="option=what;option=who;option=when;option=where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="What happened?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="What is your name?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="When did it happen?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="Where did this happen?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="Guy came in with a knife and demanded all the money. Gave it to him then he came around the counter and stabbed me!" elementProperties="option=Med;option=where;option=when;option=Attacker;option=who;" addToAAR="" operator="Caller" emotions="Panic" />
+        <DialogOption id="6" texten="Ben Mead" elementProperties="option=where;option=when;option=what;option=Help;option=Attacker;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="2 minutes ago..." elementProperties="option=Help;option=Attacker;option=who;option=where;option=what;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="addressa0" texten="At [[ADDRESS]]" elementProperties="option=when;option=who;option=what;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Med" texten="Ambulance and Police are on the way" elementProperties="option=9;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Attacker" texten="Is your attacker still there?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Help" texten="Do you need medical assistance?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="Thank you." elementProperties="option=Attacker;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="Yes. I locked myself in the bathroom." elementProperties="option=8;option=where;option=Help;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="No. I like watching the blood exit my body. YES I NEED MEDICAL ASSISTANCE!" elementProperties="option=Med;" addToAAR="" operator="Caller" emotions="Sarcastic" />
+        <DialogOption id="8" texten="Okay, I want you to stay calm. Emergency services are going to be there soon." elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="Rescue" texten="Victim was found in bathroom bleeding heavily. Bag of money was found on suspect." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

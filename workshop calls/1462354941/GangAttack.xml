@@ -1,0 +1,44 @@
+<data>
+  <conversations>
+    <conversation id="GangAttack" texten="Gang Warfare" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <suspect id="Red" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_rifle;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red2" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_rifle;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red3" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_rifle;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red4" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_shotgun;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red5" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_shotgun;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red6" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red7" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red8" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red9" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red10" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red11" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red12" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Red13" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Blue" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_rifle;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Blue1" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_rifle;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Blue2" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_rifle;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Blue3" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Blue4" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Blue5" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Blue6" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <suspect id="Blue7" texten="" elementProperties="prisonChance=1;fightRisk=0.5;weapon=e_pistol;sex=M;type=AfAm;" addToAAR="" blockedBy="" />
+        <injured id="Police" texten="Gang unit1" elementProperties="sex=M;" addToAAR="" blockedBy="" />
+        <injured id="Police2" texten="Gang unit2" elementProperties="sex=M;" addToAAR="" blockedBy="" />
+        <injured id="Police3" texten="Gang unit3" elementProperties="sex=M;" addToAAR="" blockedBy="" />
+        <dead id="Police4" texten="Gang unit4" elementProperties="sex=M;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="....This is air unit 2439, gang warfare has broken out on Hingler Ave. A gang unit has been caught in the crossfire. Requesting units." elementProperties="option=2;option=3;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="2" texten="Roughly how many gang members do you see right now?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="10-4. Dispatching units now." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Around 15 gang members." elementProperties="option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="10-4. Units responding." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

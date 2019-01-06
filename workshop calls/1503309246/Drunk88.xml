@@ -1,0 +1,38 @@
+<data>
+  <conversations>
+    <conversation id="Drunk88" texten="Dangerous Drunkers" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="poi=building_tall;">
+        <injured id="sceneElem_1" texten="Caller" elementProperties="Sex=F;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_2" texten="Drunk Person 1" elementProperties="Prisonchance=1;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_3" texten="Drunk Person 2" elementProperties="Prisonchance=1;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_4" texten="Drunk Person 3" elementProperties="Prisonchance=1;" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_5" texten="Killed Person" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_6" texten="Injured Person" elementProperties="Hp=30;Hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_7" texten="Witness 1" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_8" texten="Witness 2" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Uhm..hello? There is few really drunk people...i'm afraid that they might start doing something stupid." elementProperties="option=3;option=4;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="{WHERE?} So where did this happen?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="{WEAPONS?} Do they have any weapons?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="{STUPID?} Stupid? What do you mean by this?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="I'm outside the apartment complex at [[ADDRESS]]." elementProperties="option=4;option=5;option=9;option=10;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="They have few broken bottles..." elementProperties="option=3;option=5;option=9;option=10;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Like start fighting or they start assaulting people..." elementProperties="option=3;option=4;option=9;option=10;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="{ANYONE AROUND?} Is there anyone.. not drunk around?" elementProperties="option=11;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="{HOW MANY?} How many of them are there?" elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="Yes....few adults are keeping an eye on them but the drunk ones are talking with one sober person." elementProperties="option=10;option=13;option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="3." elementProperties="option=9;option=13;option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="{SEND POLICE} I will send few officers over there to check on them..." elementProperties="option=15;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="{NOT EMERGENCY} Ma'am, this is not a 911 emergency." elementProperties="option=16;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="Thank you, i will be waiting her- HOLY CR-" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="HOLY CRAA-" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

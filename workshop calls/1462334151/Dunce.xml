@@ -1,0 +1,17 @@
+<data>
+  <conversations>
+    <conversation id="Dunce" texten="Call Organizer" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="searchArea=6;searchWork=600;">
+        <suspect id="Suspect" texten="The duncer" elementProperties="weapon=e_pistol;fightchance=1;prisonchance=1;" addToAAR="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="Reports of wanted person near Hingler Street." elementProperties="option=2;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="2" texten="Units needed to investigate." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

@@ -1,0 +1,15 @@
+{
+  "call.oncomingcar.title": "oncoming car",
+  "call.oncomingcar.scene.sceneElem_1": "",
+  "call.oncomingcar.dialog.1": "911, what's your emergency?",
+  "call.oncomingcar.dialog.2": "TO BE DEFINED",
+  "call.oncomingcar.dialog.what": "{WHAT?} What happened?",
+  "call.oncomingcar.dialog.where": "{WHERE?} Where?",
+  "call.oncomingcar.dialog.who": "{WHO?} What is your name?",
+  "call.oncomingcar.dialog.when": "{WHEN?} When did it happen?",
+  "call.oncomingcar.dialog.addressa0": "At [[ADDRESS]]",
+  "call.oncomingcar.dialog.end": "...",
+  "call.oncomingcar.dialog.reminder": "Hello? Are you there?",
+  "call.oncomingcar.dialog.reminder2": "Anyone there?",
+  "call.oncomingcar.aar.story_1": "",
+}

@@ -1,0 +1,33 @@
+<data>
+  <conversations>
+    <conversation id="abombchi" texten="A-Bomb Nightclub 9-1-1 Call [CHINESE]" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <injured id="Shirley Delarosa" texten="Injured Club Dancer" elementProperties="sex=W;hpChange=-0.5;hp=90;" addToAAR="" blockedBy="" />
+        <suspect id="Aureliano Gonzales" texten="A Shooter" elementProperties="sex=M;hp=90;weapon=e_pistol;fightrisk=1;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="Erdôs Gabor" texten="A Shooter" elementProperties="sex=M;hp=90;weapon=e_pistol;fightrisk=1;prisonChance=1;" addToAAR="" blockedBy="" />
+        <injured id="Anthony Jones&#xD;" texten="Injured Club Dancer" elementProperties="sex=M;hpChange=-0.5;hp=90;" addToAAR="" blockedBy="" />
+        <witness id="Caller" texten="The 9-1-1 Caller" elementProperties="sex=M;" addToAAR="" blockedBy="" />
+        <suspect id="Ulfrido Saldivar" texten="A Shooter" elementProperties="sex=M;hp=90;weapon=e_pistol;fightrisk=1;prisonChance=1;" addToAAR="" blockedBy="" />
+        <suspect id="Pálfi Orkény" texten="A Shooter" elementProperties="sex=M;hp=90;weapon=e_pistol;fightrisk=1;prisonChance=1;" addToAAR="" blockedBy="" />
+        <injured id="Robert Bross" texten="Injured Club Dancer" elementProperties="sex=M;hp=90;hpChange=-0.5;" addToAAR="" blockedBy="" />
+        <suspect id="Didio Arenas" texten="A Shooter" elementProperties="sex=M;hp=90;weapon=e_pistol;prisonChance=1;" addToAAR="" blockedBy="" />
+        <injured id="Kelly Stark" texten="Injured Club Dancer" elementProperties="hp=90;hpChange=-0.5;sex=W;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="9-1-1紧急1-0-7你好？" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="我在A-Bomb夜总会.......这些家伙正在拍摄它或其他东西，他们打我的女朋友！" elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="地址是什么？&#xD;" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="拉屎！ 我不知道地址！ 我......我的意思是这是阿德莱德街上的A-Bomb ......来吧，她在流血！" elementProperties="option=6;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="6" texten="好的......我正在派一辆救护车，但如果你能给我一份街道地址，那就会有所帮助。" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="你把我搁置了吗？ 这不是9-1-1吗？！ 我不知道该死的地址！" elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="我在这里，先生，尽量保持冷静...你能形容你的女朋友受伤吗？" elementProperties="option=9;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="她受伤了！ 我试图把她拖出去，但后来她开始流血！" elementProperties="option=10;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="10" texten="她还醒着！" elementProperties="" actionOnEnd="actionHangup;opinionEffect=6;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story" texten="Hispanic And Hungarian gang members broke into a fight along racial lines. There only intrest was the opposing side, but multiple club members were caught in the crossfire." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

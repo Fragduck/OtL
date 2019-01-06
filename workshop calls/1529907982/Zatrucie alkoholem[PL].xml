@@ -1,0 +1,53 @@
+<data>
+  <conversations>
+    <conversation id="Zatrucie alkoholem[PL]" texten="Zatrucie alkoholem [PL]" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <injured id="sceneElem_4" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_5" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_6" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_7" texten="" elementProperties="hp=100;type=Children;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_8" texten="" elementProperties="hp=100;type=Old;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_1" texten="Kelner" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_2" texten="Menadzer " addToAAR="" blockedBy="" />
+        <injured id="sceneElem_3" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_9" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_10" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_11" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_12" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_13" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_14" texten="" elementProperties="hp=100;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_15" texten="" elementProperties="hpchange=-0.5;hp=100;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_16" texten="" elementProperties="hpchange=-0.5;hp=100;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_17" texten="" elementProperties="hpchange=-0.5;hp=100;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_18" texten="" elementProperties="hpchange=-0.5;hp=100;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, w czym mogę pomóc?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Pomocy ! Mieliśmy właśnie uroczystość rodzinną kiedy wszyscy źle się poczuli i zaczeli mdleć! " elementProperties="option=3;option=4;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Proszę się uspokoić i powiedzieć skąd Pan dzwoni." elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Ilu jest poszkodowanych ?" elementProperties="option=21;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="Czy poszkodowani jedli coś lub pili ? " elementProperties="option=22;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Jestem na [[ADDRESS]]. Czy ktoś przyjedzie pomóc tym ludziom!?" elementProperties="option=19;option=back;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="21" texten="Na imprezie było 12 osób i każdy się zle czuje !" elementProperties="option=back;option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="22" texten="Nic nie jedliśmy, piliśmy tylko jakąś wódke !" elementProperties="option=back;option=10;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="19" texten="Proszę zachować spokój. Służby ratunkowe są już w drodze." elementProperties="option=20;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="Skąd mieliście ten alkohol ?" elementProperties="option=11;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="Proszę otworzyć okna i zapewnić dostęp świeżego powietrza. " elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="20" texten="Pospieszcie się!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="No..... Kupiliśmy ale tak nie dokońca legalnie." elementProperties="option=back;option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="Oczywiście !" elementProperties="option=back;option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="Czy pan też wypił ten alkohol ?" elementProperties="option=15;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="Proszę pilnować by już nikt nie napił się tego alkoholu. Prawdopodobnie on jest przyczyną zatrucia" elementProperties="option=16;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="No tak.... z kieliszeczek." elementProperties="option=back;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="Dobrze." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="17" texten="Wysyłam służby ratunkowe !" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="Przyjedzcie jak najszybciej !" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Halo?!" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

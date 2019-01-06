@@ -1,0 +1,33 @@
+{
+  "call.ato.title"： "Androids Take Over"、
+  "call.ato.scene.sceneElem_2"： ""、
+  "call.ato.scene.sceneElem_1"： ""、
+  "call.ato.scene.sceneElem_3"： ""、
+  "call.ato.scene.sceneElem_4"： ""、
+  "call.ato.scene.sceneElem_5"： ""、
+  "call.ato.scene.sceneElem_6"： ""、
+  "call.ato.scene.sceneElem_7"： ""、
+  "call.ato.scene.sceneElem_8"： ""、
+  "call.ato.scene.sceneElem_9"： ""、
+  "call.ato.scene.sceneElem_10"： ""、
+  "call.ato.scene.sceneElem_11"： ""、
+  "call.ato.scene.sceneElem_12"： ""、
+  "call.ato.scene.sceneElem_13"： ""、
+  "call.ato.dialog.1"： "911、あなたの緊急事態は何ですか？"、
+  "call.ato.dialog.2"： "アンドロイド、彼ら、彼らは通りを乗り越えている！"、
+  "call.ato.dialog.3"： "すみません、アンドロイド？それは何ですか？"
+  "call.ato.dialog.5"： "あなたは私と一緒に遊んでいますか？アンドロイドは権利がありません、彼らはただのプラスチックです！"、
+  "call.ato.dialog.11"： "どこ？"、
+  "call.ato.dialog.addressa0"： "[[ADDRESS]]"に、
+  "call.ato.dialog.back"： "EMPTY ID：back"、
+  "call.ato.dialog.7"： "だから、アンドロイドには銃があるの？"
+  "call.ato.dialog.9"： "今すぐ警察を送ります！"、
+  "call.ato.dialog.end"： "..."、
+  "call.ato.dialog.reminder"： "こんにちは、そこにいますか？ここにアンドロイドはありますか？"、
+  "call.ato.dialog.reminder2"： "誰でもありますか？HELP US！"、
+  "call.ato.dialog.4"： "アンドロイド、ロボッツ、あなたが望んでいると呼びます。彼らは私たちの人間のように、彼らが正しいことを望むので、ここに抗議しています！"、
+  "call.ato.dialog.6"： "あなたが望むものは何でも言って、アンドロイドはここにあり、引き継ぎます！"、
+  "call.ato.dialog.8"： "いいえ、彼らは平和的に抗議していますが、それは違法な集まりです！"、
+  "call.ato.dialog.10"： "SRIOT ROT POLICE、PLEASE！"、
+  "call.ato.aar.story_1"： ""、
+}

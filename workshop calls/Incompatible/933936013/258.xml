@@ -1,0 +1,50 @@
+<data>
+  <conversations>
+    <conversation id="258" texten="Football Accident" elementProperties="type=generableonce;">
+      <scene elementProperties="">
+        <injuried id="caller" texten="Caller" elementProperties="sex = M; hp = 82; hpchange = -0.02;" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" actionOnEnd="opinionEffect = 4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="My leg hurts so much! Can you send help?" elementProperties="option=SendAmbulanceEarly;option=Where;option=What;option=When;option=SendAmbulanceEarly;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="SendAmbulanceEarly" texten="{SEND AMBULANCE} Alright, help will be with you shortly." elementProperties="option=SendAmbulanceEarly1;" actionOnEnd="opinionEffect += -2;" addToAAR="SendAmbulanceTooEarly" operator="Operator" emotions="" />
+        <DialogOption id="Where" texten="{ADRESS} Can you tell me where you currently are?" elementProperties="option=Where1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="What" texten="What happend?" elementProperties="option=What1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="When" texten="When did that all happend?" elementProperties="option=When1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Where1" texten="Yes, I'm at [[ADDRESS]], lying in the grass." elementProperties="option=back;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="What1" texten="I can't really remember, the last thing I know is that I was playing football with my friends. . . . . . . . . . Wait a moment. . . . . My friends just told me I was &#xD;&#xA;unconscious for around 1 or 2 minutes." elementProperties="option=MoreDetails;option=When;option=Where;option=FirstAid.O;option=MoreDetails;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="When1" texten="Seems to be 4-5 minutes ago. My friends thought that I was just fooling them." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="SendAmbulanceEarly1" texten="Thanks!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="MoreDetails" texten="{MORE DETAILS} Can you tell me more details." elementProperties="option=MoreDetails1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="FirstAid.O" texten="{FIRST AID} Can your friends administer first aid to you?" elementProperties="option=FirstAid.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="FirstAid.C" texten="Sure, what should they do?" elementProperties="option=Choice8.O;option=Choice7.O;option=Choice3.O;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="MoreDetails1" texten="I will try. What do you need to know?" elementProperties="option=When;option=Choice1.O;option=Choice2.O;option=Where;option=When;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice1.O" texten="Is your leg fractured? Or can you even see the bone?" elementProperties="option=Choice1.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice2.O" texten="{OTHER INJURIES} Do you have any other injuries?" elementProperties="option=Choice2.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice1.C" texten=". . . . . . . . I can't tell. I would say it looks normal, no blood or anything, but hurts like hell." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice2.C" texten=". . . Well I was unconscious if that counts, other than that. . . . . . Wait my friends just told me I was moving weird while being unconscious. No idea what that was." elementProperties="option=Where;option=Choice4.O;option=Choice3.O;option=FirstAid.O;option=Where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice4.O" texten="{NO EMERGENCY} That's not an emergency, please go to the next hospital or take a taxi." elementProperties="option=Choice4.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice3.O" texten="{SEND AMBULANCE} Just wait and don't move. I send the ambulance." elementProperties="option=Choice3.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice4.C" texten="You are joking? I should go to the next hospital? But my leg is really badly hurting." elementProperties="option=Choice5.O;option=Choice6.O;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice3.C" texten="Alright. Thank you!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice8.O" texten="{IMMOBILIZE} They should look around and see if they can find something like a splint." elementProperties="option=Choice8.C;option=NothingFound;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice7.O" texten="{ICE} Do you have access to ice?" elementProperties="option=Choice7.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice8.C" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . One of them found a branch, that should work, or?" elementProperties="option=Choice8.O1;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="NothingFound" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . They found nothing that would work as a splint." elementProperties="chance;option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice7.C" texten="Hmm. . . . . . . . . . . . . . . . . . . . . . . . . . . . . No." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice8.O1" texten="Yeah, your friends should try to immobilize your leg." elementProperties="option=Choice8.C1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice8.C1" texten="Wait a second. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *ouch* Sorry bro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Okay, done. " elementProperties="option=Choice7.O;option=Choice3.O;" actionOnEnd="caller.hpchange+=0.01;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice5.O" texten="{HANG UP} Sorry, can't help you." elementProperties="" actionOnEnd="opinionEffect += -2; actionHangup;" addToAAR="story_1" operator="Operator" emotions="" />
+        <DialogOption id="Choice6.O" texten="{SEND AMBULANCE} Well, I can send an ambulance." elementProperties="option=Choice6.C1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice6.C1" texten="Thanks..." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="...." elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="...." elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="SendAmbulanceTooEarly" texten="You sent the ambulace too early, you didn't even ask where the patient is." />
+        <reportElement id="story_1" texten="You didn't send an ambulance, but the patients leg was fractured and he possibly had a seizure." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

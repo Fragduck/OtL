@@ -1,0 +1,33 @@
+{
+  “call.ato.title”：“机器人接管”，
+  “call.ato.scene.sceneElem_2”：“”，
+  “call.ato.scene.sceneElem_1”：“”，
+  “call.ato.scene.sceneElem_3”：“”，
+  “call.ato.scene.sceneElem_4”：“”，
+  “call.ato.scene.sceneElem_5”：“”，
+  “call.ato.scene.sceneElem_6”：“”，
+  “call.ato.scene.sceneElem_7”：“”，
+  “call.ato.scene.sceneElem_8”：“”，
+  “call.ato.scene.sceneElem_9”：“”，
+  “call.ato.scene.sceneElem_10”：“”，
+  “call.ato.scene.sceneElem_11”：“”，
+  “call.ato.scene.sceneElem_12”：“”，
+  “call.ato.scene.sceneElem_13”：“”，
+  “call.ato.dialog.1”：“911，你的紧急情况是什么？”，
+  “call.ato.dialog.2”：“ANDROIDS，他们，他们正在接管街道！”，
+  “call.ato.dialog.3”：“对不起？机器人？那是什么？”，
+  “call.ato.dialog.5”：“你在跟我开玩笑吗？机器人不值得拥有权利，它们只是塑料！”，
+  “call.ato.dialog.11”：“哪里？”，
+  “call.ato.dialog.addressa0”：“在[[ADDRESS]]”，
+  “call.ato.dialog.back”：“EMPTY ID：back”，
+  “call.ato.dialog.7”：“那么，机器人有枪吗？”，
+  “call.ato.dialog.9”：“我现在就派警察！”，
+  “call.ato.dialog.end”：“......”，
+  “call.ato.dialog.reminder”：“你好？你在吗？机器人在这里，还记得吗？”，
+  “call.ato.dialog.reminder2”：“有人吗？帮我们！”，
+  “call.ato.dialog.4”：“ANDROIDS，ROBOTS，无论你想要什么都打电话。他们在这里抗议，因为他们想要正确，就像我们人类一样！”，
+  “call.ato.dialog.6”：“说出你想要的任何东西，机器人在这里并且正在接管！”，
+  “call.ato.dialog.8”：“不，他们和平地抗议，但这是非法集会！”，
+  “call.ato.dialog.10”：“发送警察，请！”，
+  “call.ato.aar.story_1”：“”，
+}

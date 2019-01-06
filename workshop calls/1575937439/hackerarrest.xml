@@ -1,0 +1,27 @@
+<data>
+  <conversations>
+    <conversation id="hackerarrest" texten="해커 검거" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <suspect id="sceneElem_1" texten="" elementProperties="prisonChance=1;hp=70;type=white;fightrisk=0.5;weapon=e_knife;" addToAAR="해커검거" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="긴급신고 지원센터입니다. 어떤일로 연락주셨나요?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="사이버 테러 대응센터입니다. 잠시 연결 가능하겠습니까?" elementProperties="option=what;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{어떤일이시죠?}어떤일로 연락주셨습니까?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="지난주 통신사 개인정보 유출사건을 조사한 결과 해커가 이 도시에 은거하고 있다는것을 파악하였습니다. 지금 당장 지역 경찰의 지원이 필요해서 바로 연락드렸습니다." elementProperties="option=where;option=6;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="where" texten="{어디에 있습니까?} 예, 알겠습니다. 혹시 파악된 범인의 위치는 어디에 있는지 아십니까?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="{거절}그런건 시 경찰청에 연락하시길 바랍니다." elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="예,  [[ADDRESS]]에 은거중입니다. 주변 순찰중인 경찰에게 체포무전을 내려주시길 바랍니다." elementProperties="option=back;option=4;option=6;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="{경찰출동알림}예, 지금 순찰중인 경찰이 그곳으로 출동했습니다. 검거 뒤 지역 경찰측에서 연락할것입니다." elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="알겠습니다 그러면 수고하십시오." elementProperties="option=end;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="저기요? 전화 받고 계십니까?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="아무도 없습니까?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="해커검거" texten="한국 사이버 테러 대응센터에서 해커가 이  도시에 거주한다고 연락이 왔다. 긴급히 경찰을 보내 해커가 도망치기 전에 체포해야한다." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

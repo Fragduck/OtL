@@ -1,0 +1,37 @@
+<data>
+  <conversations>
+    <conversation id="Party" texten="Loud af party" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="poi=building;">
+        <witness id="Eldery_Lady" texten="" elementProperties="sex=F;" addToAAR="" blockedBy="" />
+        <witness id="Party_Rocker" texten="" addToAAR="" blockedBy="" />
+        <witness id="Party_Rocker1" texten="" addToAAR="" blockedBy="" />
+        <witness id="Party_Rocker2" texten="" addToAAR="" blockedBy="" />
+        <witness id="Party_Rocker3" texten="" addToAAR="" blockedBy="" />
+        <witness id="Party_Rocker4" texten="" addToAAR="" blockedBy="" />
+        <witness id="Party_Rocker5" texten="" addToAAR="" blockedBy="" />
+        <witness id="Party_Rocker6" texten="" addToAAR="" blockedBy="" />
+        <witness id="Party_Rocker7" texten="" addToAAR="" blockedBy="" />
+        <witness id="Party_Host" texten="" addToAAR="" blockedBy="" />
+        <witness id="Party_DJ" texten="" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="2" texten="Hello? Who is this?" elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="You've reached 911, do you need help?" elementProperties="option=4;" addToAAR="" operator="Operator" />
+        <DialogOption id="4" texten="Yes, yes... I need help, there's a party next door and they are too damn loud." elementProperties="option=5;" addToAAR="" operator="Caller" />
+        <DialogOption id="5" texten="Ok, what kind of party are they having?" elementProperties="option=6;" addToAAR="" operator="Operator" />
+        <DialogOption id="6" texten="A terrible music party, christ what do kids call it? Dubstep or something? Awfull music I tell you." elementProperties="option=7;option=8;" addToAAR="" operator="Caller" />
+        <DialogOption id="7" texten="{Send police to investigate} Ok, I'll send someone to investigate." elementProperties="option=9;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Operator" />
+        <DialogOption id="8" texten="{Not an emergency} This isn't an emergency. If it's in the house it's completely legal. I can't send someone to check it out unless there's multiple noise complaints." elementProperties="option=10;" addToAAR="" operator="Operator" />
+        <DialogOption id="9" texten="Ok!" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" />
+        <DialogOption id="10" texten="But it's so loud." elementProperties="option=12;" addToAAR="" operator="Caller" />
+        <DialogOption id="12" texten="Sorry, it's not an emergency. I can't help you." elementProperties="option=11;" addToAAR="" operator="Operator" />
+        <DialogOption id="11" texten="Ok, I understand." actionOnEnd="actionHangup;" addToAAR="" operator="Caller" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

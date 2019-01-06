@@ -1,0 +1,35 @@
+<data>
+  <conversations>
+    <conversation id="911" texten="POLICE HQ RAID" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="poi=police;searchArea=3;searchWork=600000;">
+        <dead id="Officer" texten="" actionOnEnd="" addToAAR="" blockedBy="" />
+        <dead id="Officer2" texten="" addToAAR="" blockedBy="" />
+        <dead id="Officer3" texten="" addToAAR="" blockedBy="" />
+        <dead id="Officer4" texten="" addToAAR="" blockedBy="" />
+        <dead id="Officer5" texten="" addToAAR="" blockedBy="" />
+        <injured id="Officer6" texten="" addToAAR="" blockedBy="" />
+        <dead id="Officer7" texten="" addToAAR="" blockedBy="" />
+        <dead id="Police_Accountant1" texten="" addToAAR="" blockedBy="" />
+        <dead id="Police_Accountant2" texten="" addToAAR="" blockedBy="" />
+        <dead id="Police_HR" texten="" addToAAR="" blockedBy="" />
+        <dead id="Police_Captain" texten="" addToAAR="" blockedBy="" />
+        <passerby id="Grunt" texten="" elementProperties="hp=400;weapon=e_rifle;fightRisk=1;prisonchance=1;" addToAAR="" blockedBy="" />
+        <passerby id="Grunt1" texten="" elementProperties="hp=400;weapon=e_rifle;fightRisk=1;prisonchance=1;" addToAAR="" blockedBy="" />
+        <passerby id="Grunt2" texten="" elementProperties="hp=400;weapon=e_rifle;fightRisk=1;prisonchance=1;" addToAAR="" blockedBy="" />
+        <passerby id="Grunt3" texten="" elementProperties="hp=400;weapon=e_rifle;fightRisk=1;prisonchance=1;" addToAAR="" blockedBy="" />
+        <passerby id="Grunt4" texten="" elementProperties="hp=400;weapon=e_rifle;fightRisk=1;prisonchance=1;" addToAAR="" blockedBy="" />
+        <passerby id="Grunt5" texten="" elementProperties="hp=400;weapon=e_rifle;fightRisk=1;prisonchance=1;" addToAAR="" blockedBy="" />
+        <passerby id="Grunt6" texten="" elementProperties="hp=400;weapon=e_rifle;fightRisk=1;prisonchance=1;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="Reports of shots fired. Unknown location of precise incident. General area of shooting is [[ADDRESS]]." elementProperties="option=2;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="2" texten="Reports of Terrorist group named Alarasid spotted within area. " elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="Information" texten="An terrorist group known as Alarasid has been targeting Police. They have posted pictures of themselves executing Police Officers. This Terrorist Organization is not to be taken lightly." />
+        <reportElement id="Warning" texten="Welcome to Chaos." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

@@ -1,0 +1,41 @@
+<data>
+  <conversations>
+    <conversation id="Gang" texten="Terrorist Activity" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="poi=building;">
+        <suspect id="Gang_Member" texten="" elementProperties="weapon=e_pistol;fightRisk=0.1;prisonChance=0.3;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Member1" texten="" elementProperties="prisonChance=0;fightRisk=0;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Member2" texten="" elementProperties="prisonChance=0;fightRisk=0;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Member3" texten="" elementProperties="weapon=e_pistol;fightRisk=0.1;prisonChance=0.3;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Member4" texten="" elementProperties="prisonChance=0;fightRisk=0;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Member5" texten="" elementProperties="prisonChance=0;fightRisk=0;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Member6" texten="" elementProperties="prisonChance=0;fightRisk=0;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Member7" texten="" elementProperties="weapon=e_pistol;fightRisk=0.1;prisonChance=0.3;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Member8" texten="" elementProperties="weapon=e_pistol;fightRisk=0.1;prisonChance=0.3;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Member9" texten="" elementProperties="prisonChance=0;fightRisk=0;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Leader" texten="" elementProperties="weapon=e_pistol;fightRisk=0.1;prisonChance=0.2;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Recruit" texten="" elementProperties="prisonChance=0;fightRisk=0;" addToAAR="" blockedBy="" />
+        <suspect id="Gang_Recruit1" texten="" elementProperties="prisonChance=0;fightRisk=0;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hey, I'm an owner of an alcohol store and theres black dudes out front who ain't buying nothing." elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Ok, so why did you call 911?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Because some of them got guns that are clearly visible." elementProperties="option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="How many of them are there?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Probably around twelve." elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="What's the name of you're store?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="Liquor Surplus, it's on Hingler St, giant beer bottle ontop, hard to miss." elementProperties="option=9;option=11;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="{Ignore} Sir this isn't an emergency." elementProperties="option=10;" actionOnEnd="opinionEffect=-5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="{Send Police} Alright sir, Police are responding. Anything else I should know?" elementProperties="option=13;" actionOnEnd="opinionEffect=+5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="Like hell it isn't! These men have guns and I'm afraid to tell them to get the hell off my property, because they have guns!" elementProperties="option=12;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="No, nothing else. Goodbye brother." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="I understand but there is no emergency here." elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="Man screw ya'll. I'll deal with them myself." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

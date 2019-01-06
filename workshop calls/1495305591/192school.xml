@@ -1,0 +1,103 @@
+<data>
+  <conversations>
+    <conversation id="192school" texten="19-2: School Shooting" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="poi=building;">
+        <tech id="sceneElem_1" texten="Search and Rescue." elementProperties="work=400;" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_2" texten="Suspect" elementProperties="weapon=e_rifle;weapon=e_pistol;" addToAAR="story_1" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_3" texten="Officer Tyler Joseph" elementProperties="hp=30;type=AfAm;sex=M;weapon=e_pistol;hpChange=-0.3;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_4" texten="Officer Nick Barron" elementProperties="weapon=e_pistol;type=AfAm;sex=M;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_5" texten="Officer Ben Chartier" elementProperties="weapon=e_pistol;type=White;sex=M;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_6" texten="Officer Beatrice Hamelin" elementProperties="weapon=e_pistol;type=White;sex=W;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_7" texten="Officer Audrey Pouliot" elementProperties="weapon=e_pistol;type=White;sex=W;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_8" texten="Officer Jean-Marc Brouillard" elementProperties="weapon=e_pistol;type=White;sex=M;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_9" texten="Sergeant Julien Houle" elementProperties="weapon=e_pistol;type=White;sex=M;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_10" texten="Commander Gendron" elementProperties="weapon=e_pistol;type=White;sex=M;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_11" texten="Detective Sergeant Isabelle Latendresse" elementProperties="weapon=e_pistol;type=White;sex=W;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_12" texten="Lieutenant Luc Carrey" elementProperties="weapon=e_pistol;type=White;sex=M;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_13" texten="Sergeant Roy Suarez" elementProperties="weapon=e_pistol;type=White;sex=M;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_14" texten="Officer Richard Dulac" elementProperties="weapon=e_pistol;type=White;sex=M;prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_15" texten="Student" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_16" texten="Student" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_17" texten="Student" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_18" texten="Student" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_19" texten="Student" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_20" texten="Student" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_21" texten="Student" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_22" texten="Student" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_23" texten="Teacher" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_24" texten="Teacher" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <witness id="sceneElem_25" texten="Teacher" elementProperties="prisonChance=0;" addToAAR="" blockedBy="sceneElem_1" />
+        <dead id="sceneElem_26" texten="Deceased Student" elementProperties="" addToAAR="story_1" blockedBy="sceneElem_1" />
+        <dead id="sceneElem_27" texten="Deceased Student" elementProperties="type=Children;" addToAAR="story_1" blockedBy="sceneElem_1" />
+        <dead id="sceneElem_28" texten="Deceased Student" elementProperties="" addToAAR="story_1" blockedBy="sceneElem_1" />
+        <dead id="sceneElem_29" texten="Deceased Teacher" elementProperties="" addToAAR="story_1" blockedBy="sceneElem_1" />
+        <dead id="sceneElem_30" texten="Deceased Teacher" elementProperties="" addToAAR="story_1" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_31" texten="Injured Student" elementProperties="hp=80;type=Children;hpChange=-0.2;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_32" texten="Injured Student" elementProperties="hp=30;hpChange=-0.1;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_33" texten="Injured Student" elementProperties="hp=40;type=Children;hpChange=-0.2;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_34" texten="Injured Student" elementProperties="hp=50;type=Children;hpChange=-0.1;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_35" texten="Injured Student" elementProperties="hp=70;type=Children;hpChange=-0.2;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_36" texten="Injured Student" elementProperties="hp=20;hpChange=-0.2;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_37" texten="Injured Student" elementProperties="hp=10;type=Children;hpChange=-0.1;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_38" texten="Injured Student" elementProperties="hp=80;hpChange=-0.1;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_39" texten="Injured Teacher" elementProperties="hp=90;hpChange=-0.3;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_40" texten="Injured Teacher" elementProperties="hp=50;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_41" texten="Injured Teacher" elementProperties="hp=10;hpChange=-0.1;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_42" texten="Injured Teacher" elementProperties="hp=40;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_43" texten="Injured Student" elementProperties="hp=50;hpChange=-0.3;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_44" texten="Injured Student" elementProperties="hp=30;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_45" texten="Injured Student" elementProperties="hp=70;type=Children;hpChange=-0.1;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_46" texten="Injured Student" elementProperties="hp=40;hpChange=-0.2;" addToAAR="" blockedBy="sceneElem_1" />
+        <injured id="sceneElem_47" texten="Injured Student" elementProperties="hp=30;hpChange=-0.1;" addToAAR="" blockedBy="sceneElem_1" />
+        <dead id="sceneElem_48" texten="Deceased Student" elementProperties="" addToAAR="story_1" blockedBy="sceneElem_1" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="19-2 We have shots fired inside VJ high school, we have an 888, inside VJ high school, I repeat, multiple shots fired, we're in pursuit." elementProperties="option=2;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="2" texten="We've at least one victim inside the school, you should use the west entrance we have it open." elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="19-2 I have eyes on the shooter, he's wearing a black ball cap, black sweatshirt, he has an assault rifle." elementProperties="option=4;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="All units clear channel 1 for 888 call, all units clear channel 1." elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="The shooter is taking hostages,  I repeat, he's in the back of the cafeteria by the kitchen, the shooter has hostages-No don't you shoot her! Don't shoot her!-" elementProperties="option=6;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="6" texten="19-28 We're arriving on site, unconfirmed reports of gunshots in the gym." elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="Shooter is in the cafeteria, try to contain him." elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="Which way do we go?" elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten=" I don't know no one is saying the same thing, let's get it together guys." elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="19-2 He's-What are you doing?-moving, exiting the back of the cafeteria-Let him go!-into the kitchen, he's got 3 hostages he's using them as human shield, I repeat, the shooter is exiting the cafeteria into the kitchen." elementProperties="option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="Do not lose contact with the shooter. 19-1 I'll take command on site minutes away. Tactical's delayed but on-route." elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="19-8 We're looking for an entrance to the kitchen." elementProperties="option=13;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="19-24 We're just outside open the door it's locked." elementProperties="option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="I believe the shooter is in the West Hall, we need some guidance here." elementProperties="option=15;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="15" texten="We have floorplans on site I'm almost there. . . . . . -We have casualties in the kitchen, we need paramedics-" elementProperties="option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="Multiple units on-route." elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="-we confrim multiple shooters?" elementProperties="option=18;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="18" texten="Negative, go after the shooter!" elementProperties="option=19;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="19" texten=". . . . . . . . . . . . I've got a young girl down, at the southeast entrance -Do you have contact with the shooter?- Negative, negative, there's kids everywhere. -First priority is to neutralize the threat, find them-" elementProperties="option=20;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="20" texten="The outside perimeter is now secure. Keep moving guys, go!" elementProperties="option=21;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="21" texten=". . . . . . . . . . . . " elementProperties="option=22;" addToAAR="" operator="Caller" emotions="option=22" />
+        <DialogOption id="22" texten="This is 19-7, I have a girl in critical I'll bring her out now." elementProperties="option=23;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="23" texten="I NEED A FUCKING AMBULANCE MAN! -This way!- I NEED A FUCKING AMBULANCE! -Behind the wall.- Okay sweetie you're gonna be okay sweetie, WHERE THE FUCK IS THE AMBULANCE? WHERE THE FUCK IS THE AMBULANCE? -RELAX, RELAX, it's okay.- 19-2 We should be in the auditorium on stage, he's shooting! He's in the auditorium!" elementProperties="option=24;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="24" texten="I have a girl bleeding out in here-FORGET THE GIRL STAY WITH THE SHOOTER- I REPEAT, WE NEED PARAMEDICS I HAVE A GIRL BLEEDING DOWN HERE.-What is your location?- In the auditorium, she needs help-DOWN!- now! 32-4, We're in the auditorium.-IT'S OVER, PUT THE GUN DOWN-" elementProperties="option=25;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="25" texten="19-2 We've lost the suspect where is he? -I need to know the office is secured, I need access to the offices- All units I need the main office secured, I want 2 duos on it! 17-3 We're on it 19-12 We'll head there now. . . . . . . . . . . .  SHOTS, SHOTS -SHOTS FIRED, STOP RIGHT THERE, DON'T YOU FUCKING MOVE-" elementProperties="option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="26" texten="Where are you? -I DON'T FUCKING KNOW-" elementProperties="option=27;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="27" texten="I need someone to fix the fucking monitor, the computer is smashed." elementProperties="option=28;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="28" texten="Room 259 is cleared, about 20 students and a teacher. Stairway's been chain-shut, we'll need bolt cutters. -Copy-" elementProperties="option=29;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="29" texten="19-28 -Clearance of the classrooms- 19-2 -We're in the science lab at 240L- 19-4 -232C-...... Where the fuck is 232C." elementProperties="option=30;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="30" texten="HE'S SHOOTING AT US, HE'S SHOOTING AT US-WE CAN'T GET OUT OF HERE, WE NEED THE FUCKING BACKUP NOW- Beside the room 263, he's at the end of the hall. -He's got an exit, keep him engaged. All units we have a confirmed shooter near Stairway L, I repeat, Stairway L, Stairway B has been obstructed." elementProperties="option=31;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="31" texten="19-2 I have the eyes on the shooter, black ball cap, black sweatshirt, he's going through the firedoor, I don't know what direction.-Copy stay on it-" elementProperties="option=32;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="32" texten="CROSSFIRE, CROSSFIRE!" elementProperties="option=33;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="33" texten=". . . . . . . . . . . . " elementProperties="option=34;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="34" texten="Tyler's down! His neck! Jesus, I need paramedics right away!" elementProperties="option=35;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="35" texten="Hey, I got a bunch of kids in here, let's get him out-No, no, no, no, lock it down-Let's just do it Nick, come on-Stay there, stay there. You look at me, stay down, quiet-" elementProperties="option=36;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="36" texten="Nick? Nick? Nick?-What's happening?........ Chartier, Barron?...... Latendresse do you have visual?- I can't see them they're somewhere in the library." elementProperties="option=37;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="37" texten="19-2 Respond, 19-2?" elementProperties="option=38;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="38" texten="19-8 Respond, 19-8?.......... -19-8- You are cleared to evacuate. Do it now. -Copy.-" elementProperties="option=39;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="39" texten="I got an exit. -Go, go, go!-" elementProperties="option=40;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="40" texten="19-2......... we've neutralized the threat." elementProperties="option=41;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="41" texten="He... um.... He was... He was shooting... kids.... right in front of us..." elementProperties="" actionOnEnd="actionHangup;opinionEffect=50;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="School Shooting." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

@@ -1,0 +1,32 @@
+<data>
+  <conversations>
+    <conversation id="00000000" texten="dead cat" elementProperties="type=generableonce;">
+      <scene>
+        <passerby id="sceneElem_1" texten="" addToAAR="story_1" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hi! Id like to report a dead cat in the road." elementProperties="option=what;option=where;option=who;option=when;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} What happend?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} What is your name?" elementProperties="option=name;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} When did it happen?" elementProperties="option=send;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="I was driving and I saw a cat so I swerved and almost tiped over so I thought I would tell you to move it." elementProperties="" addToAAR="" operator="Caller" emotions="scared" />
+        <DialogOption id="addressa0" texten="At W143 N5512 van Buren Dr." elementProperties="option=6;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="confident" />
+        <DialogOption id="name" texten="I'm Bob Eveans." elementProperties="option=8;" addToAAR="" operator="Caller" emotions="confident" />
+        <DialogOption id="send" texten="it happend at 2:30 yesterday." elementProperties="option=4;" addToAAR="" operator="Caller" emotions="confident" />
+        <DialogOption id="6" texten="O.K. can you tell me the time of the incident?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="Ok Bob.... Can you tell me a time and location of the incident?" elementProperties="option=9;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Sir, 911 is for emergencys only...Yesterday is not today!!!" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="2:30 yesterday." elementProperties="option=4;" addToAAR="" operator="Caller" emotions="confident" />
+        <DialogOption id="9" texten="Sure......Its W143 N5512 Vanburen Dr. It happend at 2:30 yesterday" elementProperties="option=4;" addToAAR="" operator="Caller" emotions="confident" />
+        <DialogOption id="5" texten="Ok..FINE. I thought you were here to help." elementProperties="option=10;" addToAAR="" operator="Caller" emotions="angry" />
+        <DialogOption id="10" texten="....." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

@@ -1,0 +1,40 @@
+<data>
+  <conversations>
+    <conversation id="Fire1" texten="Apartment Fire" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="poi=building;">
+        <passerby id="sceneElem_1" texten="Caller" elementProperties="Sex=M;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_2" texten="Injured Man" elementProperties="Hp=22;Sex=M;Hpchange=-0.3;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_3" texten="Injured Girl" elementProperties="Hp=22;Sex=F;Hpchange=-0.3;" addToAAR="" blockedBy="" />
+        <fire id="sceneElem_4" texten="Fire" elementProperties="Work=1000;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="story_1" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="The apartment building is on fire!!" elementProperties="option=3;option=4;option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="{WHERE?} Where did this happen?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="{BIG FIRE?} Is the fire big?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="{HOW MANY FLOORS?} How many floors does the apartment have?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="It's at [[ADDRESS]]." elementProperties="option=4;option=5;option=9;option=10;option=11;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="Yes! Two of the units are on fire!" elementProperties="option=3;option=5;option=9;option=10;option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="1..2..3..4..5..6..7..7...7 SEVEN! The floor 6 is on fire.." elementProperties="option=3;option=4;option=9;option=10;option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="{WHAT CAUSED IT?} Do you know what caused this fire?" elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="{IS IT SPREADING?} Is the fire spreading anywhere?" elementProperties="option=13;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="{ANYONE INSIDE?} Is there anyone inside?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="I'm pretty sure it was the woman living alone.... she is not good at cooking..." elementProperties="option=10;option=11;option=16;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="Yes...it's spreading to other units." elementProperties="option=9;option=11;option=16;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="I don't think so but........there is 2 people on the balcony.." elementProperties="option=9;option=10;option=15;option=16;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="{WAIT FOR HELP} A firetruck is on the way, wait for them." elementProperties="option=19;" addToAAR="story_2" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="{NOT EMERGENCY.} Sir, this is not a 911 emergency.." elementProperties="option=20;" addToAAR="story_3" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="{TELL THEM TO JUMP} Tell those people to jump." elementProperties="option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="18" texten="JUMP!! DID YOU HEAR?? JUMP!!! Holy heck...they are so injured..." elementProperties="option=16;option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="19" texten="Okay...be quick." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="20" texten="Wh..hat?" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="A man reported a fire in a apartment building." />
+        <reportElement id="story_2" texten="The fire was caused by someone's poor cooking skills.   Injured were sent to hospital immidiately." />
+        <reportElement id="story_3" texten="The building almost got destroyed and the injured people ended up dying because there was no emergency services sent." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

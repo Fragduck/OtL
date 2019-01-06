@@ -1,0 +1,55 @@
+<data>
+  <conversations>
+    <conversation id="Planecrash" texten="Emergency landing" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <witness id="sceneElem_1" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_2" texten="" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_3" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_4" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_5" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_6" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_7" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_8" texten="" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_9" texten="" addToAAR="" blockedBy="" />
+        <passerby id="sceneElem_10" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_11" texten="" addToAAR="" blockedBy="" />
+        <tech id="sceneElem_12" texten="" addToAAR="" blockedBy="" />
+        <fire id="sceneElem_13" texten="" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Oh my... a plane just started shooting flames, I think the're going down!" elementProperties="option=what;option=where;option=who;option=when;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} What happened?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} What is your name?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} When did it happen?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="I just told you!" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="addressa0" texten="At [[ADDRESS]]" elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="My name is sarah" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="litteraly right now" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="story_1" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="landingstrip" texten="{landing strip} Are there any nearby airfields or airports?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="No!" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="signal" texten="{signal} can you get the pilots attention with a laser or headlights or something?" elementProperties="option=7;option=7a;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="maybe" elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7a" texten="I can try" elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="okay, I got his attention i think. What now" elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="Is there any land or open road for the pilot to land or space that you can clear out maybe?" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="yes hold on............................................................................................................................................................................................................." elementProperties="option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten=",.....................................................................................................ok done" elementProperties="option=12;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="Try and signal the pilot to land and emergency services are en route " elementProperties="option=13;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="He is circling around now, I'm gonna move " elementProperties="option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="Ok, whatever keeps you and everyone else safe." elementProperties="option=15;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="..................(tire screech)........(engine)................" elementProperties="option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="has the plane landed?" elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="Yes, thank you so much for your help, everybody is safe now" elementProperties="option=end;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="A plane lost an engine due to a flock of birds and performed an emergency landing on a public road" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

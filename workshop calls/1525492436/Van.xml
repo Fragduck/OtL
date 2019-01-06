@@ -1,0 +1,33 @@
+<data>
+  <conversations>
+    <conversation id="Van" texten="Possible kidnapping" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="poi=building;">
+        <suspect id="Man1" texten="" elementProperties="prisonChance=0;fightRisk=0.1;sex=M;" addToAAR="" blockedBy="" />
+        <suspect id="Man2" texten="" elementProperties="prisonChance=0;fightRisk=0.1;sex=M;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hello, I'd like to report a suspicious van out of Hingler State Middle School. I'm the vice principal." elementProperties="option=3;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="Ok, and why is this van suspicious?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Theres two guys in it who never pick up anyone, they just watch... I'm afraid they'll attempt to take a student." elementProperties="option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="Can you describe the men?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Yeah, one of them has a thick black beard, messy black hair, I can tell he's a big guy. The other man I can't really see... I think he's a blonde though." elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="Have they attempted to talk to any students there?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="No, not yet anyways... they've been here for three days now. I had school security keep an eye on them." elementProperties="option=9;option=10;option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="{Hand out forums} What I'm going to suggest is for you to hand out forums notifying parents, and to call back if anything happens." elementProperties="option=12;" actionOnEnd="opinionEffect=+5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="{Not an emergency} This isn't an emergency. I can't do anything about it unless a student goes missing." elementProperties="option=13;" actionOnEnd="opinionEffect=+1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="{Have Police investigate} Ok, I'll send police to investigate." elementProperties="option=14;" actionOnEnd="opinionEffect=-1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="I was going to do that anyways, anything else you could suggest?" elementProperties="option=15;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="13" texten="I know it's not an emergency, but it's just concerning me and some of the parents." elementProperties="option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="I don't think thats really needed but, hey! It's you're call." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="15" texten="No, that is all. Call back if someone goes missing." elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="16" texten="And there is nothing I can do." elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="Alright, bye." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

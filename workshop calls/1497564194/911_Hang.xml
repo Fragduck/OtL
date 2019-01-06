@@ -1,0 +1,22 @@
+<data>
+  <conversations>
+    <conversation id="911_Hang" texten="911 Hangup" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <witness id="sceneElem_1" texten="Hangup Susp" elementProperties="sex=M;type=white;hp=100;work=15;" addToAAR="story_1" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=SuspAccident;" addToAAR="story_1" operator="Operator" emotions="" />
+        <DialogOption id="SuspAccident" texten="Yeah, I accidentally called you guys." elementProperties="option=who;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="who" texten="Alright sir, what is your last name?" elementProperties="option=SuspName;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="SuspName" texten="My name is Tyrone Woods." elementProperties="option=Where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Where" texten="Alright Tyrone, where do you live?" elementProperties="option=SuspLocation;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="SuspLocation" texten="I live at [[ADDRESS]] ." elementProperties="" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="end" texten="Alright, an officer will be enroute to check up and make sure their is no emergency." elementProperties="" actionOnEnd="actionHangup;" addToAAR="story_1" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="The 911 hangup individual was talked to about the situation. You should always dispatch officers out even if it's a butt dial, hangup or accidental call just because there might be an actual emergency." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

@@ -1,0 +1,42 @@
+<data>
+  <conversations>
+    <conversation id="ato" texten="Androids Take Over" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="">
+        <suspect id="sceneElem_2" texten="" actionOnEnd="weapon=e_bat;;" addToAAR="" blockedBy="" />
+        <witness id="sceneElem_1" texten="" actionOnEnd="opinionEffect=15;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_3" texten="" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_4" texten="" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_5" texten="" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_6" texten="" actionOnEnd="weapon=e_bat;;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_7" texten="" actionOnEnd="weapon=e_bat;;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_8" texten="" actionOnEnd="weapon=e_bat;;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_9" texten="" actionOnEnd="weapon=e_bat;;" addToAAR="" blockedBy="" />
+        <dead id="sceneElem_10" texten="" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_11" texten="" actionOnEnd="weapon=e_bat;;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_12" texten="" actionOnEnd="weapon=e_bat;;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_13" texten="" actionOnEnd="speed=5;weapon=e_bat;;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="ANDROIDS, they, they are taking over the street!" elementProperties="option=3;option=5;option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Excuse me? Androids? what is that?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="Are you kidding with me? Androids don't deserve rights, they are just plastic!" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="Where?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="ANDROIDS, ROBOTS, CALL IT WHATEVER YOU WANT. They are protesting here because they want right, like us humans!" elementProperties="option=5;option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="6" texten="Say whatever you want, androids are here and is taking over!" elementProperties="option=7;option=9;option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="addressa0" texten="EMPTY ID: addressa0" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="So, do the androids have a gun?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="I'll send Police right now!" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="No, they are protesting peacefully but it is an illegal gathering!" elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="10" texten="SEND RIOT POLICE, PLEASE!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="At [[ADDRESS]]" elementProperties="option=back;option=3;option=7;option=9;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there? Androids here, remember?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there? HELP US!" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

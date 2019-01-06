@@ -1,0 +1,69 @@
+<data>
+  <conversations>
+    <conversation id="dt" texten="Deadly abuse" elementProperties="type=generableonce;" version="18.27">
+      <scene elementProperties="">
+        <witness id="sceneElem_1" texten="Teenager" elementProperties="sex=M;type=white;" addToAAR="" />
+        <injured id="sceneElem_2" texten="Mom" elementProperties="sex=F;type=white;hp=60;hpchange=-0.2;" addToAAR="" blockedBy="" />
+        <passerby id="sceneElem_3" texten="Dad" elementProperties="sex=M;type=white;weapon=e_pistol;prisonchance=100;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hello... can we talk?" elementProperties="option=what;option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} Whats wrong?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} What is your name?" elementProperties="option=30;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="I... I just want to talk... How are you?" elementProperties="option=4;option=5;" addToAAR="" operator="Caller" />
+        <DialogOption id="4" texten="I'm good... How are you?" elementProperties="option=6;" addToAAR="" operator="Operator" />
+        <DialogOption id="5" texten="Sir is there an emergency?" elementProperties="option=9;" addToAAR="" operator="Operator" />
+        <DialogOption id="6" texten="I could be better..." elementProperties="option=13;" addToAAR="" operator="Caller" />
+        <DialogOption id="8" texten="Is there an emergency?" elementProperties="option=9;" addToAAR="" operator="Operator" />
+        <DialogOption id="9" texten="No... No I just wanna talk..." elementProperties="option=7;" addToAAR="" operator="Caller" />
+        <DialogOption id="7" texten="Sir this line is for emergencys only..." elementProperties="option=10;" addToAAR="" operator="Operator" />
+        <DialogOption id="10" texten="Ok... Do you want me to leave?" elementProperties="option=11;option=12;" addToAAR="" operator="Caller" />
+        <DialogOption id="11" texten="That would be nice... Have a nice day..." elementProperties="option=end;" addToAAR="" operator="Operator" />
+        <DialogOption id="12" texten="No we could talk..." elementProperties="option=47;" addToAAR="" operator="Operator" />
+        <DialogOption id="13" texten="Why is that?" elementProperties="option=14;" addToAAR="" operator="Operator" />
+        <DialogOption id="14" texten="I... I don't wanna talk about it..." elementProperties="option=15;option=16;" addToAAR="" operator="Caller" />
+        <DialogOption id="15" texten="It's ok you can tell me..." elementProperties="option=17;" addToAAR="" operator="Operator" />
+        <DialogOption id="16" texten="Sir please just leave if your gonna hold up the line..." elementProperties="option=end;" addToAAR="" operator="Operator" />
+        <DialogOption id="17" texten="Im being bullied... not only that my dad is abbusive and  I think he hates me... I've been thinking about killing myself... [Yelling]" elementProperties="option=18;" addToAAR="" operator="Caller" />
+        <DialogOption id="18" texten="Do you want me to get an officer down to help you?" elementProperties="option=19;" addToAAR="" operator="Operator" />
+        <DialogOption id="19" texten="NO! NO! NO! Please don't do that my dad will get so mad... [Yelling]" elementProperties="option=20;" addToAAR="" operator="Caller" />
+        <DialogOption id="20" texten="Whats the yelling in the background?" elementProperties="option=21;" addToAAR="" operator="Operator" />
+        <DialogOption id="21" texten="My parents are fighting... They're always at it... [Screaming] Shit..." elementProperties="option=22;" addToAAR="" operator="Caller" />
+        <DialogOption id="22" texten="Whats wrong?" elementProperties="option=23;" addToAAR="" operator="Operator" />
+        <DialogOption id="23" texten="..." elementProperties="option=24;" addToAAR="" operator="Caller" />
+        <DialogOption id="24" texten="Are you ok?" elementProperties="option=25;" addToAAR="" operator="Operator" />
+        <DialogOption id="25" texten="Shit shit..." elementProperties="option=26;" addToAAR="" operator="Caller" />
+        <DialogOption id="26" texten="What happened?" elementProperties="option=27;" addToAAR="" operator="Operator" />
+        <DialogOption id="27" texten="My dad just hit my mom..." elementProperties="option=28;" addToAAR="" operator="Caller" />
+        <DialogOption id="28" texten="Is she ok?" elementProperties="option=29;" addToAAR="" operator="Operator" />
+        <DialogOption id="29" texten="Yeah I... [GET THE FUCK OFF THE PHONE AND LOOK WHAT YOUR MOTHER DID!] GET THE HELL OUT OF MY ROOM! [SHUT YOUR MOUTH BEFORE I FUCKING KILL YOU!]" elementProperties="option=who;" addToAAR="" operator="Caller" />
+        <DialogOption id="30" texten="Jason..." elementProperties="option=31;" addToAAR="" operator="Caller" />
+        <DialogOption id="31" texten="Jason im sending an officer down there..." elementProperties="option=32;" addToAAR="" operator="Operator" />
+        <DialogOption id="32" texten="Ok thank you... Just a warning he has a gun..." elementProperties="option=33;" addToAAR="" operator="Caller" />
+        <DialogOption id="33" texten="Ok Jason just stay calm... Where is your father right now?" elementProperties="option=34;" addToAAR="" operator="Operator" />
+        <DialogOption id="34" texten="He went into his room..." elementProperties="option=35;" addToAAR="" operator="Caller" />
+        <DialogOption id="35" texten="Ok go check on your mother..." elementProperties="option=36;" addToAAR="" operator="Operator" />
+        <DialogOption id="36" texten="Ok one second............ Shit shit... Shes bleeding, badly..." elementProperties="option=37;" addToAAR="" operator="Caller" />
+        <DialogOption id="37" texten="From where?" elementProperties="option=38;" addToAAR="" operator="Operator" />
+        <DialogOption id="38" texten="Her head... Its everywhere... Sh... SHES NOT RESPONSIVE!" elementProperties="option=39;option=40;" addToAAR="" operator="Caller" />
+        <DialogOption id="39" texten="Ok jason im gonna need you to get out of the house officers are on the way..." elementProperties="option=41;" addToAAR="" operator="Operator" />
+        <DialogOption id="40" texten="Stay there with you mother and try to stop the bleeding..." elementProperties="option=42;" addToAAR="" operator="Operator" />
+        <DialogOption id="41" texten="Ok... Im outside..." elementProperties="option=43;" addToAAR="" operator="Caller" />
+        <DialogOption id="42" texten="Ok... What should I do?" elementProperties="option=44;" addToAAR="" operator="Caller" />
+        <DialogOption id="43" texten="Good just wait there..." elementProperties="option=46;" addToAAR="" operator="Operator" />
+        <DialogOption id="44" texten="Cover her wound with your hands or find something to cover it up..." elementProperties="option=45;" addToAAR="" operator="Operator" />
+        <DialogOption id="45" texten="Ok ok... Shit dad... put the gun down... FUCK! [GUNSHOTS] [GUNSHOTS] [GUNSHOTS]" elementProperties="option=end;" addToAAR="" operator="Caller" />
+        <DialogOption id="46" texten="Ok... ok thank you..." elementProperties="option=end;" addToAAR="" operator="Caller" />
+        <DialogOption id="47" texten="Ok... How are you?" elementProperties="option=4;" addToAAR="" operator="Caller" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="A teen going through suicidal thoughts and an abusive father. One day the father looses it and goes mad" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
