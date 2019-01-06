@@ -1,0 +1,34 @@
+<data>
+<conversations>
+<conversation id="fallen" texten="Fallen Ladder" elementProperties="type=generable;" >
+<scene>
+<witness id="caller" texten="Caller" elementProperties="isActive=true" blockedBy="ladder" />
+<tech id="ladder" texten="Ladder" elementProperties="work=20;isActive=true" />
+</scene>
+
+<dialog>
+<DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" operator="Operator" actionOnEnd="opinionEffect=1;" />
+<DialogOption id="2" texten="Yeah? Hello? Can you send the me fire department over, please? I'm stuck on the roof." elementProperties="option=what;option=where;option=who;option=when;" operator="Caller" />
+<DialogOption id="what" texten="{WHAT?} What happend?" elementProperties="option=Whata;option=whatb;" operator="Operator" />
+<DialogOption id="where" texten="{WHERE?} OK. What's the address please?" elementProperties="option=address;" operator="Operator" />
+<DialogOption id="who" texten="{WHO?} What is your name?" elementProperties="option=namea;" operator="Operator" />
+<DialogOption id="when" texten="{WHEN?} How long have you been up there now?" elementProperties="option=whena;" operator="Operator" />
+<DialogOption id="Whata" texten="I climbed on the roof of my garage to do some repairs, and then my dog knocked over the ladder. I can't get down." elementProperties="option=back" operator="Caller" />
+<DialogOption id="whatb" texten="I'm on top of the garage because I had to fix the satellite dish, and the ladder fell over from the wind. So I'm stuck here now." elementProperties="option=back" operator="Caller" />
+<DialogOption id="address" texten="I live at [[ADDRESS]]." actionOnEnd="actionSetLocation" elementProperties="option=back;" operator="Caller" />
+<DialogOption id="namea" texten="I'm Jonathan Devon" operator="Caller" elementProperties="option=back;" />
+<DialogOption id="whena" texten="I've been stuck here for about an hour now. I live here alone, and I tried to wait until some neighbours would walk by so they could put the ladder up again. But it seems nobody is showing up." elementProperties="option=sendhelp;" operator="Caller" />
+<DialogOption id="sendhelp" texten="[SEND HELP] OK, Jonathan. I've sent you someone to help you down." elementProperties="option=thanks;" operator="Operator"/>
+<DialogOption id="reminder" texten="Hello? Are you there?" elementProperties="" operator="Caller" />
+<DialogOption id="reminder2" texten="Anyone there?" elementProperties="" operator="Caller" />
+<DialogOption id="thanks" texten="Much appreciated, thanks a lot. Bye." actionOnEnd="actionHangup;" addToAAR="success" operator="Caller" />
+<DialogOption id="end" texten="..." actionOnEnd="actionHangup" operator="operator" />
+</dialog>
+<aar>
+<reportElement id="case" texten="A male was stuck on top of a roof after his ladder had fallen over." />
+<reportElement id="success" texten="He was helped down by the fire department." />
+<reportElement id="ignored" texten="The 911 operator ignored the call and sent no help." />
+</aar>
+</conversation>
+</conversations>
+</data>
