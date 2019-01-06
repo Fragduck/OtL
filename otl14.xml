@@ -1,0 +1,47 @@
+﻿<data><conversations>
+<conversation elementProperties="type=generableonce;" id="otl14" texten="Football Accident">
+ <scene>
+ <injuried elementProperties="sex = M; hp = 82; hpchange = -0.02;" id="caller" texten="Caller" />
+ </scene>
+ <dialog>
+ <dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect = 4;" />
+ <dialogOption elementProperties="option = SendAmbulanceEarly;" id="2" operator="Caller:" texten="My leg hurts so much! Can you send help?" default="Where" option2="What" option3="When" />
+ <dialogOption id="Where" operator="Operator:" texten="{ADRESS} Can you tell me where you currently are?" default="Where1" />
+ <dialogOption id="Where1" operator="Caller:" texten="Yes, I'm at [[ADDRESS]], lying in the grass." default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="What" operator="Operator:" texten="What happend?" default="What1" />
+ <dialogOption elementProperties="option = MoreDetails;" id="What1" operator="Caller:" texten="I can't really remember, the last thing I know is that I was playing football with my friends. . . . . . . . . . Wait a moment. . . . . My friends just told me I was 
+unconscious for around 1 or 2 minutes." default="When" option2="Where" option3="FirstAid.O" />
+ <dialogOption id="When" operator="Operator:" texten="When did that all happend?" default="When1" />
+ <dialogOption id="When1" operator="Caller:" texten="Seems to be 4-5 minutes ago. My friends thought that I was just fooling them." default="back" />
+ <dialogOption id="MoreDetails" operator="Operator:" texten="{MORE DETAILS} Can you tell me more details." default="MoreDetails1" />
+ <dialogOption elementProperties="option = When;" id="MoreDetails1" operator="Caller:" texten="I will try. What do you need to know?" default="Choice1.O" option2="Choice2.O" option3="Where" />
+ <dialogOption id="Choice1.O" operator="Operator:" texten="Is your leg fractured? Or can you even see the bone?" default="Choice1.C" />
+ <dialogOption id="Choice1.C" operator="Caller:" texten=". . . . . . . . I can't tell. I would say it looks normal, no blood or anything, but hurts like hell." default="back" />
+ <dialogOption id="Choice2.O" operator="Operator:" texten="{OTHER INJURIES} Do you have any other injuries?" default="Choice2.C" />
+ <dialogOption elementProperties="option = Where;" id="Choice2.C" operator="Caller:" texten=". . . Well I was unconscious if that counts, other than that. . . . . . Wait my friends just told me I was moving weird while being unconscious. No idea what that was." default="Choice4.O" option2="Choice3.O" option3="FirstAid.O" />
+ <dialogOption id="FirstAid.O" operator="Operator:" texten="{FIRST AID} Can your friends administer first aid to you?" default="FirstAid.C" />
+ <dialogOption id="FirstAid.C" operator="Caller:" texten="Sure, what should they do?" default="Choice8.O" option2="Choice7.O" option3="Choice3.O" />
+ <dialogOption id="Choice8.O" operator="Operator:" texten="{IMMOBILIZE} They should look around and see if they can find something like a splint." default="Choice8.C" option2="NothingFound" />
+ <dialogOption id="Choice8.C" operator="Caller:" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . One of them found a branch, that should work, or?" default="Choice8.O1" />
+ <dialogOption id="Choice8.O1" operator="Operator:" texten="Yeah, your friends should try to immobilize your leg." default="Choice8.C1" />
+ <dialogOption id="Choice8.C1" operator="Caller:" texten="Wait a second. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *ouch* Sorry bro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Okay, done. " default="back" actionOnEnd="caller.hpchange+=0.01;" />
+ <dialogOption id="Choice7.O" operator="Operator:" texten="{ICE} Do you have access to ice?" default="Choice7.C" />
+ <dialogOption id="Choice7.C" operator="Caller:" texten="Hmm. . . . . . . . . . . . . . . . . . . . . . . . . . . . . No." default="back" />
+ <dialogOption id="Choice3.O" operator="Operator:" texten="{SEND AMBULANCE} Just wait and don't move. I send the ambulance." default="Choice3.C" />
+ <dialogOption id="Choice4.O" operator="Operator:" texten="{NO EMERGENCY} That's not an emergency, please go to the next hospital or take a taxi." default="Choice4.C" />
+ <dialogOption id="Choice3.C" operator="Caller:" texten="Alright. Thank you!" actionOnEnd="actionHangup;" />
+ <dialogOption id="Choice4.C" operator="Caller:" texten="You are joking? I should go to the next hospital? But my leg is really badly hurting." default="Choice5.O" option2="Choice6.O" />
+ <dialogOption id="Choice5.O" operator="Operator:" texten="{HANG UP} Sorry, can't help you." actionOnEnd="opinionEffect += -2; actionHangup;" />
+ <dialogOption id="Choice6.O" operator="Operator:" texten="{SEND AMBULANCE} Well, I can send an ambulance." default="Choice6.C1" />
+ <dialogOption id="Choice6.C1" operator="Caller:" texten="Thanks..." actionOnEnd="actionHangup;" />
+ <dialogOption id="SendAmbulanceEarly" operator="Operator:" texten="{SEND AMBULANCE} Alright, help will be with you shortly." default="SendAmbulanceEarly1" actionOnEnd="opinionEffect += -2;" addToAAR="SendAmbulanceTooEarly" />
+ <dialogOption id="SendAmbulanceEarly1" operator="Caller:" texten="Thanks!" actionOnEnd="actionHangup;" />
+ <dialogOption elementProperties="chance;" id="NothingFound" operator="Caller:" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . They found nothing that would work as a splint." default="back" />
+ <dialogOption id="reminder" operator="Caller:" texten="...." />
+ <dialogOption id="reminder2" operator="Caller:" texten="...." />
+ </dialog>
+ <aar>
+ <reportElement id="SendAmbulanceTooEarly" texten="You sent the ambulace too early, you didn't even ask where the patient is." />
+ </aar>
+ </conversation>
+</conversations></data>
