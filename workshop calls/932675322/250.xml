@@ -1,0 +1,28 @@
+﻿<data><conversations>
+<conversation elementProperties="type=generableonce;" id="250" texten="Dizzy1">
+ <scene>
+ <injuried elementProperties="hp = 95; sex = W; type=Old;" id="caller" texten="Caller, of old age." />
+ </scene>
+ <dialog>
+ <dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect = -1;" />
+ <dialogOption id="2" operator="Caller:" texten="Hello, I'm a little dizzy." default="address" option2="4" option3="6" />
+ <dialogOption id="address" operator="Operator:" texten="{ADDRESS?} Where do you live?" default="addressa0" />
+ <dialogOption id="4" operator="Operator:" texten="How long have you been dizzy?" default="5" />
+ <dialogOption id="addressa0" operator="Caller:" texten="I live at [[ADDRESS]]." default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="5" operator="Caller:" texten="Hmm.. for maybe 1 hour, maybe a little bit longer." default="back" />
+ <dialogOption id="6" operator="Operator:" texten="Do you have any other symptoms?" default="7" />
+ <dialogOption id="7" operator="Caller:" texten="Yes, my body feels just a little bit hotter than usual." default="8" option2="10" option3="11" />
+ <dialogOption id="8" operator="Operator:" texten="Do you have fever?" default="9" />
+ <dialogOption id="9" operator="Caller:" texten="No, not right now. I measured just 5 minutes ago." default="back" />
+ <dialogOption id="10" operator="Operator:" texten="{SEND AMBULANCE} I send an ambulance." default="thanks" addToAAR="shouldnotcheck" />
+ <dialogOption id="11" operator="Operator:" texten="{NO EMERGENCY} Sorry, thats not an emergency, please go to a doctor." default="end" />
+ <dialogOption id="thanks" operator="Caller:" texten="Thanks! I'm waiting." actionOnEnd="actionHangup;" />
+ <dialogOption id="end" operator="Caller:" texten="Oh, ok." actionOnEnd="actionHangup;" />
+ <dialogOption id="reminder" operator="Caller:" texten="Hello?" />
+ <dialogOption id="reminder2" operator="Caller:" texten="...." />
+ </dialog>
+ <aar>
+ <reportElement id="shouldnotcheck" texten="The operator send the ambulance, although it was no emergency." />
+ </aar>
+ </conversation>
+</conversations></data>

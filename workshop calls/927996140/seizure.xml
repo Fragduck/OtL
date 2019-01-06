@@ -1,0 +1,58 @@
+<data>
+  <conversations>
+    <conversation id="seizure" texten="Epileptic seizure" elementProperties="type=generableonce;">
+      <scene>
+        <passerby id="caller" texten="Caller" elementProperties="sex=W;" />
+        <injuried id="epi" texten="Old man" elementProperties="hp = 60; hpChange = -0.2; sex=M;" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hello, there's an older man lying in the underpass. I'm not sure what to do." elementProperties="option=cons;option=address;option=inj;" actionOnEnd="opinionEffect=4;" addToAAR="" operator="Caller" emotions="[confused]" />
+        <DialogOption id="cons" texten="{IS HE CONSCIOUS?} Is the man conscious?" elementProperties="option=strange;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="address" texten="{ADDRESS?} Please tell me where are you, ma'am?" elementProperties="option=address0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="inj" texten="{ANY INJURIES?} Does he have any visible injuries?" elementProperties="option=inj1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="strange" texten="I don't know, he's acting strangely, flinging around and foaming at his mouth.... am I in danger? There's barely anyone else in here." elementProperties="option=attack;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="address0" texten="I'm in the underpass at [[ADDRESS]]" elementProperties="option=back;option=send;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="inj1" texten="No, no I think not, but..." elementProperties="option=inj2;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="attack" texten="{IT'S SEIZURE} Stay calm, it's probably an epileptic seizure." elementProperties="option=uncle;" actionOnEnd="opinionEffect +=1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="uncle" texten="Epileptic? Oh I know! My uncle was an epileptic. I'm gonna put something in between his jaws." elementProperties="option=yesblock;option=noblock;option=address;" addToAAR="" operator="Caller" emotions="[with relief]" />
+        <DialogOption id="yesblock" texten="{DO IT} It's good idea. Try to find something solid enough, which won't break under his teeth." elementProperties="option=blockdone;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="noblock" texten="{DON'T DO THAT} Please don't do that, ma'am! It can only make things worse." elementProperties="option=auntie;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="blockdone" texten="Sure . . . . . . . . . . . . . . . . . . . . . . . Agh, he bit me! . . . . . Okay, that wasn't easy, but its done. What now?" elementProperties="option=send;option=clean;option=head;" actionOnEnd="epi.hp=40;&#xD;&#xA;opinionEffect +=-1; onIgnore+=-1;" addToAAR="badinst" operator="Caller" emotions="" />
+        <DialogOption id="auntie" texten="But my auntie used to do that, so my uncle wouldn't bite his tongue off." elementProperties="option=anymore;option=yesblock;option=address;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="anymore" texten="{DON'T DO THAT} It's not the done thing anymore. If he didn't bite his tongue already, then he won't. Putting something in his mouth may result in jaw injury, knocking out a tooth or choking." elementProperties="option=whatnow;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="send" texten="{I'LL SEND HELP} I'm sending help. The paramedics are on their way. Please wait for them." elementProperties="option=isthatit;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="clean" texten="{CLEAR THE AREA} Move away everything that might be dangerous and can result in an injury." elementProperties="option=clean1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="head" texten="{HOLD HIM} Hold his head to protect him from injuries." elementProperties="option=head1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="isthatit" texten="Is that it? Can I just leave him?" elementProperties="option=clean;option=head;option=yesgo;option=attack;option=clean;option=head;option=pleasestay;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="clean1" texten="Sure . . . . . . . . . . . . . . . . . . . . I moved the trash can. There is nothing more around." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="head1" texten="How exactly I'm supposed to hold it?" elementProperties="option=kneel;option=comfort;option=address;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="whatnow" texten="So what can I do now?" elementProperties="option=clean;option=head;option=address;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="kneel" texten="{KNEEL BEHIND HIS HEAD} Put your phone on the ground in the speaker mode. You'll need two hands. Please kneel behind his head and then sit back on your knees." elementProperties="option=fine;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="comfort" texten="{COMFORTABLE FOR YOU} In any position which is comfortable for you. The seizure might take a while." elementProperties="option=go;" actionOnEnd="opinionEffect +=-1; onIgnore+=-1;" addToAAR="badinst" operator="Operator" emotions="" />
+        <DialogOption id="fine" texten="Fine . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Done." elementProperties="option=send;option=address;option=pleasestay;option=under;option=send;option=address;option=pleasestay;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="go" texten="Can I just let him go after it ends?" elementProperties="option=send;option=pleasestay;option=doc;option=lethim;option=address;option=send;option=pleasestay;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="pleasestay" texten="{PLEASE STAY} No, please stay untill the ambulance arrives" elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="doc" texten="{GO TO A DOCTOR} It would be better if he got examined by a doctor after the seizure. He might be exhausted or injured." elementProperties="option=endnoamb;" actionOnEnd="opinionEffect=1;&#xD;&#xA;onIgnore=0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="lethim" texten="{YES} Yes, if he will be consious and without any injuries just let him go." elementProperties="option=endnoamb;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="under" texten="{PUT HIS HEAD ON YOUR THIGHS} Okay, now lift his head up and move yourself a bit forward so your thighs are under it." elementProperties="option=under1;" actionOnEnd="epi.hpchange = 0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="under1" texten="God, his whole body is jerking. I don't know if I can do it..." elementProperties="option=under2;" addToAAR="" operator="Caller" emotions="[worried]" />
+        <DialogOption id="end" texten="Okay. I'm waiting. Thanks, goodbye!" elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="under2" texten="I'm sure you'll do well, ma'am. Just do it slowly and be careful." elementProperties="option=under3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="under3" texten="Ok, now what?" elementProperties="option=hold;option=send;option=address;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="hold" texten="{HOLD HIM} Hold his head firmly on your legs and wait. That's all what you can do for now." elementProperties="option=go;" addToAAR="firstaid" operator="Operator" emotions="" />
+        <DialogOption id="endnoamb" texten="Okay, thanks for the help." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="yesgo" texten="{YES, THAT'S IT} Yes, you can leave now, thank you." elementProperties="option=endnoamb;option=pleasestay;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="inj2" texten="Yes?" elementProperties="option=strange;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="reminder" texten="Hello?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Am I supposed to leave him like this?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story" texten="Caller saw a man with epileptic seizure." />
+        <reportElement id="badinst" texten="Operator gave wrong medical instruction to the caller." />
+        <reportElement id="firstaid" texten="Caller properly gave first aid to the vicitm thanks to operator's instruction." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
