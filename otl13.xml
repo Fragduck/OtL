@@ -1,0 +1,43 @@
+﻿<data>
+  <conversations>
+    <conversation id="257" texten="Broken Leg Accident" elementProperties="type=generableonce;">
+      <scene elementProperties="">
+        <injuried id="caller" texten="Caller" elementProperties="sex = W; hp = 85; hpchange = -0.01;" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" actionOnEnd="opinionEffect = 3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="I broke my leg and can't move, please send help!" elementProperties="option=SendAmbulanceEarly;option=Where;option=What;option=When;option=SendAmbulanceEarly;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Where" texten="{ADDRESS} Can you tell me where we can find you?" elementProperties="option=Where1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="What" texten="What happened exactly?" elementProperties="option=What1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="When" texten="When did you broke your leg?" elementProperties="option=When1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="SendAmbulanceEarly" texten="{SEND AMBULANCE} Alright, help will be with you shortly." elementProperties="option=SendAmbulanceEarly1;" actionOnEnd="opinionEffect += -2;" addToAAR="SendAmbulanceTooEarly" operator="Operator" emotions="" />
+        <DialogOption id="Where1" texten=". . Yeah, I'm currently at [[ADDRESS]], lying on the pavement." elementProperties="option=back;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="What1" texten="Well. . . . That's kinda embarrassing . . . . . . . I stumbled over my dog. . . . . . . . . . . . . . . . . . . . . And now I'm lying on the pavement. . . . . . My dog is fine by the way." elementProperties="option=MoreDetails;option=When;option=Where;option=FirstAid.O;option=MoreDetails;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="FirstAid.O" texten="{FIRST AID} Do you see someone who could administer first aid to you?" elementProperties="option=FirstAid.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="MoreDetails" texten="{MORE DETAILS} I need some more information." elementProperties="option=MoreDetails1;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="When1" texten="It happened just a few moments ago. I'm glad I got my mobile phone with me." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="MoreDetails1" texten="What do you need to know?" elementProperties="option=When;option=Choice1.O;option=Choice2.O;option=Where;option=When;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice1.O" texten="Is it a open fracture? Can you see the bone?" elementProperties="option=Choice1.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice2.O" texten="{OTHER INJURIES} Do you have any other injuries?" elementProperties="option=Choice2.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice1.C" texten="No, but my leg doesn't look normal either. The angle seems off..." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice2.C" texten=". . . I don't think so, but my leg hurts really bad. . . . ." elementProperties="option=Where;option=Choice4.O;option=Choice3.O;option=FirstAid.O;option=Where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice4.O" texten="{NO EMERGENCY} That's not an emergency, please go to the next hospital." elementProperties="option=Choice4.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice3.O" texten="{SEND AMBULANCE} It's okay, I'll send an ambulance." elementProperties="option=Choice3.C;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="FirstAid.C" texten=". . . . . . . . . . . . . . . . . . . . . . I fear I don't see anybody." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice3.C" texten="Thank you!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice4.C" texten="What? Go to the next hospital? How should I do that with my broken leg?" elementProperties="option=Choice5.O;option=Choice6.O;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice5.O" texten="{HANG UP} Sorry, can't help you." elementProperties="" actionOnEnd="opinionEffect += -2; actionHangup;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice6.O" texten="{SEND AMBULANCE} Oh, I'm so sorry, of course I will send an ambulance." elementProperties="option=Choice6.C1;option=Choice6.C2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="Choice6.C1" texten="Thanks..." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Choice6.C2" texten="You better do that! I can't believe that you didn't want to send me help..." elementProperties="chance;" actionOnEnd="opinionEffect += -1; actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="SendAmbulanceEarly1" texten="Thanks!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="...." elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="...." elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="SendAmbulanceTooEarly" texten="You sent the ambulance too early, you didn't even ask where the patient is." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
