@@ -1,0 +1,37 @@
+﻿<data><conversations>
+<conversation elementProperties="type=generableonce;" id="otl07"  texten="Dizzy Elderly Man">
+ <scene>
+ <injuried elementProperties="hp = 92; sex = M; type=Old; hpchange = -0.05;" id="caller" texten="Caller, of old age." />
+ </scene>
+ <dialog>
+ <dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect = 1;" />
+ <dialogOption id="2" operator="Caller:" texten="I'm. . . . . . . . . . . dizzy . . . . . . . . . . . . and I . . . . . . . . . . . . I have a headache as well." default="address" option2="4" option3="SitDown1" />
+ <dialogOption id="address" operator="Operator:" texten="{ADDRESS?} Where do you live?" default="addressa0" option2="FallingDown" />
+ <dialogOption id="4" operator="Operator:" texten="How long have you been dizzy?" default="5" option2="FallingDown" />
+ <dialogOption id="addressa0" operator="Caller:" texten="I live at [[ADDRESS]]." default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="5" operator="Caller:" texten="Hmm.. for maybe 2 hours, I'm not sure." default="address" option2="6" />
+ <dialogOption id="6" operator="Operator:" texten="Do you have any other symptoms?" default="7" option2="FallingDown" />
+ <dialogOption id="7" operator="Caller:" texten="Yes, my body is shivering for quite a while now.. " default="8" option2="9" option3="10" />
+ <dialogOption id="8" operator="Operator:" texten="Do you have fever?" default="Fever1" option2="Fever2" option3="FallingDown" />
+ <dialogOption id="9" operator="Operator:" texten="{SEND AMBULANCE} I send an ambulance." default="thanks" option2="FallingDown" />
+ <dialogOption id="10" operator="Operator:" texten="{NO EMERGENCY} Sorry, thats not an emergency, please go to a doctor." default="end" option2="FallingDown" />
+ <dialogOption id="SitDown1" operator="Operator:" texten="Are you currently standing?" default="SitDown2" option2="FallingDown" />
+ <dialogOption id="SitDown2" operator="Caller:" texten=". . . . . . . . . Yes." default="SitDown3" />
+ <dialogOption id="SitDown3" operator="Operator:" texten="Alright, please sit down, otherwise you could fall down." default="SitDown4" actionOnEnd="FallingDown-&gt;active=false;" addToAAR="Helped" />
+ <dialogOption id="SitDown4" operator="Caller:" texten="Sure, give me a moment. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I'm sitting now." default="address" option2="4" />
+ <dialogOption elementProperties="chance = 0.10;" id="FallingDown" operator="Caller:" texten=" . . . . . . . . . . . . . . . . . . . *fall* . . . . . . . . . . . . . . . . . . . " default="endFall" actionOnEnd="caller.hp = -10; onIgnore =-6;" addToAAR="Info" />
+ <dialogOption id="Fever1" operator="Caller:" texten="Well . . . . . . . . . . . . . . . . . . . now that you mention it. It seems as if I am not longer shivering. . . . . . . . . . . . . . . . . . . . But now I feel like I have fever." default="back" />
+ <dialogOption id="Fever2" operator="Caller:" texten="No, not right now. I told you I am shivering, and it is getting stronger!" default="back" />
+ <dialogOption id="thanks" operator="Caller:" texten="I'm waiting." actionOnEnd="actionHangup;" />
+ <dialogOption id="end" operator="Caller:" texten="Thats too bad..." actionOnEnd="actionHangup;" addToAAR="shouldcheck" />
+ <dialogOption id="endFall" operator="Operator:" texten="Did he fall?" actionOnEnd="actionHangup;" />
+ <dialogOption id="reminder" operator="Caller:" texten="You still there?" />
+ <dialogOption id="reminder2" operator="Caller:" texten="...." />
+ </dialog>
+ <aar>
+ <reportElement id="shouldcheck" texten="The operator didn't send the ambulance." />
+ <reportElement id="Info" texten="The caller fell down and hurt him/herself. You can minimze the chance by letting him/her sit down." />
+ <reportElement id="Helped" texten="You helped the dizzy caller by letting him/her sit down! (The chance of falling is reduced.)" />
+ </aar>
+ </conversation>
+</conversations></data>
