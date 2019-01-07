@@ -1,0 +1,50 @@
+<data><conversations>
+	<conversation elementProperties="type=generableonce;" id="otl08" texten="Dizzy Child">
+		<scene>
+			<passerby elementProperties="type = White;" id="caller" texten="Scared Parent" />
+			<injuried elementProperties="type = Children; hp = 80;" texten="Dizzy Child" />
+		</scene>
+		<dialog>
+			<dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect = -2; ca6-&gt;active=false; norm6-&gt;active=false; norm7-&gt;active=false;" />
+			<dialogOption id="2" operator="Caller:" emotions="shouting" texten="Hello?! Finally, someone takes my call... My child is seriously sick!" default="address" option2="Calm" option3="ag" />
+			<dialogOption id="address" operator="Operator:" texten="Where are you right now?" default="address0" />
+			<dialogOption id="address0" operator="Caller:" texten="Where we are?! . . . . . . ." default="address1" />
+			<dialogOption id="address1" operator="Operator:" texten="Yeah, your current location." default="addressa0" />
+			<dialogOption elementProperties="option = norm6; option = norm7;" id="addressa0" operator="Caller:" texten="I'm at [[ADDRESS]]." default="norm" option2="norm1" option3="norm2" actionOnEnd="actionSetLocation;" />
+			<dialogOption id="ca" operator="Operator:" texten="Please calm down. I'm going to help you now. " default="ca1" />
+			<dialogOption id="ca1" operator="Caller:" texten="Oh... ok. What do you need to know?" default="ca2" option2="ca3" option3="ca6" />
+			<dialogOption id="ca2" operator="Operator:" texten="What happend to your child?" default="ca4" />
+			<dialogOption id="ca3" operator="Operator:" texten="{ADDRESS} Alright, where are you currently?" default="ca5" />
+			<dialogOption id="ca4" operator="Caller:" texten="My child is not feeling well. It said something like the ground is spinning around." default="back" actionOnEnd="ca6-&gt;active=true;" />
+			<dialogOption id="ca5" operator="Caller:" texten="We are at [[ADDRESS]]." default="back" actionOnEnd="actionSetLocation;" />
+			<dialogOption id="ca6" operator="Operator:" texten="Any other symptoms?" default="ca7" />
+			<dialogOption id="ca7" operator="Caller:" texten="Ähm.. no, not really." default="go" option2="nogo" />
+			<dialogOption id="ag" operator="Operator:" texten="Just Calm down... Otherwise I can't help you!" default="ag1" />
+			<dialogOption id="ag1" operator="Caller:" texten="Calm down!?! My child is SICK! And you want me to calm down. . . . . Thats ridiculous." default="ag2" option2="ag3" />
+			<dialogOption id="ag2" operator="Operator:" texten="{ADDRESS}Just tell me where you are right now, otherwise nobody can help you." default="agend" />
+			<dialogOption id="agend" operator="Caller:" texten="You know what, I don't want your help! " default="end1" actionOnEnd="opinionEffect += 3;" addToAAR="nf" />
+			<dialogOption id="ag3" operator="Operator:" texten="{SORRY} I'm sorry, I understand that you are under a lot of pressure because your child is sick." default="ag4" />
+			<dialogOption id="ag4" operator="Caller:" texten=" . . . . . . . . . . . . . . . . . . . It's ok, what do you need to know?" default="ca3" option2="ca2" option3="ca6" />
+			<dialogOption id="norm" operator="Operator:" texten="Ok, now tell me what happend." default="norm3" />
+			<dialogOption id="norm1" operator="Operator:" texten="Is your child conscious?" default="norm4" />
+			<dialogOption id="norm2" operator="Operator:" texten="Is your child breathing?" default="norm5" />
+			<dialogOption id="norm3" operator="Caller:" texten="My child was simply playing around. You know, new toy and everything. But suddenly my child said the ground is spinning around! What should I do?" default="back" actionOnEnd="norm6-&gt;active=true; norm7-&gt;active=true;" />
+			<dialogOption id="norm4" operator="Caller:" texten="Conscious? Yes, of course." default="back" />
+			<dialogOption id="norm5" operator="Caller:" texten="Yes." default="back" />
+			<dialogOption id="norm6" operator="Operator:" texten="{SEND AMBULANCE} Just wait for the ambulance to arrive." default="go" addToAAR="nc" />
+			<dialogOption id="norm7" operator="Operator:" texten="{NO EMERGENCY} Give your child something to drink, and let it rest. If it is still dizzy afterwards, go to a doctor." default="end" />
+			<dialogOption id="go" operator="Operator:" texten="An ambulance will be with you shortly." default="end" />
+			<dialogOption id="nogo" operator="Operator:" texten="That's not an emergency. Please go to your primary care physician." default="end2" />
+			<dialogOption id="end" operator="Caller:" texten="Alright, thanks!" actionOnEnd="actionHangup;" />
+			<dialogOption id="end1" operator="Caller:" texten="..." actionOnEnd="actionHangup; onIgnore =-2;" addToAAR="dk" />
+			<dialogOption id="end2" operator="Caller:" texten="Hmm.. if you say so." actionOnEnd="actionHangup;" />
+			<dialogOption id="reminder" operator="Caller:" texten="Will you help me?" />
+			<dialogOption id="reminder2" operator="Caller:" texten="You still there?" />
+		</dialog>
+		<aar>
+			<reportElement id="nc" texten="The child was just dizzy, no need for an ambulance." />
+			<reportElement id="nf" texten="You upset the scared parent, because of that she/he hung up." />
+			<reportElement id="dk" texten="You don't know what happend to the kid, you should send someone to be sure." />
+		</aar>
+	</conversation>
+</conversations></data>
