@@ -1,0 +1,42 @@
+﻿<data><conversations>
+<conversation elementProperties="type=generableonce;" id="otl10" texten="Butter Knife Accident">
+ <scene>
+ <injuried elementProperties="sex = M; type = AfAm; hp = 85; hpchange = +0,1;" id="caller" texten="Scared Caller" />
+ </scene>
+ <dialog>
+ <dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect = -3;" />
+ <dialogOption elementProperties="option = Who;" id="2" operator="Caller:" texten="I'm going to die!" default="What" option2="Where" option3="When" />
+ <dialogOption id="What" operator="Operator:" texten="What happend to you?" default="What1" />
+ <dialogOption id="What1" operator="Caller:" texten="I cut myself! Oh my god. . . . . . I'm going to lose my arm, isn't it so? . . . . . . . I shouldn't look at it..." default="What2" option2="What3" />
+ <dialogOption id="What2" operator="Operator:" texten="Can you try to look at your 
+injury?" default="WhatLook" />
+ <dialogOption id="What3" operator="Operator:" texten="With what did you cut yourself?" default="WhatObject" />
+ <dialogOption id="WhatLook" operator="Caller:" texten="I don't think so.. you know . . . . . I fear that I will faint as soon as I look at it." default="WhatLook1" option2="WhatLook2" />
+ <dialogOption elementProperties="option = Who;" id="WhatLook1" operator="Operator:" texten="Alright, you don't have to, if you don't want." default="What3" option2="Where" option3="When" />
+ <dialogOption id="WhatLook2" operator="Operator:" texten="You have to, otherwise I don't know how serious your injury is." default="WhatLook3" option2="Faint" />
+ <dialogOption id="WhatLook3" operator="Caller:" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Oh, it is only a small wound! I think I don't need any help. Just a plaster. " default="EndThanks" />
+ <dialogOption id="WhatObject" operator="Caller:" texten="Oh! I can tell you that. It was a small butter knife." default="WhatObject1" option2="WhatObject3" option3="WhatObject4" />
+ <dialogOption id="WhatObject1" operator="Operator:" texten="Is it sharp?" default="WhatObject2" />
+ <dialogOption id="WhatObject2" operator="Caller:" texten="No, it is actually blunt." default="back" />
+ <dialogOption id="WhatObject3" operator="Operator:" texten="{NO EMERGENCY} If thats the case, then you just have to dress your wound. I hope you understand that I can't send you an ambulance for a small wound." default="end" />
+ <dialogOption id="WhatObject4" operator="Operator:" texten="{SEND AMBULANCE} I can send an ambulance if you want." default="SendAmbulance" addToAAR="shouldnotcheck" />
+ <dialogOption id="Where" operator="Operator:" texten="{ADDRESS} Where are you?" default="Where1" />
+ <dialogOption id="Where1" operator="Caller:" texten=". . . . . I'm currently at . . . . . . Wait . . . . . . . Where am I, ah right. At [[ADDRESS]]." default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="When" operator="Operator:" texten="When did it happen?" default="When1" />
+ <dialogOption id="When1" operator="Caller:" texten="It was just one or two minutes ago, I called you at once!" default="back" />
+ <dialogOption id="Who" operator="Operator:" texten="Who's fault is it?" default="Who1" />
+ <dialogOption id="Who1" operator="Caller:" texten="It was me . . . . . . . . Just a terrible accident." default="back" />
+ <dialogOption elementProperties="chance = 0.5;" id="Faint" operator="Caller:" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *fall*" default="EndFall" actionOnEnd="caller.hp = -15; caller.hpchange = -0.2; opinionEffect += 2;" />
+ <dialogOption id="SendAmbulance" operator="Operator:" texten="An ambulance will be soon with you." default="EndThanks" />
+ <dialogOption id="end" operator="Caller:" texten="Of course, I understand. I think I can help myself. Thank you!" default="EndThanks1" />
+ <dialogOption id="EndThanks" operator="Caller:" texten="Thanks a lot!" default="EndThanks1" />
+ <dialogOption id="EndThanks1" operator="Operator:" texten="Sure, glad I could help." actionOnEnd="actionHangup;" />
+ <dialogOption id="EndFall" operator="Operator:" texten="He really fainted..." actionOnEnd="actionHangup; onIgnore = -3;" />
+ <dialogOption id="reminder" operator="Caller:" texten="I am going to die . . . . . . . . . . ." />
+ <dialogOption id="reminder2" operator="Caller:" texten="...." />
+ </dialog>
+ <aar>
+ <reportElement id="shouldnotcheck" texten="You send an ambulance, although it was just a small cut." />
+ </aar>
+ </conversation>
+</conversations></data>
