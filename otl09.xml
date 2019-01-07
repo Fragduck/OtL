@@ -1,0 +1,56 @@
+﻿<data><conversations>
+  <conversation elementProperties="type=generableonce;" id="otl09" texten="Two Butchers Accident">
+  <scene>
+  <injuried elementProperties="sex = M; hpchange = -0.25; hp = 60;" id="worker;" texten="Injured Worker"/>
+  <witness elementProperties="sex = M;" id="caller;" texten="Caller"/>
+  </scene>
+  <dialog>
+  <dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect = 6; onIgnore = -6;"/>
+  <dialogOption elementProperties="option = FirstAid;" id="2" operator="Caller:" texten="My co-worker is seriously hurt!" default="When" option2="What" option3="Where"/>
+  <dialogOption id="When" operator="Operator:" texten="When did your co-worker get hurt?" default="When1"/>
+  <dialogOption id="When1" operator="Caller:" texten="I don't know, maybe 5 minutes ago!" default="back"/>
+  <dialogOption id="What" operator="Operator:" texten="What happend to your co-worker?" default="What1"/>
+  <dialogOption id="What1" operator="Caller:" texten="We are both butchers. Well I am, he is my apprentice. The problem was that I had no time to supervise him and he somehow cut himself despite his protective clothing." default="back"/>
+  <dialogOption id="Where" operator="Operator:" texten="Can you tell me your current location?" default="Where1"/>
+  <dialogOption id="Where1" operator="Caller:" texten="Erm yeah . . Wait it's [[ADDRESS]]." default="back" actionOnEnd="actionSetLocation; WhereLate->active=false;"/>
+  <dialogOption id="FirstAid" operator="Operator:" texten="{FIRST AID} Did you give first aid?" default="FirstAid1"/>
+  <dialogOption id="FirstAid1" operator="Caller:" texten="I tried my best. I found a first-aid box and tried to dress his wound as good as possible but the knife is kinda in the way. . . . . Should I pull it out? So that I can dress the injury better?" default="Choice1.O" option2="Choice2.O"/>
+  <dialogOption id="Choice1.O" operator="Operator:" texten="{YES} Yes, if you do that you should be able to dress his wound even better." default="Choice1.C" actionOnEnd=" opinionEffect += -3;" addToAAR="WrongFirstAid"/>
+  <dialogOption id="Choice2.O" operator="Operator:" texten="{NO} No, don't touch it. The way it is right now reduces the loss of blood. Just try to stabilize the knife and keep an eye out for blood leaking through his bandages." default="Choice2.C"/>
+  <dialogOption elementProperties="option = Where;" id="Choice2.C" operator="Caller:" texten="Understood, I put some more bandages around the knife. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Done!" default="Choice5.O" option2="Choice6.O" option3="WaitAmbulance" actionOnEnd="worker.hpchange+=0.05;"/>
+  <dialogOption id="Choice5.O" operator="Operator:" texten="{POSITION} In which position is your co-worker?" default="Choice5.C"/>
+  <dialogOption id="Choice5.C" operator="Caller:" texten="He is currently lying on the ground. Should I change something?" default="Choice7.O" option2="Choice8.O"/>
+  <dialogOption id="Choice7.O" operator="Operator:" texten="{ELEVATE LEGS} As long as your co-worker is conscious you should elevate his legs." default="Choice7.C"/>
+  <dialogOption id="Choice8.O" operator="Operator:" texten="{STABLE SIDE POSITION} You should put him in a stable side position." default="Choice8.C" option2="Choice9.C" option3="Choice10.C" addToAAR="WrongFirstAid"/>
+  <dialogOption id="Choice7.C" operator="Caller:" texten="I'm on it . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I elevated his legs, there are on a stool which stood nearby." default="Choice7.O1" actionOnEnd="worker.hpchange+=0.05;"/>
+  <dialogOption id="Choice7.O1" operator="Operator:" texten="Well done." default="Choice7.C1"/>
+  <dialogOption id="Choice7.C1" operator="Caller:" texten="Anything else I can do?" default="Choice6.O" option2="Where" option3="WaitAmbulance"/>
+  <dialogOption id="Choice8.C" operator="Caller:" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . OK, done! What now?" default="Choice6.O" option2="Where" option3="WaitAmbulance"/>
+  <dialogOption id="Choice10.C" operator="Caller:" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Done.. But he says, that this position hurts more. What should I do?" default="Choice6.O" option2="Where" option3="WaitAmbulance"/>
+  <dialogOption elementProperties="chance;" id="Choice9.C" operator="Caller:" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Oh shit! The knife no longer closing the wound! " default="Choice1.C1" actionOnEnd="worker.hpchange+= -0,2;"/>
+  <dialogOption id="Choice6.O" operator="Operator:" texten="{PRESSURE} Next you should try to apply pressure on the injury." default="Choice6.C"/>
+  <dialogOption id="Choice6.C" operator="Caller:" texten="You sure?  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I fear that the knife is blocking me." default="Choice14.O" option2="Choice15.O"/>
+  <dialogOption id="Choice14.O" operator="Operator:" texten="{TRY MORE} Doesn't matter if the knife is blocking you, just try the best you can." default="Choice14.C" option2="Choice14.C1"/>
+  <dialogOption id="Choice14.C" operator="Caller:" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Alright, what now?" default="Where" option2="WaitAmbulance"/>
+  <dialogOption elementProperties="chance;" id="Choice14.C1" operator="Caller:" texten=". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . FUCK! The knife! It slipped out of the wound! He took a deep breath and I put pressure around the wound. . . . ." default="Choice1.C1"/>
+  <dialogOption id="Choice15.O" operator="Operator:" texten="{STOP} If thats the case, don't try to put more pressure on it. Just look out if blood seeps through his bandages." default="Choice15.C"/>
+  <dialogOption id="Choice15.C" operator="Caller:" texten="OK!" default="Where" option2="WaitAmbulance"/>
+  <dialogOption id="Choice1.C" operator="Caller:" texten="Ok, pulling the knife out of him . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Done!" default="Choice1.C1" actionOnEnd="worker.hpchange+= -0,2;"/>
+  <dialogOption id="Choice1.C1" operator="Caller:" texten="Oh my god! There is a LOT blood coming! What should I do?" default="Choice3.O" option2="Choice4.O" option3="WaitAmbulance"/>
+  <dialogOption id="Choice3.O" operator="Operator:" texten="{PRESSURE} Put more bandages on the wound and apply as much pressure as you can on the injury. " default="Choice3.C" actionOnEnd="worker.hpchange+=0.05;"/>
+  <dialogOption id="Choice3.C" operator="Caller:" texten="I'm on it, . . . . . . . . . . . . . . . .  and putting you on speaker . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . " default="Choice3.O1" option2="WhereLate"/>
+  <dialogOption id="Choice3.O1" operator="Operator:" texten="{KEEP GOING} You are doing that very good! The ambulance will arrive shortly." actionOnEnd="actionHangup;"/>
+  <dialogOption id="Choice4.O" operator="Operator:" texten="{PUT THE KNIFE BACK} Try to put the knife back in, so that the wound is sealed again." default="Choice4.C" actionOnEnd=" opinionEffect += -3;" addToAAR="WrongFirstAid"/>
+  <dialogOption id="Choice4.C" operator="Caller:" texten="WHAT?! I am not going to do that! Are you crazy?" default="back"/>
+  <dialogOption id="WhereLate" operator="Operator:" texten="I need your address to send an ambulance." default="WhereLate1"/>
+  <dialogOption id="WhereLate1" operator="Caller:" texten=". . . . . . . .  You mean you didn't already send one? Holy... We are at  [[ADDRESS]]" default="back" actionOnEnd="actionSetLocation;  opinionEffect += -1;" addToAAR="WhereTooLate"/>
+  <dialogOption id="WaitAmbulance" operator="Operator:" texten="{WAIT AMBULANCE} Just wait for the ambulance to arrive." actionOnEnd="actionHangup;"/>
+  <dialogOption id="reminder" operator="Caller:" texten="Hello? You still there?"/>
+  <dialogOption id="reminder2" operator="Caller:" texten="..."/>
+  </dialog>
+  <aar/>
+  <reportElement id="WrongFirstAid" texten="You gave wrong first aid instructions."/>
+  <reportElement id="WhereTooLate" texten="You asked too late where the person is. You could have sent an ambulance sooner."/>
+  <_aar/>
+  </conversation>
+</conversations></data>
