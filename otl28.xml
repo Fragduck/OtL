@@ -1,0 +1,51 @@
+﻿<data><conversations>
+<conversation elementProperties="type=generable;" id="otl28" texten="Warehouse accident">
+ <scene>
+ <witness id="caller" operator="Caller:" emotions="male, around 50 years old, breathless" texten="Caller" />
+ <injuried elementProperties="hp = 60; hpChange = -0.5;" blockedBy="shelves" id="injuried1" emotions="male, 35 years old" texten="Injured worker" />
+ <tech elementProperties="work = 100;" id="shelves" texten="Downed racks" />
+ <tech elementProperties="isActive = false; work = 10;" id="shelves2" texten="Downed racks" />
+ </scene>
+ <dialog>
+ <dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect=4;" />
+ <dialogOption elementProperties="option=address" id="2" operator="Caller:" emotions="[nervous]" texten="I'm calling from the Cool Speed warehouses. One of the racks has collapsed and pinned down our worker!" default="inj" option2="happen" option3="around" actionOnEnd="up-&gt;active=false;" addToAAR="story" />
+ <dialogOption id="inj" operator="Operator:" texten="{INJURIES?} What are his injuries?" default="inj1" />
+ <dialogOption elementProperties="option=happen;" id="inj1" operator="Caller:" texten="I don't know. He has crushed legs, stomach and a bit of chest." default="breathing" option2="around" option3="address" />
+ <dialogOption id="address" operator="Operator:" texten="{ADDRESS?} What's the address of that warehouse?" default="addressa" />
+ <dialogOption id="addressa" operator="Caller:" texten="It's at [[ADDRESS]]. Warehouse with number 8." default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="send" operator="Operator:" texten="I'm sending the ambulance." default="end" />
+ <dialogOption id="up1" operator="Caller:" texten="I'll gather up my boys so we can lever up this scrap. That's might help him." default="upno" option2="upyes" />
+ <dialogOption id="up" operator="Operator:" texten="{LEVER UP RACKS} Are you able to lever up this racks?" default="up1" />
+ <dialogOption id="upno" operator="Operator:" texten="{DON'T DO THAT} No, please don't do that." default="why" />
+ <dialogOption id="why" operator="Caller:" emotions="[surprised]" texten="Why?" default="why1" />
+ <dialogOption id="why1" operator="Operator:" texten="The victim may have some injuries that can get worse if you move the rack. Just make sure it doesn't slump down anymore and wait for the rescuers." default="pain" />
+ <dialogOption id="pain" operator="Caller:" emotions="[nervous]" texten="But Kris is in terrible pain..." default="pani1" option2="upnono" />
+ <dialogOption id="pani1" operator="Operator:" texten="If you move it before the rescue team arrives, you might cause a life-threatening situation. As long as he's conscious and able to breathe, just wait." default="waiting" />
+ <dialogOption id="waiting" operator="Caller:" texten="So we'll at least gather up here and wait for the ambulance so we can lift everything up right after." default="waitok" option2="waitfire" />
+ <dialogOption id="waitok" operator="Operator:" texten="{YES, YOU CAN DO THAT} Sure, it will be very helpful." default="boyswait" actionOnEnd="injuried1.hp+= -20; shelves.isActive = false; shelves2.isActive= true;" addToAAR="moreinj" />
+ <dialogOption id="waitfire" operator="Operator:" texten="{LEAVE IT FOR FIREFIGHERS} I'm sending the firemen too. They have the proper equipment and will help you to gently pull it up, but not before the paramedics arrive. For now, just wait." default="disappoint" />
+ <dialogOption id="happen" operator="Operator:" texten="{WHAT HAPPENED?} What exactly happened?" default="happen1" actionOnEnd="up-&gt;active=true;" />
+ <dialogOption id="happen1" operator="Caller:" texten="Bob, this idiot, he stared at her and hit the rack's leg with a forklift truck. The rack has tipped and fallen down on Kris." default="up" option2="back" />
+ <dialogOption id="breathing" operator="Operator:" texten="Is the victim breathing?" default="breathyes" />
+ <dialogOption id="breathyes" operator="Caller:" texten="Yes, sure. We're all hearing his yelling and swears." default="send" option2="happen" option3="up" />
+ <dialogOption id="around" operator="Operator:" texten="{ARE YOU SAFE?} Is the accident scene properly secured?" default="around1" />
+ <dialogOption id="around1" operator="Caller:" texten="What do you mean?" default="around2" />
+ <dialogOption id="around2" operator="Operator:" texten="Have you checked whether the other racks aren't damaged? Have you secured the other racks?" default="yep" addToAAR="good" />
+ <dialogOption elementProperties="option=inj;" id="yep" operator="Caller:" texten="Mmmm..... yeah, sure. I'll order the guys to support other racks with the forklift trucks." default="up" option2="send" option3="happen" actionOnEnd="opinionEffect+=1;" />
+ <dialogOption id="upyes" operator="Operator:" texten="{DO IT} Okay, just be careful." default="upyes1" actionOnEnd="injuried1.hp += -20; injuried1.hpChange = -0.3; shelves.isActive = false" addToAAR="moreinj2" />
+ <dialogOption id="upyes1" operator="Caller:" emotions="[pleased]" texten="I'll gather the whole shift so... I guess that nothing worse can happen. We'll take him out and wait for you. . . . . . . . . Come on boys!" actionOnEnd="actionHangup" />
+ <dialogOption id="boyswait" operator="Caller:" emotions="[relieved]" texten="I'll gather the boys up. We'll be waiting for you." actionOnEnd="actionHangup;" />
+ <dialogOption id="disappoint" operator="Caller:" emotions="[nervous]" texten="Are we supposed to wait? He might die!" default="upnono" />
+ <dialogOption id="upnono" operator="Operator:" texten="I know that you want to help sir, but it's really for the best." default="end" />
+ <dialogOption id="end" operator="Caller:" texten="Okay, we're waiting. Please make it fast." actionOnEnd="actionHangup;" />
+ <dialogOption id="reminder" operator="Caller:" texten="So what am I supposed to do?" />
+ <dialogOption id="reminder2" operator="Caller:" texten="Hey!?" />
+ </dialog>
+ <aar>
+ <reportElement id="story" texten="In the warehouse, one of the racks has collapsed and pinned down a worker." />
+ <reportElement id="moreinj" texten="Workers have lifted the racks which caused intensified injuries of the victim. Reduction of pressure conducted to heavily bleeding from the wounded leg and made internal bleeding more intense." />
+ <reportElement id="moreinj2" texten="Workers have lifted the racks which caused intensified injuries of the victim. Reduction of pressure conducted to heavily bleeding from the wounded leg and made internal bleeding more intense. However, the paramedic was already there and immediately gave first aid to the victim." />
+ <reportElement id="good" texten="Operator made sure that workers secure the area which prevented for other accidents." />
+ </aar>
+ </conversation>
+</conversations></data>
