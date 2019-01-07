@@ -1,0 +1,51 @@
+<data>
+  <conversations>
+    <conversation id="otl15" texten="Hit and Run" elementProperties="type=generable;">
+      <scene>
+        <witness id="sceneElem_1" texten="Mother" elementProperties="sex=f;type=white;hp=100;" addToAAR="" blockedBy="" />
+        <injured id="sceneElem_2" texten="Johnny" elementProperties="type=children;sex=m;hp=30;hpchange=-0.1;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_3" texten="Driver" elementProperties="isActive=false;prisonchance=1;fightrisk=0.2;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Oh my god... oh my god." elementProperties="option=3;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Hello? 911, what's your emergency?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="Oh my... Please.. Please help me! " elementProperties="option=what;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="What going on ma'am?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="My son... OH my god Johnny!... My son has been hit by a car..." elementProperties="option=where;option=who;option=when;" addToAAR="story_1" operator="Caller" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where did this happen?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} What is your name?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} When did this happen?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="addressa0" texten="We are at ummm... [[ADDRESS]]" elementProperties="option=back;option=12;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="6" texten="Its uhh... Eliza." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="It happened no more then 3 minutes ago! Please help my Johnny!" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="Is your son alert at all?" elementProperties="option=13;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="Nooo oh my god... nooo he's not responding to me at all!" elementProperties="option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="Is he breathing?" elementProperties="option=15;option=16;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="He's breathing a little. I can hear him weezing." elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="No, no he's not breathing... I can't lose you baby... Stay with momma!" elementProperties="option=17;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Did you see car that hit your son?" elementProperties="option=9;option=10;option=11;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="Ma'am do you know how to perform CPR?" elementProperties="option=18;option=19;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="I think it was a black Dodge Charger." elementProperties="option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="10" texten="I think it was a blue Chevy Silverado." elementProperties="option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="I think it was a red Jeep Wrangler." elementProperties="option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="18" texten="Yeah!" elementProperties="option=20;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="19" texten="Noo.. Help me!" elementProperties="option=21;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="26" texten="EMS is on the way. Keep calm until help arrives." elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="20" texten="EMS is on the way. Keep giving your son CPR till they arrive.  Give police the description of the car." elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="21" texten="Alright, put me on speakerphone, I'll will walk you through it. Tilt his head back, seal your mouth over his  and pinch his nose. Blow 5 times in his mouth." elementProperties="option=22;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="22" texten="1... 2... 3.." elementProperties="option=23;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="23" texten="Push firmly in the middle of his chest with one hand, so the chest goes inward, then release. Give 30 chest compressions." elementProperties="option=24;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="reminder" texten="Hello? Hello are you there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="24" texten="1... 2... 3..." elementProperties="option=25;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="25" texten="Continue with cycles of 30 chest compressions and 2 breaths until help arrives." elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="A child has been hit by a vehicle. The driver took off." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
