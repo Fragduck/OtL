@@ -1,0 +1,52 @@
+﻿<data><conversations>
+<conversation elementProperties="type=generableonce;" id="otl11" texten="Chainsaw Accident">
+ <scene>
+ <injuried elementProperties="sex = M; type = White; hpchange = -0,3; hp = 70;" id="caller" texten="Caller" />
+ </scene>
+ <dialog>
+ <dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect = 5; onIgnore = -6;" />
+ <dialogOption elementProperties="option = FirstAid;" id="2" operator="Caller:" emotions="calm, in shock" texten="The chainsaw, I . . . .I just cut my leg. . . And there is nobody here who could help me." default="What" option2="When" option3="Where" />
+ <dialogOption id="What" operator="Operator:" texten="Tell me exactly what happend." default="What1" option2="Unconcious" />
+ <dialogOption id="What1" operator="Caller:" texten="I was just cutting some wood with a chainsaw. Somehow the cainsaw hit my left leg. . . . and now, well you know. . . .there is a lot of blood." default="back" />
+ <dialogOption id="Where" operator="Operator:" texten="Where did the accident happen?" default="Where1" option2="Unconcious" />
+ <dialogOption id="Where1" operator="Caller:" texten="At the backyard of my house." default="Where2" />
+ <dialogOption id="Where2" operator="Operator:" texten="I am going to need the address of your house." default="Where3" option2="Unconcious" />
+ <dialogOption id="Where3" operator="Caller:" texten="[[ADDRESS]]." default="What" option2="When" option3="FirstAid" actionOnEnd="actionSetLocation; HowLong3-&gt;active=false;" />
+ <dialogOption id="When" operator="Operator:" texten="When did it happen?" default="When1" option2="Unconcious" />
+ <dialogOption id="When1" operator="Caller:" texten=". . . . . . . . Maybe two minutes ago?" default="back" />
+ <dialogOption id="FirstAid" operator="Operator:" texten="{FIRST AID} Alright, I will help you now. First, you have to put your legs in the correct position." default="FirstAid1" />
+ <dialogOption id="FirstAid1" operator="Caller:" texten="Which position?" default="FirstAid1.C1" option2="FirstAid1.C2" />
+ <dialogOption id="FirstAid1.C1" operator="Operator:" texten="{GROUND LEVEL} Just at ground level." default="FirstAid2.C1" option2="Unconcious" addToAAR="WrongFirstAid" />
+ <dialogOption id="FirstAid1.C2" operator="Operator:" texten="{HIGH} So high, that your legs are higher in the air than your head. This way more blood will flow to your head and you will stay concious." default="FirstAid2.C2" />
+ <dialogOption elementProperties="option = Where;" id="FirstAid2.C1" operator="Caller:" texten="Ok . . . done." default="FirstAid3.C1" option2="FirstAid3.C2" option3="FirstAid3.C3" actionOnEnd="caller.hpchange+= -0,1; opinionEffect += -2;" />
+ <dialogOption elementProperties="option = Where;" id="FirstAid2.C2" operator="Caller:" texten="Ok. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I put them on a nearby rock." default="FirstAid3.C1" option2="FirstAid3.C2" option3="FirstAid3.C3" actionOnEnd="caller.hpchange+=0.1;" />
+ <dialogOption id="FirstAid3.C2" operator="Operator:" texten="{GET HELP} Do you see someone who could help you?" default="FirstAid3.C2.1" option2="Unconcious" />
+ <dialogOption id="FirstAid3.C2.1" operator="Caller:" texten=" . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . No, there is just me lying on the ground in my garden." default="back" />
+ <dialogOption id="FirstAid3.C1" operator="Operator:" texten="{DRESS WOUND} Do you have something to dress your wound? A piece of clothing for example?" default="FirstAid4.C1" />
+ <dialogOption id="FirstAid4.C1" operator="Caller:" texten="Well, I got my sweater right here. Can I use it?" default="FirstAid4.C1.1" />
+ <dialogOption id="FirstAid4.C1.1" operator="Operator:" texten="Yes. Put it on your wounded leg." default="FirstAid4.C1.2" />
+ <dialogOption elementProperties="option = Where;" id="FirstAid4.C1.2" operator="Caller:" texten=" . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . What next?" default="FirstAid5.C1" option2="FirstAid5.C2" option3="FirstAid3.C3" />
+ <dialogOption id="FirstAid5.C2" operator="Operator:" texten="{PRESSURE} Now you have to put pressure on your injury. This way you will lose less blood. " default="FirstAid5.C2.1" />
+ <dialogOption id="FirstAid5.C1" operator="Operator:" texten="{NO PRESSURE} We don't want too much pressure on your injury, because you would cut of your legs blood circulation. " default="FirstAid5.C1.1" option2="Unconcious" addToAAR="WrongFirstAid" />
+ <dialogOption elementProperties="option = Where;" id="FirstAid5.C1.1" operator="Caller:" texten="Alright, I just use my hand." default="FirstAid3.C3" />
+ <dialogOption id="FirstAid3.C3" operator="Operator:" texten="{WAIT FOR AMBULANCE} OK, now you just have to wait. The ambulance is on their way." default="EarlyEndSend" option2="Unconcious" />
+ <dialogOption elementProperties="option = Where;" id="FirstAid5.C2.1" operator="Caller:" texten="Alright, I just use my hand and try to put as much pressure on the cut as possible." default="FirstAid6" option2="FirstAid3.C3" actionOnEnd="caller.hpchange+=0.1;" />
+ <dialogOption id="FirstAid6" operator="Operator:" texten="{PRESSURE + AMBULANCE} The last thing you have to do is to keep the pressure on the wound and wait for the ambulance to arrive." default="HowLong" />
+ <dialogOption elementProperties="option = HowLong4;" id="HowLong" operator="Caller:" texten="How long do you think it will take them?" default="HowLong1" option2="HowLong2" option3="HowLong3" />
+ <dialogOption id="HowLong1" operator="Operator:" texten="Less than 2 minutes." default="HowLongR" />
+ <dialogOption id="HowLong2" operator="Operator:" texten="Less than 5 minutes." default="HowLongR" />
+ <dialogOption id="HowLong3" operator="Operator:" texten="{ADRESS} I just need your adress to send them to you." default="HowLongR1" />
+ <dialogOption id="HowLong4" operator="Operator:" texten="10 Minutes." default="HowLongR2" />
+ <dialogOption id="HowLongR" operator="Caller:" texten="I hope you are right, because I feel like I . . . " default="Unconcious" />
+ <dialogOption id="HowLongR1" operator="Caller:" texten="Maybe you should have asked that question at the beginning? I am at . . . " default="Unconcious" />
+ <dialogOption id="HowLongR2" operator="Caller:" texten="I hope they are faster than that, because I . . . . " default="Unconcious" />
+ <dialogOption elementProperties="chance = 0.1;" id="Unconcious" operator="Caller:" texten="I.. I... everything is going bla... . . . . . . . . . . . ." actionOnEnd="actionHangup; caller.hpchange += -0,1;" />
+ <dialogOption id="EarlyEndSend" operator="Caller:" texten="Sure. . . . " actionOnEnd="actionHangup;" />
+ <dialogOption id="reminder" operator="Caller:" texten="...." />
+ <dialogOption id="reminder2" operator="Caller:" texten="...." />
+ </dialog>
+ <aar>
+ <reportElement id="WrongFirstAid" texten="You gave wrong first aid instructions." />
+ </aar>
+ </conversation>
+</conversations></data>
