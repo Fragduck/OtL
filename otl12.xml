@@ -1,0 +1,28 @@
+﻿<data><conversations>
+<conversation elementProperties="type=generableonce;" id="otl12" texten="Broken Bones">
+ <scene>
+ <injuried elementProperties="sex = W; hp = 95;" id="caller" texten="Caller" />
+ </scene>
+ <dialog>
+ <dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect = -2;" />
+ <dialogOption elementProperties="option = WhichOne;" id="2" operator="Caller:" texten="I broke one of my fingers." default="What" option2="When" option3="Where" />
+ <dialogOption id="What" operator="Operator:" texten="How did it happend?" default="What1" />
+ <dialogOption elementProperties="option = NoEmergency;" id="What1" operator="Caller:" texten="I just did some sport, volleyball to be exactly. I didn't even notice at first. But now the finger looks quite swollen." default="Where" option2="When" option3="SendAmbulance" />
+ <dialogOption id="When" operator="Operator:" texten="When did you broke your finger?" default="When1" />
+ <dialogOption elementProperties="option = Where;" id="When1" operator="Caller:" texten="Hmm. . . . let me think . . . . . . . . . . . around 6 hours ago." default="What" option2="SendAmbulance" option3="NoEmergency" />
+ <dialogOption id="Where" operator="Operator:" texten="Where do you live?" default="Where1" />
+ <dialogOption id="Where1" operator="Caller:" texten="I live at [[ADDRESS]]." default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="WhichOne" operator="Operator:" texten="Which finger did you break?" default="WhichOne1" />
+ <dialogOption id="WhichOne1" operator="Caller:" texten="It's my index finger." default="back" />
+ <dialogOption id="SendAmbulance" operator="Operator:" texten="{SEND AMBULANCE} I send the ambulance." default="SendAmbulance1" addToAAR="shouldnotcheck" />
+ <dialogOption id="SendAmbulance1" operator="Caller:" texten="Thank you very much!" actionOnEnd="actionHangup;" />
+ <dialogOption id="NoEmergency" operator="Operator:" texten="{NO EMERGENCY} I'm sorry, but that's not an emergency, please take a taxi or go to the nearest hospital." default="NoEmergency1" />
+ <dialogOption id="NoEmergency1" operator="Caller:" texten="Oh, ok. I will do that." actionOnEnd="actionHangup;" />
+ <dialogOption id="reminder" operator="Caller:" texten="...." />
+ <dialogOption id="reminder2" operator="Caller:" texten="...." />
+ </dialog>
+ <aar>
+ <reportElement id="shouldnotcheck" texten="You send an ambulance, although it was not an emergency." />
+ </aar>
+ </conversation>
+</conversations></data>
