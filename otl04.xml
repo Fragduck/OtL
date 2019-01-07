@@ -1,0 +1,46 @@
+<data>
+  <conversations>
+    <conversation id="otl04" texten="Hooligan (Football Brawl)" elementProperties="type=generableonce;">
+      <scene>
+        <suspect id="Man01" texten="Armed Man" elementProperties="sex=M;prisonchance=1;fightRisk=0.9;weapon=e_knife;hp=75;" addToAAR="" blockedBy="" />
+        <suspect id="Man02" texten="Violent Man" elementProperties="sex=M;prisonchance=1;fightRisk=0.9;hp=85;" addToAAR="" blockedBy="" />
+        <suspect id="Man03" texten="Violent Man" elementProperties="sex=M;prisonchance=0;fightRisk=0.9;hp=60;" addToAAR="" blockedBy="" />
+        <suspect id="Woman04" texten="Armed Woman" elementProperties="sex=W;prisonchance=1;fightRisk=0.9;weapon=e_knife;hp=95;" addToAAR="" blockedBy="" />
+        <suspect id="Woman05" texten="Armed Woman" elementProperties="sex=W;prisonchance=1;fightRisk=0.9;weapon=e_knife;" addToAAR="" blockedBy="" />
+        <suspect id="Man06" texten="Violent Man" elementProperties="sex=M;prisonchance=0;fightRisk=0.9;hp=35;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="Hooligan" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Come here, quick, there is a fight here !" elementProperties="option=3;option=4;" actionOnEnd="opinionEffect=4;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="How many people are fighting ? " elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="How big of a fight sir?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="Five... Maybe six I... I'm not sure ..." elementProperties="option=8;option=10;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="A big fight! Quickly it's going to shit. " elementProperties="option=6;option=21;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Are there any weapons ? " elementProperties="option=9;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="When did this begin ? " elementProperties="option=11;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="How many people is a big fight? " elementProperties="option=22;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="21" texten="Are there any weapons ?" elementProperties="option=23;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="I do not know ... Finally I think there are knives and broken bottles ... Quick its going to shit ..." elementProperties="option=15;option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="After the game ... The supporters started it ..." elementProperties="option=12;option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="22" texten="Six I think ... I do not really know ..." elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="23" texten="I do not know ... Wait I think there are knives and broken bottles ... Quick its really bad ..." elementProperties="option=15;option=16;option=24;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="15" texten="When did this begin ? " elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="16" texten="Where are you ?" elementProperties="option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="Do you see any weapons ?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="Where are you ? " elementProperties="option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="24" texten="How many are they ?" elementProperties="option=15;option=16;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="At the end of the match ... the fans took the lead ..." elementProperties="option=19;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="18" texten="[[ADDRESS]], Come ! Quick ! " elementProperties="option=20;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="19" texten="Where are you ?" elementProperties="option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="20" texten="I'm sending you a team." elementProperties="actionHangup;" actionOnEnd="actionHangup;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="I ... Could be knives ... and broken bottles ... I'm not sure ... Come quickly its getting worst" elementProperties="option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Hey ! Come quickly, it's going to shit !" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Hello ... Is there someone?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="Hooligan" texten="Someone is calling about a brawl in between team supporters." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
