@@ -1,0 +1,33 @@
+<data>
+  <conversations>
+    <conversation id="otl29" texten="Motorbike Disturbance" elementProperties="type=generableonce;">
+      <scene>
+        <suspect id="Gary" texten="Gary" elementProperties="Sex=M;prisonChance=0;" addToAAR="insurance" blockedBy="" />
+        <suspect id="Jeremy" texten="Jeremy" elementProperties="Sex=M;prisonChance=1;weapon=e_knife;" addToAAR="knife" blockedBy="Gary" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hello, there are currently two motorbikes racing up and down my road. They're causing a disturbance!" elementProperties="option=3;option=4;option=5;option=6;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="{WHERE?} Ok, what is the address?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="{WHO?} Do you have any idea who they are?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="{DESCRIPTION} Could you provide a description for me of the bikes and the persons." elementProperties="option=9;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="{WHEN?} When has this happened?" elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="I live at [[ADDRESS]]." elementProperties="option=4;option=5;option=6;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="I have no idea, I never seen these bikes round here before!" elementProperties="option=5;option=6;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="Good job I know my bikes! One seems to be an orange and black Honda MSX125 and the other one is... umm... it must be a Honda CBR125R" elementProperties="option=6;option=11;option=12;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="10" texten="They are still here! They have been here for about twenty minutes now!" elementProperties="option=11;option=12;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="{SEND} Ok sir, we are sending Police over now" elementProperties="option=end;opinionEffect=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="12" texten="{DON'T SEND} Unfortunately sir, this is not an emergency service matter, I can not help you" elementProperties="option=14;opinionEffect=-4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="Ok thank you, bye" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="You can't be serious! Ugh, guess I'll have to sort it out myself!" elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="angry" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="reminder" texten="Hello?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Are you still there Operator?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="insurance" texten="One of the suspects had no insurance" />
+        <reportElement id="knife" texten="Jeremy is found with a knife!" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
