@@ -1,0 +1,68 @@
+<data>
+  <conversations>
+    <conversation id="otl05" texten="Girl Followed" elementProperties="type=generableonce;">
+      <scene>
+        <passerby id="Girl_Victime" texten="Victim" elementProperties="sex=W;" addToAAR="" blockedBy="Pervert" />
+        <suspect id="Pervert" texten="Pervert" elementProperties="sex=M;weapon=e_knife;hp=95;prisonChance=0.6;fightRisk=0.7;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" actionOnEnd="opinionEffect=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Hello Sarah, wat's up ?" elementProperties="option=3;option=4;" addToAAR="Summary" operator="Caller" emotions="" />
+        <DialogOption id="3" texten="Madam, you just called 911, do you need help?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="There is no Sarah here, you called 911 ..." elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="5" texten="Yes I understand, you are right" elementProperties="option=7;option=8;option=45;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="6" texten="Yes, it's true" elementProperties="option=7;option=8;option=43;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="Can you not talk freely?" elementProperties="option=9;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="You understand that this is an emergency call? Do you need help ?" elementProperties="option=12;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="45" texten="Madam, please indicate your emergency or I can't help you" elementProperties="option=46;option=47;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="43" texten="Is this a joke?" elementProperties="option=44;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="That's right. I'm fine, I've finished the job. I am on my way. How's your son? " elementProperties="option=10;option=11;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="Yes" elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="46" texten="I can't tell you ..." elementProperties="option=49;option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="47" texten="Are you stupid ?" elementProperties="option=51;option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="44" texten="No ! ... " elementProperties="option=7;option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="10" texten="Are you being followed?" elementProperties="option=13;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="Where are you ?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="49" texten="Is this a joke ?" elementProperties="option=50;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="51" texten="This is the 911 call center, we don't time for jokes. Goodbye miss" elementProperties="actionHangup;" actionOnEnd="actionHangup;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="Yes, it's always been hard to talk about her child's problems" elementProperties="option=15;option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="Oh, I'm passing by the cafe where we went Monday, the one at [[ADDRESS]]" elementProperties="actionSetLocation;option=23;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="50" texten="Are you stupid ?" elementProperties="option=51;option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="15" texten="Can you defend yourself?" elementProperties="option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="16" texten="Is there more than one?" elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="23" texten="&#xD;I'll send a team, stay inside the cafe until they arrive." elementProperties="option=24;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="18" texten="No, not right now I haven't thought about it yet" elementProperties="option=19;option=35;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="17" texten="I think I would not want more than one" elementProperties="option=21;option=33;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="24" texten="Ok Sarah my battery is almost empty, so I'll leave you. Bye and thanks again." elementProperties="" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="19" texten="How many are they ?" elementProperties="option=20;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="35" texten="&#xD;Does he have a weapon ?" elementProperties="option=36;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="21" texten="Can you defend yourself?" elementProperties="option=22;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="33" texten="&#xD;Does he have a weapon ?" elementProperties="option=34;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="20" texten="I think I would not want more than one " elementProperties="option=25;option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="36" texten="No idea, you know me and the kids ..." elementProperties="option=19;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="22" texten="Not at the moment I didn't think about it yet" elementProperties="option=25;option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="34" texten="No idea, you know me and the kids ..." elementProperties="option=25;option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="25" texten="Where are you ?" elementProperties="option=28;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="26" texten="Can you wait somewhere?" elementProperties="option=27;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="28" texten="Oh, I'm passing by the cafe where we went Monday, the one at [[ADDRESS]]" elementProperties="option=37;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="27" texten="Oh, I'll go to the cafe where we used to go" elementProperties="option=29;option=30;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="37" texten="&#xD;I'll send a team, stay inside the cafe until they arrive." elementProperties="option=40;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="29" texten="Where is the cafe?" elementProperties="option=32;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="30" texten="Give me the adress and wait inside." elementProperties="option=31;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="40" texten="Ok Sarah my battery is almost empty, so I'll leave you. Bye and thanks again." elementProperties="actionHangup;" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="32" texten="It's the one at [[ADDRESS]]" elementProperties="option=39;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="31" texten="Yeah, you know the one at [[ADDRESS]" elementProperties="option=38;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="39" texten="I will send a team, get in the cafe and wait for them" elementProperties="option=41;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="38" texten="I will send a team." elementProperties="option=42;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="41" texten="Ok Sarah my battery is almost empty, so I'll leave you. Bye and thanks again." elementProperties="actionHangup;" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="42" texten="Ok Sarah my battery is almost empty, so I'll leave you. Bye and thanks again." elementProperties="actionHangup;" actionOnEnd="actionHangup;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Do you hear me ? " elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Hey Sarah ? " elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="Summary" texten="A girl is calling and asks for a &quot; Sarah&quot;, Prank or serious demand?" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
