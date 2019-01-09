@@ -36,7 +36,8 @@
         <DialogOption id="end" texten=". . . . . . . . . . . . " actionOnEnd="actionHangup;" operator="Caller" />
         <DialogOption id="reminder" texten="Sir? Are you still here?" operator="Caller" />
         <DialogOption id="reminder2" texten="Sir?" operator="Caller" />
-        <DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />      </dialog>
+        <DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
+      </dialog>
       <aar>
         <reportElement id="caller" texten="A man call about his wife found passed out in the kitchen, a strange smell fly in the air" />
       </aar>
