@@ -1,5 +1,5 @@
-<data><conversations>
-<conversation elementProperties="type=generable;" id="otl22" texten="Epileptic Seizure">
+﻿<data><conversations>
+<conversation elementProperties="type=generable;" id="otl22" texten="Epileptic Seizure" COMMENT="RECORDED">
  <scene>
  <passerby elementProperties="sex=W;" id="caller" emotions="female, around 25 yo. speaks neatly and correctly, with a canadian accent." texten="Caller" />
  <injuried elementProperties="hp = 60; hpChange = -0.2; sex=M;" id="epi" emotions="victim - male, around 70yo, has an epileptic fit." texten="Old man" />
@@ -44,7 +44,6 @@
  <dialogOption id="end" operator="Caller:" texten="Okay. I'm waiting. Thank you so much for your help, goodbye!" actionOnEnd="actionHangup" />
  <dialogOption id="reminder" operator="Caller:" texten="Hello? . . . . . Is anybody there? . . . . . Am I just supposed to leave him here like this?" />
  <dialogOption id="reminder2" operator="Caller:" texten="Hello? Isn't 911 supposed to answer? There's a man here and he's foaming at the mouth, he's flailing around and noone's answering me. . . . 911, hello?! Hello! Why is noone answering me? . . Oh no, he-he's stopped moving. I-Is something wrong? . . . Oh, I-I just heard a crack - I think I just heard a crack. I think he broke something. He's flailing, why isn't anyone answering me? . . . Hello? Hello?! I pay taxes for a reason, 911, hello?" />
-		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
  </dialog>
  <aar>
  <reportElement id="story" texten="Caller saw a man with epileptic seizure." />

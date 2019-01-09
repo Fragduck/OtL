@@ -27,7 +27,6 @@
 		<DialogOption id="18" texten="Oh, okay I guess it won't get any worse. Thank you, bye." actiononEnd="opinionEffect=2;actionHangup;" operator="Caller" />
 		<DialogOption id="reminder" texten="Hello? Are you there?" operator="Caller" />
 		<DialogOption id="reminder2" texten="Hello? Stupid phone it's hung up again!" operator="Caller" />
-		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
 	</dialog>
 	<aar>
 		<reportElement id="caller" texten="An elderly woman called and reported being dizzy." />

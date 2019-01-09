@@ -17,6 +17,7 @@
         <DialogOption id="4" texten="I... I uh I don't know. Mooommmmyyy!!... Please help my mom and dad!" elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="5" texten="My names Ella. Can you please come help my mom and dad?!" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="6" texten="It happened a few minutes ago!" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="7" texten="I need you to tell me where you are. Can you tell me the color of your house and the color of your front door?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="8" texten="Our house is blue, and the door is red!" elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="9" texten="Okay thats good. Keep helping me, can you go out your front door and tell me what numbers you see on your house? I need those numbers to help your parents." elementProperties="option=10;" addToAAR="" operator="Operator" emotions="" />
@@ -28,7 +29,6 @@
         <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="reminder" texten="Help me they're dying!" elementProperties="" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="reminder2" texten="Please help me!" elementProperties="" addToAAR="" operator="Caller" emotions="" />
-		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
       </dialog>
       <aar>
         <reportElement id="story_1" texten="Ella's parents have been shot during a home invasion." />

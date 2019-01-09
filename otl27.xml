@@ -18,6 +18,7 @@
         <DialogOption id="8u" texten="When did the crash happen?" elementProperties="option=9;option=15;option=16;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="32" texten="How big was the plane?" elementProperties="option=33;option=34;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="44" texten="And is the plane on fire?" elementProperties="option=45;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="Easter Egg! No seriously, it's broken - please report to Soharic." elementProperties="" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="4" texten="At the end of the road in a field." elementProperties="option=5;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="7" texten="I'm standing outside [[ADDRESS]] and it crashed on the field down the road." elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="5" texten="Can you give me a precise address please." elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
@@ -71,7 +72,6 @@
         <DialogOption id="49" texten="Sure I can do that, thank you." elementProperties="" actionOnEnd="actionHangup;" addToAAR="hangup" operator="Caller" emotions="" />
         <DialogOption id="reminder" texten="..." elementProperties="" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="reminder2" texten="..." elementProperties="" addToAAR="" operator="Caller" emotions="" />
-		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
       </dialog>
       <aar>
         <reportElement id="nonemerg" texten="The caller was a young child who had crashed their model plane. An emergency presence was not required." />

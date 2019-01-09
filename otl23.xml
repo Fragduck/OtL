@@ -34,7 +34,6 @@ sex=W;" id="sister2" texten="Child" />
  <dialogOption id="notouch1" operator="Caller:" texten="I won't touch it!!!" default="stay" />
  <dialogOption id="reminder" operator="Caller:" emotions="[crying]" texten="[crying]" />
  <dialogOption id="reminder2" operator="Caller:" emotions="[crying]" texten="Help me!" />
-		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
  </dialog>
  <aar>
  <reportElement id="story" texten="Male teenager shot himself in his own house. Bullet caused loss of consciousness and massive bleeding. His two little sisters have been in the house during an accident. Older girl (10 years old) called 911." />

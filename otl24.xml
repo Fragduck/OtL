@@ -24,7 +24,6 @@
 		<dialogOption id="end" operator="Operator:" texten="Okay, the police and medical services are on their way and should be there shortly." actionOnEnd="actionHangup" addtoAAR="storya"/>
 		<dialogOption id="reminder" operator="Caller:" texten="Hello? Hello, are you there still?"/>
 		<dialogOption id="reminder2" operator="Caller:" texten="Have I lost signal?!"/>
-		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
 	</dialog>
 	<aar>
 		<reportElement id="fail" texten="The Operator hungup on a genuine emergency."/>
