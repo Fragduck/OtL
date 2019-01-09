@@ -1,6 +1,7 @@
 <!-- Blank xml for uploading to the Workshop - Only required by Soharic -->
 
-<!-- Credit list can be found: http://www.gamesoperators.com/otl/ -->
+<!-- Full credit list can be found: http://www.soharicmedia.com/911/otl -->
+<!-- On the Line 002.017 -->
 
 <data>
   <conversations>
@@ -9,4 +10,4 @@
   </conversations>
 </data>
 
-<!-- This file will shows errors if opened in the Call Editor, but it does still function for uploads only -->
+<!-- This file will shows errors if opened in the Call Editor -->
