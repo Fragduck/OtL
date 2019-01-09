@@ -12,32 +12,31 @@
         <DialogOption id="3" texten="Ok, is she breathing?" elementProperties="option=5;" operator="Operator" />
         <DialogOption id="4" texten="{WHERE} Where are you sir?" elementProperties="option=14;" operator="Operator" />
         <DialogOption id="5" texten="Yes, but with difficulty..." elementProperties="option=6;option=4;" operator="Caller" />
-        <DialogOption id="14" texten="At home, I just came back from work ... what is that smell?" elementProperties="option=15;option=17;" operator="Caller" />
         <DialogOption id="6" texten="{HOW LONG} How long has it been?" elementProperties="option=7;" operator="Operator" />
+        <DialogOption id="7" texten="I don't know. I just came back from work ... My head... it's spinning and what is that smell?" elementProperties="option=8;option=21;" operator="Caller" />
+        <DialogOption id="8" texten="{ADDRESS} Sir, can you give me your location?" elementProperties="option=9;" operator="Operator" />
+        <DialogOption id="9" texten="Yes, it's [[ADDRESS]]." elementProperties="option=10;" actionOnEnd="actionSetLocation;" operator="Caller" />
+        <DialogOption id="10" texten="I will send someone, but can you open the windows and go into the kitchen to see if the gas is cut off?" elementProperties="option=11;" operator="Operator" />
+        <DialogOption id="11" texten=". . . . . . . . . . . . " elementProperties="option=12;" operator="Caller" />
+        <DialogOption id="12" texten="Sir?" elementProperties="option=13;" operator="Operator" />
+        <DialogOption id="13" texten=". . . . . . . . . . . . " actionOnEnd="actionHangup;" addToAAR="story_1" operator="Caller" />
+        <DialogOption id="14" texten="At home, I just came back from work ... what is that smell?" elementProperties="option=15;option=17;" operator="Caller" />
         <DialogOption id="15" texten="{ADDRESS} Sir, can you give me your address?" elementProperties="option=16;" operator="Operator" />
         <DialogOption id="17" texten="{A SMELL?} A smell? Do you use gas at home?" elementProperties="option=18;" operator="Operator" />
-        <DialogOption id="7" texten="I don't know. I just came back from work ... My head... it's spinning and what is that smell?" elementProperties="option=8;option=21;" operator="Caller" />
         <DialogOption id="16" texten="It's [[ADDRESS]]. Oh, &#xD; Quick! The smell is unbearable." elementProperties="option=25;option=29;" actionOnEnd="actionSetLocation;" operator="Caller" />
         <DialogOption id="18" texten="Yes in the Kitchen" elementProperties="option=19;option=30;" operator="Caller" />
-        <DialogOption id="8" texten="{ADDRESS} Sir, can you give me your location?" elementProperties="option=9;" operator="Operator" />
-        <DialogOption id="21" texten="{A SMELL?} A smell? Do you use gas at home?" elementProperties="option=24;" operator="Operator" />
-        <DialogOption id="25" texten="{SEND SOMEONE} I will send someone. Don't move, okay?" elementProperties="option=11;" operator="Operator" />
-        <DialogOption id="29" texten="{A SMELL?} A smell? Do you use gas at home?" elementProperties="option=26;" operator="Operator" />
         <DialogOption id="19" texten="{ADDRESS} Okay, can you give me your address?" elementProperties="option=20;" operator="Operator" />
-        <DialogOption id="30" texten="{OPEN THE WINDOWS} Sir i need you to open the windows and check if the gas is cut off." elementProperties="option=11;" operator="Operator" />
-        <DialogOption id="9" texten="Yes, it's [[ADDRESS]]." elementProperties="option=10;" actionOnEnd="actionSetLocation;" operator="Caller" />
-        <DialogOption id="24" texten="Yes, for the kitchen." elementProperties="option=8;" operator="Caller" />
-        <DialogOption id="11" texten=". . . . . . . . . . . . " elementProperties="option=12;" operator="Caller" />
-        <DialogOption id="26" texten="Yes, in the kitchen." elementProperties="option=10;" operator="Caller" />
         <DialogOption id="20" texten="I'm at [[ADDRESS]]" elementProperties="option=10;" actionOnEnd="actionSetLocation;" operator="Caller" />
-        <DialogOption id="10" texten="I will send someone, but can you open the windows and go into the kitchen to see if the gas is cut off?" elementProperties="option=11;" operator="Operator" />
-        <DialogOption id="12" texten="Sir?" elementProperties="option=13;" operator="Operator" />
-        <DialogOption id="13" texten=". . . . . . . . . . . . " elementProperties="" actionOnEnd="actionHangup;" addToAAR="story_1" operator="Caller" />
-        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" operator="Operator" />
-        <DialogOption id="end" texten=". . . . . . . . . . . . " elementProperties="" actionOnEnd="actionHangup;" operator="Caller" />
-        <DialogOption id="reminder" texten="Sir? Are you still here?" elementProperties="" operator="Caller" />
-        <DialogOption id="reminder2" texten="Sir?" elementProperties="" operator="Caller" />
-      </dialog>
+        <DialogOption id="21" texten="{A SMELL?} A smell? Do you use gas at home?" elementProperties="option=24;" operator="Operator" />
+        <DialogOption id="24" texten="Yes, for the kitchen." elementProperties="option=8;" operator="Caller" />
+        <DialogOption id="25" texten="{SEND SOMEONE} I will send someone. Don't move, okay?" elementProperties="option=11;" operator="Operator" />
+        <DialogOption id="26" texten="Yes, in the kitchen." elementProperties="option=10;" operator="Caller" />
+        <DialogOption id="29" texten="{A SMELL?} A smell? Do you use gas at home?" elementProperties="option=26;" operator="Operator" />
+        <DialogOption id="30" texten="{OPEN THE WINDOWS} Sir i need you to open the windows and check if the gas is cut off." elementProperties="option=11;" operator="Operator" />
+        <DialogOption id="end" texten=". . . . . . . . . . . . " actionOnEnd="actionHangup;" operator="Caller" />
+        <DialogOption id="reminder" texten="Sir? Are you still here?" operator="Caller" />
+        <DialogOption id="reminder2" texten="Sir?" operator="Caller" />
+        <DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />      </dialog>
       <aar>
         <reportElement id="caller" texten="A man call about his wife found passed out in the kitchen, a strange smell fly in the air" />
       </aar>
