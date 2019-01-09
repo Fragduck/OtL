@@ -16,7 +16,6 @@
         <DialogOption id="addressa0" texten="I'm laying in the street at [[ADDRESS]]" elementProperties="option=back;option=6;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="4" texten="(cough) My names Jake... Jake Donavon" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="5" texten="They.. They just shot me a few seconds ago... " elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
-        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="6" texten="Where have you been shot?" elementProperties="option=7;option=8;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="7" texten="In the chest and in the leg" elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="8" texten="In my stomach!" elementProperties="option=24;" addToAAR="" operator="Caller" emotions="" />
@@ -53,6 +52,7 @@
         <DialogOption id="20" texten="Can your rip your shirt again to cover up the wound? You need to put pressure on it to stop the bleeding." elementProperties="option=25;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="37" texten="I need you to stay calm, emergency services are on their way." elementProperties="option=38;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="38" texten="Please have them hurry! I might pass out!" elementProperties="option=end;" addToAAR="" operator="Caller" emotions="" />
+<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
       </dialog>
       <aar>
         <reportElement id="story_1" texten="An Uber driver shot and robbed their rider." />

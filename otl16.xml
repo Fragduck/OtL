@@ -27,7 +27,6 @@
         <DialogOption id="3" texten="An explosion happened at the finish line!" elementProperties="option=back;" operator="Caller" emotions="scared, panicked" />
         <DialogOption id="addressa0" texten="At the finish line!" elementProperties="option=back;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="4" texten="Just now! There's a lot of people injured. Send help!" elementProperties="option=5;option=7;" operator="Caller" emotions="scared, panicked" />
-        <DialogOption id="back" texten="Back error, please report to call creator." operator="Operator" />
         <DialogOption id="5" texten="Did you see anything?" elementProperties="option=6;" addToAAR="" operator="Operator" />
         <DialogOption id="7" texten="{SEND HELP}Help is on the way. I need you to stay calm and help the injured if you can." elementProperties="option=8;" operator="Operator" />
         <DialogOption id="6" texten="Not really, I was watching the runners and then I heard the loud explosions." elementProperties="option=7;" operator="Caller" emotions="scared" />
@@ -35,6 +34,7 @@
         <DialogOption id="end" texten="..." actionOnEnd="actionHangup" addToAAR="story_1" operator="Caller" />
         <DialogOption id="reminder" texten="Hello? We need help down here!" operator="Caller" />
         <DialogOption id="reminder2" texten="Someone help!" operator="Caller" />
+		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
       </dialog>
       <aar>
         <reportElement id="story_1" texten="The caller reported explosions at a marathon finish line." />

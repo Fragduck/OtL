@@ -29,6 +29,7 @@
 			<dialogOption id="end" operator="Caller" texten="Yeah get here! I ain't gonna wait all day!" actionOnEnd="actionHangup;" />
 			<dialogOption id="reminder" operator="Caller" texten="So? I ain't gonna wait all day." actionOnEnd="actionHangup;" />
 			<dialogOption id="reminder2" operator="Caller" texten="You there?" />
+		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
 		</dialog>
 		<aar>
 			<reportElement id="story" texten="The caller was drunk. He called an ambulance, but intervention was not necessary" />
