@@ -22,8 +22,8 @@
         <DialogOption id="13" texten=". . . . . . . . . . . . " actionOnEnd="actionHangup;" addToAAR="story_1" operator="Caller" />
         <DialogOption id="14" texten="At home, I just came back from work ... what is that smell?" elementProperties="option=15;option=17;" operator="Caller" />
         <DialogOption id="15" texten="{ADDRESS} Sir, can you give me your address?" elementProperties="option=16;" operator="Operator" />
-        <DialogOption id="17" texten="{A SMELL?} A smell? Do you use gas at home?" elementProperties="option=18;" operator="Operator" />
         <DialogOption id="16" texten="It's [[ADDRESS]]. Oh, &#xD; Quick! The smell is unbearable." elementProperties="option=25;option=29;" actionOnEnd="actionSetLocation;" operator="Caller" />
+        <DialogOption id="17" texten="{A SMELL?} A smell? Do you use gas at home?" elementProperties="option=18;" operator="Operator" />
         <DialogOption id="18" texten="Yes in the Kitchen" elementProperties="option=19;option=30;" operator="Caller" />
         <DialogOption id="19" texten="{ADDRESS} Okay, can you give me your address?" elementProperties="option=20;" operator="Operator" />
         <DialogOption id="20" texten="I'm at [[ADDRESS]]" elementProperties="option=10;" actionOnEnd="actionSetLocation;" operator="Caller" />
