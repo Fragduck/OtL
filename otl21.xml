@@ -1,4 +1,4 @@
-﻿<data><conversations>
+<data><conversations>
 <conversation elementProperties="type=generable;" id="otl21" texten="Car Collision">
  <scene>
  <suspect elementProperties="fightRisk = 0; sex=M; type=White;" id="caller" operator="Caller:" emotions="male, 30 yo, calm" texten="Caller" />
@@ -46,6 +46,7 @@
  <dialogOption id="enda" operator="Caller:" texten="Ok, thank you!" actionOnEnd="actionHangup" />
  <dialogOption id="reminder" operator="Caller:" texten="Are you there?" />
  <dialogOption id="reminder2" operator="Caller:" texten="Hello?" />
+		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
  </dialog>
  <aar>
  <reportElement id="yesterday" texten="The accident took place yesterday and there was no need of intervention." />

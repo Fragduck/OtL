@@ -14,7 +14,6 @@
         <DialogOption id="where" texten="{WHERE?} Where is the car located?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="19" texten="My name is Jordan. What should I do?" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="addressa0" texten="I'm at [[ADDRESS]]." elementProperties="option=back;option=3;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
-        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="3" texten="Is the car on?" elementProperties="option=14;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="14" texten="No its not!" elementProperties="option=4;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="4" texten="Is the infant alert and conscious? " elementProperties="option=20;" addToAAR="" operator="Operator" emotions="" />
@@ -51,6 +50,7 @@
         <DialogOption id="12" texten="If the baby is not breathing or not breathing normally, cover the baby's mouth and nose with your mouth and give 2 gentle breaths. Each breath should be about 1 second long." elementProperties="option=35;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="35" texten="One... Two... " elementProperties="option=13;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="13" texten="Continue with 30 pumps and 2 breaths until help arrives." elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
       </dialog>
       <aar>
         <reportElement id="story_1" texten="Infant locked in hot car." />

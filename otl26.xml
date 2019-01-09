@@ -49,6 +49,7 @@
         <DialogOption id="40" texten=". . . . . . . Liam?" elementProperties="" addToAAR="" operator="Operator" emotions="" actionOnEnd="actionHangup;" />
         <DialogOption id="reminder" texten="Hello?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="reminder2" texten="..." elementProperties="" addToAAR="" operator="Caller" emotions="" />
+		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
       </dialog>
       <aar />
     </conversation>
